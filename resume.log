@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  11 APR 2025 17:58
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  11 APR 2025 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,22 +613,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 17.
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 84--84
-[] [] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 84--84
-[] [] 
- []
-
-
 
 [1
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 89.
+(Font)              <7> on input line 91.
 
 
 [2] (./resume.aux)
@@ -636,18 +626,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 22859 strings out of 473832
- 471784 string characters out of 5729482
- 953483 words of memory out of 5000000
- 45547 multiletter control sequences out of 15000+600000
+ 22606 strings out of 473832
+ 467255 string characters out of 5729482
+ 907072 words of memory out of 5000000
+ 45294 multiletter control sequences out of 15000+600000
  561396 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,10n,121p,1240b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,10n,121p,1240b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on resume.pdf (2 pages).

@@ -24,7 +24,7 @@
 \definecolor{sectionbg}{HTML}{FAE49E}
 \definecolor{yellow1}{HTML}{F7D564}
 \definecolor{baseText}{HTML}{1F1F1F}
-\definecolor{bulletColor}{HTML}{707070}
+\definecolor{bulletColor}{HTML}{B2B2B2}
 
 % --- Replace the current font toggle block (starting from "Define storage for header elements") with the following:
 
@@ -179,44 +179,16 @@
     \vspace{0.5em}%
 }
 
-\makeatletter
-\newcommand{\tikzmark}[1]{%
-    \tikz[baseline=-0.3ex,remember picture,overlay]{%
-        \node[inner sep=0pt,outer sep=0pt] (#1) {};%
-    }%
-}
-\makeatother
-
-
-% --- Define a new bullet command for use in the experience items ---
-% Use \lineditem in place of \item when listing bullet items.
-\newcommand{\linkeditem}[1]{
-    \begin{tikzpicture}[remember picture]%
-        \node (#1) [color=bulletColor,circle,fill,inner sep=1pt,minimum size=1.3mm]{};
-    \end{tikzpicture}%
+% --- Divider for Experience Items ---
+\newcommand{\ExpDividerLength}{0.95\linewidth}  % Set the length of the divider (adjust as needed)
+\newcommand{\ExpDividerThickness}{0.5pt}       % Set the thickness of the divider (adjust as needed)
+\newcommand{\expdivider}{%
+    \vspace{-0.5em}%    % Vertical space before the divider
+    \centering\noindent\textcolor{bulletColor}{\rule{\ExpDividerLength}{\ExpDividerThickness}}%
+    \vspace{1em}%    % Vertical space after the divider
+    \\
 }
 
-\newenvironment{linkedlist}{%
-    \renewcommand{\theenumi}{\protect\linkeditem{\arabic{enumi}}}
-    \renewcommand{\labelenumi}{\theenumi}
-    \begin{enumerate}
-        }{ \end{enumerate} \begin{tikzpicture}[remember picture,overlay]
-        \ifnum\value{enumi}>1% Only if there are at least 2 bullet points
-        \foreach \x [remember=\x as \lastx (initially 1)]
-        in {2,...,\value{enumi}}{% iterate over them
-                \draw[color=bulletColor, line width=0.3mm,shorten >=0.5mm, shorten <=0.5mm] (\lastx) -- (\x);}% and draw the connecting lines
-        \fi
-    \end{tikzpicture}
-}
-
-% --- New command to format a single experience item ---
-% Arguments: 
-% #1: Company Name
-% #2: Location (will be bold and right-aligned)
-% #3: Position Title
-% #4: Dates (right-aligned)
-% #5: Team/Project or additional info (left-aligned on its own line)
-% #6: Bullet list content (e.g., a list of achievements)
 \newcommand{\experienceItem}[5]{%
     \noindent
     \begin{tabularx}{\linewidth}{@{}Xr@{}}%
@@ -224,10 +196,10 @@
         {\textit{\fontsize{\PositionSize}{\PositionSize}\selectfont #3}}       & {\textit{\fontsize{9}{9}\selectfont #4}}                         \\[0.5ex]
     \end{tabularx}%
     \vspace{-0.5ex}%
-    \begin{linkedlist}[leftmargin=*]%
+    \begin{itemize}[leftmargin=*,label=\textcolor{bulletColor}{\textbullet}]%
         \setlength{\itemsep}{-3pt}%
         #5
-    \end{linkedlist}%
+    \end{itemize}%
     \vspace{0em}%
 }
 
@@ -235,7 +207,7 @@
     \noindent
     \begin{tabularx}{\linewidth}{@{}Xr@{}}%
         {\textbf{\fontsize{9}{9}\selectfont #1}} & {\textbf{\fontsize{9}{9}\selectfont #2}} \\[0.5ex]
-        {\textit{\fontsize{9}{9}\selectfont #3}} & {\textbf{\fontsize{9}{9}\selectfont #4}} \\[0.5ex]
+        {\textit{\fontsize{9}{9}\selectfont #3}} & {\textit{\fontsize{9}{9}\selectfont #4}} \\[0.5ex]
     \end{tabularx}%
     \vspace{1em}%
 }
