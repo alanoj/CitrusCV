@@ -1,7 +1,7 @@
 \documentclass{resume}
 \fullname{ALAN ORDORICA}
-\address{Oakland, CA | (510) 314-9967 | alaniordorica@gmail | Linkedin.com/in/alanoj | \href{https://github.com/alanoj}{github.com/alanoj}}
-\jobtitle{COMPUTER ENGINEER | SOFTWARE ENGINEER | JACK-OF-ALL-CODES}
+\address{Oakland, CA | (510) 314-9967 | alaniordorica@gmail | \href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj} | \href{https://github.com/alanoj}{github.com/alanoj}}
+\jobtitle{SOFTWARE ENGINEER | JACK-OF-ALL-STACKS | TECH MAVERICK}
 
 \color{baseText}
 \begin{document}
@@ -10,7 +10,7 @@
 %---------------------------------------------------
 % Professional Summary
 %---------------------------------------------------
-\summarySection{
+\newSection{
     \sectionTitle{\textbf{PROFESSIONAL SUMMARY}}
 
     {Versatile and adaptable Software Engineer with experience at top-tier tech companies, including Google and Apple, contributing to large-scale infrastructure, testing platforms, and backend systems. Proven ability to learn new technologies rapidly and solve complex problems across domains including automation, CI/CD pipelines, and scalable APIs. Passionate about building elegant and robust systems, with a strong foundation in computer engineering, data structures, and performance optimization.}
@@ -19,41 +19,41 @@
 %---------------------------------------------------
 % Technical Skills Section
 %---------------------------------------------------
-\skillsSection{
+\newSection{
     \sectionTitle{\textbf{TECHNICAL SKILLS}}
-    \textbf{Languages:} C, C++, Python, JavaScript, Java, Dart, HTML, CSS, SQL, NoSQL. \\
-    \textbf{Frameworks, Libraries \& Technologies:} gRPC, Docker, SDN Networking, Load Testing frameworks, CI/CD pipelines, Microservices orchestration, GCP, React, Flutter, Splunk, Firebase, Bash, Git, Ansible.
+    \skillTitle
+    {\textbf{Languages: }}
+    {C, C++, Python, JavaScript, Java, Dart, HTML, CSS, SQL, NoSQL.  \\[1ex]}
+    \skillTitle
+    {\textbf{Frameworks, Libraries \& Technologies: }}
+    {gRPC, Docker, SDN Networking, Load Testing frameworks, CI/CD pipelines, Microservices orchestration, GCP, React, Flutter, Splunk, Firebase, Bash, Git, Ansible.}
 }
 
 %---------------------------------------------------
 % Work Experience Section
 %---------------------------------------------------
-\experienceSection{
-    \sectionTitle{\textbf{WORK EXPERIENCE}}
+\sectionTitle{\textbf{WORK EXPERIENCE}}
+\newSection{
 
     \experienceItem
-    {Google | Google Cloud Platform}
+    {Google | GCP Networking}
     {Sunnyvale, CA}
-    {Software Engineer | Google Cloud Networking | SDN Platform Team}
+    {Software Engineer | SDN Platform Team}
     {May 2022 - December 2024}
     {%
-        \item Developed and maintained a gRPC-based load testing framework for GCP's cloud networking features.
-        \item Collaborated with cross-functional teams to enhance the performance of cloud services.
-        \item Optimized overall cloud network performance.
-        \item Developed a load testing framework for internal testing platform, enabling the simulation of real-world scenarios.
-        \item Designed and implemented a microservices architecture for the load testing framework, improving scalability and maintainability.
-        \item Utilized Kubernetes and Docker for container orchestration and deployment, ensuring efficient resource utilization.
-        \item Implemented CI/CD pipelines for automated testing and deployment, reducing time to market for new features.
-        \item Conducted performance analysis and optimization of cloud networking features, resulting in improved latency and throughput.
-        \item Collaborated with product managers and engineers to gather requirements and deliver high-quality solutions.
-        \item Participated in code reviews and provided mentorship to junior engineers, fostering a culture of knowledge sharing and continuous improvement.
-        \item Contributed to the design and implementation of new features for the load testing framework, enhancing its capabilities and usability.
-        \item Developed and maintained documentation for the load testing framework, ensuring clarity and ease of use for internal teams.
-        \item Actively participated in Agile development processes, including sprint planning, daily stand-ups, and retrospectives.
-        \item Collaborated with QA teams to ensure the quality and reliability of the load testing framework through thorough testing and validation.
-        \item Engaged in troubleshooting and debugging complex issues within the load testing framework, utilizing strong problem-solving skills.
-        \item Conducted performance benchmarking and analysis of cloud networking features, identifying areas for improvement and optimization.
-        \item Collaborated with cross-functional teams to gather requirements and deliver high-quality solutions.
+        \multibulletitem Drove enhancements for internal load-testing infrastructure that cut setup times and accelerated release cycles by {\textbf{20\%}}, saving the equivalent of \textbf{1.5 SWE-years} of manual work through early bug and regression detections, preventing scaling test failures and production outages.
+
+        \multibulletitem Bolstered testing coverage by \textbf{40\%} by implementing feature improvements that broadened our load testing platform’s scope by launching new VM controller test grid and control plane emulation logic, adding support for \textbf{1,000+} virtual gateway nodes, and reducing system bottlenecks across releases.
+
+        \multibulletitem Architected scalable control-plane framework logic to enable broader testing coverage by implementing a new test grid with control plane VM emulation logic, enabling support for 1k+ virtual gateway nodes, uncovering critical scalability issues and reducing false-negative test results and system bottlenecks by \textbf{35\%}.
+
+        \multibulletitem Implemented robust solutions to scale load-testing capabilities, successfully introducing higher load VM simulation support, improving overall testing infrastructure efficiency.
+
+        \multibulletitem Enhanced CI release pipeline reliability by proactively detecting and resolving regressions while rapidly addressing blocking failures, resulting in a \textbf{30\%} decrease in release-related outages and significantly shortening developer feedback loops.
+
+        \multibulletitem Streamlined internal control plane test infrastructure, introducing robust support for distributed updates across thousands of VMs. Drove the design and implementation of scalable message distribution logic, significantly reducing simulation flakiness and increasing test accuracy for large-scale deployments.
+
+        \multibulletitem Collaborated on strategic enhancements with cross-functional teams to identify and resolve performance bottlenecks to streamline requirements gathering and align testing strategies with business objectives. Actively engaged in Agile practices including sprint planning and retrospectives, contributing directly to a \textbf{25\%} increase in team productivity and project velocity.
         \vspace{0.5em}%
     }
     \expdivider
@@ -63,12 +63,9 @@
     {Computer Engineer | Software Engineer}
     {January 2020 - July 2022}
     {%
-        \item Utilize languages, frameworks, and tools, such as Java, JavaScript, Node.js, React, Express, and Flutter to develop, test, and implement web, mobile, and native applications. Deliver projects on time and as per customer expectations, while providing top-notch service to achieve maximum client satisfaction. Deploy specific programming technologies, create software specifications / documentation, develop programming codes, fix technical errors, and process data.
-        \item Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
-        \item Developed a top-down, 2-player space-themed shooter game in Java utilizing multithreading for real-time gameplay, split-screen, and a mini-map feature.
-        \item Built a portfolio website using React on an Express, Node.js server running within Docker containers, incorporating Twilio’s SendGrid API for email communications.
-        \item Developed an iOS/Android native application using Dart/Flutter, emphasizing asynchronous control via BLE protocol for backend and frontend integration.
-        \item Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
+        \multibulletitem Built a portfolio website using React on an Express, Node.js server running within Docker containers, incorporating Twilio’s SendGrid API for email communications.
+        \multibulletitem Developed an iOS/Android native application using Dart/Flutter, emphasizing asynchronous control via BLE protocol for backend and frontend integration.
+        \multibulletitem Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
     }
     \expdivider
     \experienceItem
@@ -78,7 +75,7 @@
     {July 2020 - March 2021}
     {%
         \item Built and maintained multiple CI/CD testing labs by automating the deployment of testing clusters and orchestrating microservices.
-        \item Deployed automation systems and workflows to identify potential failures in hosts that ultimately reduced queue times to achieve 90\% availability and 30\% overall site reliability.
+        \multibulletitem Deployed automation systems and workflows to identify potential failures in hosts that ultimately reduced queue times to achieve 90\% availability and 30\% overall site reliability.
         \item Leveraged Ansible to configure more than 100K devices under test for deployment on testing clusters.
         % \vspace{0.5em}%
     }
@@ -90,12 +87,12 @@
 %---------------------------------------------------
 \sectionTitle{\textbf{PROJECTS}}
 
-\projectSection{
+\newSection{
     \begin{itemize}[leftmargin=1.5em]
-        \item \textbf{Infinity Board:} Led a team to develop an iOS/Android native application using Dart/Flutter, emphasizing asynchronous control via BLE protocol for backend and frontend integration.
-        \item \textbf{Tasky API:} Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
-        \item \textbf{Tank Wars:} Designed and implemented a top-down, 2-player space-themed shooter game in Java utilizing multithreading for real-time gameplay, split-screen, and a mini-map feature.
-        \item \textbf{Portfolio Website:} Built a portfolio website using React on an Express, Node.js server running within Docker containers, incorporating Twilio’s SendGrid API for email communications.
+        \multibulletitem \textbf{Infinity Board:} Led a team to develop an iOS/Android native application using Dart/Flutter, emphasizing asynchronous control via BLE protocol for backend and frontend integration.
+        \multibulletitem \textbf{Tasky API:} Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
+        \multibulletitem \textbf{Tank Wars:} Designed and implemented a top-down, 2-player space-themed shooter game in Java utilizing multithreading for real-time gameplay, split-screen, and a mini-map feature.
+        \multibulletitem \textbf{Portfolio Website:} Built a portfolio website using React on an Express, Node.js server running within Docker containers, incorporating Twilio’s SendGrid API for email communications.
     \end{itemize}
 }
 
@@ -103,9 +100,9 @@
 % Education Section
 %---------------------------------------------------
 \sectionTitle{\textbf{EDUCATION}}
-\educationSection{
+\newSection{
     \educationItem
-    {San franscoco State University}
+    {San Francisco State University}
     {San Francisco, CA}
     {Bachelor of Science in Computer Engineering}
     {December 2019}
