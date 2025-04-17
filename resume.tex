@@ -1,32 +1,26 @@
 \documentclass{resume}
 \fullname{ALAN ORDORICA}
-\address{Oakland, CA | (510) 314-9967 | alaniordorica@gmail | \href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj} | \href{https://github.com/alanoj}{github.com/alanoj}}
+\address{Oakland\comma CA, (510) 314-9967, alaniordorica@gmail, \href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj}, \href{https://github.com/alanoj}{github.com/alanoj}}
 \jobtitle{SOFTWARE ENGINEER | JACK-OF-ALL-STACKS | TECH MAVERICK}
 
 \color{baseText}
 \begin{document}
 \resumeheader
+% \mylist{Oakland,510-314-9967,alanioordorica@gmail.com,linkedin.com/in/alanoj,github.com/alanoj}
 
-%---------------------------------------------------
-% Professional Summary
-%---------------------------------------------------
+\sectionTitle{\textbf{PROFESSIONAL SUMMARY}}
 \newSection{
-    \sectionTitle{\textbf{PROFESSIONAL SUMMARY}}
 
-    {Versatile and adaptable Software Engineer with experience at top-tier tech companies, including Google and Apple, contributing to large-scale infrastructure, testing platforms, and backend systems. Proven ability to learn new technologies rapidly and solve complex problems across domains including automation, CI/CD pipelines, and scalable APIs. Passionate about building elegant and robust systems, with a strong foundation in computer engineering, data structures, and performance optimization.}
+    {Software engineer with experience at leading technology companies specializing in automation, full-stack systems, distributed architectures, and passionate about designing scalable solutions eager to explore and AI-driven challenges and apply a continuous improvement mindset, delivering reliable, and impactful software innovations.}
 }
 
 %---------------------------------------------------
 % Technical Skills Section
 %---------------------------------------------------
+\sectionTitle{\textbf{TECHNICAL SKILLS}}
 \newSection{
-    \sectionTitle{\textbf{TECHNICAL SKILLS}}
-    \skillTitle
-    {\textbf{Languages: }}
-    {C, C++, Python, JavaScript, Java, Dart, HTML, CSS, SQL, NoSQL.  \\[1ex]}
-    \skillTitle
-    {\textbf{Frameworks, Libraries \& Technologies: }}
-    {gRPC, Docker, SDN Networking, Load Testing frameworks, CI/CD pipelines, Microservices orchestration, GCP, React, Flutter, Splunk, Firebase, Bash, Git, Ansible.}
+    \skillsItem{Languages:}{C, C++, Python, JavaScript, Java, Dart, HTML, CSS, SQL, NoSQL}
+    \skillsItem{Frameworks, Libraries \& Technologies:}{gRPC, Docker, SDN Networking, Load Testing frameworks, CI/CD pipelines, Microservices orchestration, GCP, React, Flutter, Splunk, Firebase, Bash, Git, Ansible.}
 }
 
 %---------------------------------------------------
@@ -36,9 +30,9 @@
 \newSection{
 
     \experienceItem
-    {Google | GCP Networking}
+    {Google,GCP Networking}
     {Sunnyvale, CA}
-    {Software Engineer | SDN Platform Team}
+    {Software Engineer,SDN Platform Team}
     {May 2022 - December 2024}
     {%
         \multibulletitem Drove enhancements for internal load-testing infrastructure that cut setup times and accelerated release cycles by {\textbf{20\%}}, saving the equivalent of \textbf{1.5 SWE-years} of manual work through early bug and regression detections, preventing scaling test failures and production outages.
@@ -58,26 +52,24 @@
     }
     \expdivider
     \experienceItem
-    {Freelance}
-    {Remote}
-    {Computer Engineer | Software Engineer}
-    {January 2020 - July 2022}
+    {Apple}
+    {Sunnyvale, CA}
+    {DevOps Engineer Intern, CI Tools - Site reliability}
+    {July 2020 - March 2021}
     {%
-        \multibulletitem Built a portfolio website using React on an Express, Node.js server running within Docker containers, incorporating Twilio’s SendGrid API for email communications.
-        \multibulletitem Developed an iOS/Android native application using Dart/Flutter, emphasizing asynchronous control via BLE protocol for backend and frontend integration.
-        \multibulletitem Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
+        \multibulletitem Installed and configured \textbf{200+} test racks housing \textbf{1,000+} devices, increasing overall availability by \textbf{50\%}, reducing test scheduling wait times by \textbf{30\%}, and boosting overall lab uptime by \textbf{20\%}.
+        \multibulletitem Automated device provisioning and network monitoring and configuration using Python, Bash, and Ansible scripts, reducing setup time by over \textbf{70\%} while achieving \textbf{98\%} lab uptime consistently.
+        \multibulletitem Developed monitoring and remediation tools integrated with Splunk and internal dashboards, reducing device downtime by \textbf{27\%} and increasing test execution success rates by \textbf{34\%}.
     }
     \expdivider
     \experienceItem
-    {Apple}
-    {Sunnyvale, CA}
-    {Tools and Automation Engineer Intern | Automation and Testing Labs}
-    {July 2020 - March 2021}
+    {Independent Software Engineer}
+    {Remote}
+    {Software Engineer (Contract)}
+    {January 2020 - Present}
     {%
-        \item Built and maintained multiple CI/CD testing labs by automating the deployment of testing clusters and orchestrating microservices.
-        \multibulletitem Deployed automation systems and workflows to identify potential failures in hosts that ultimately reduced queue times to achieve 90\% availability and 30\% overall site reliability.
-        \item Leveraged Ansible to configure more than 100K devices under test for deployment on testing clusters.
-        % \vspace{0.5em}%
+        \singlebulletitem Built modular React frontend and Node.js backend portfolio web apps with Docker Compose for local orchestration, enabling rapid environment setup.
+        \singlebulletitem Developed Node.js RESTful microservices and ESP32-based automation projects using Python, Bash, and other tools, demonstrating a passion for automating processes across software and hardware domains.
     }
 
 }
@@ -85,14 +77,14 @@
 %---------------------------------------------------
 % Projects Section
 %---------------------------------------------------
-\sectionTitle{\textbf{PROJECTS}}
+\sectionTitle{\textbf{PROJECT PORTFOLIO}}
 
 \newSection{
     \begin{itemize}[leftmargin=1.5em]
-        \multibulletitem \textbf{Infinity Board:} Led a team to develop an iOS/Android native application using Dart/Flutter, emphasizing asynchronous control via BLE protocol for backend and frontend integration.
-        \multibulletitem \textbf{Tasky API:} Developed a REST API for task management using Node.js, MongoDB, Express, and Jest, integrating JSON Web Tokens and SendGrid API for secure messaging and user authentication.
-        \multibulletitem \textbf{Tank Wars:} Designed and implemented a top-down, 2-player space-themed shooter game in Java utilizing multithreading for real-time gameplay, split-screen, and a mini-map feature.
-        \multibulletitem \textbf{Portfolio Website:} Built a portfolio website using React on an Express, Node.js server running within Docker containers, incorporating Twilio’s SendGrid API for email communications.
+        \multibulletitem \textbf{GhostPass:} Engineered an embedded solution integrating an RC522 RFID module and SSD1306 Mini OLED with an ESP32S3 via I²C/SPI in C/C++, delivering a robust prototype for secure access simulations and demonstrating deep hardware–software integration expertise.
+        \multibulletitem \textbf{CitrusCV:} Designed and delivered a reusable LaTeX resume class and automation scripts, enabling streamlined document generation and highlighting proficiency in domain-specific language design.
+        \multibulletitem \textbf{Lume-finity:} Spearheaded development of a cross-platform Flutter app for Bluetooth-enabled hardware control, implementing BLE communication layers and intuitive UI to streamline IoT device management.
+        \multibulletitem \textbf{Java Interpreter:} Authored a custom Java-based language interpreter from scratch, designing lexer, parser, and runtime components to deepen understanding of compiler principles and showcase system-level software engineering skills.
     \end{itemize}
 }
 

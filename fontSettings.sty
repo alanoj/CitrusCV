@@ -54,7 +54,16 @@
 
 % ------------------------------ Skills Font Options ---------------
 
-\newfontfamily\skillsFont[UprightFont={Open Sans Medium}]{Open Sans}
-\newcommand{\skillTitle}[2]{{\fontsize{7.5pt}{9pt}\selectfont\skillsFont\bfseries\addfontfeature{LetterSpace=2.0} #1}{\fontsize{7.5pt}{9pt}\selectfont\skillsFont #2}}
+\newfontfamily\skillTypeFont[BoldFont={Open Sans SemiBold}]{Open Sans}
+\newcommand{\skillTitle}[1]{{%
+            \fontsize{7.5pt}{9pt}\selectfont
+            \skillTypeFont
+            \addfontfeature{LetterSpace=2.0}%
+            \bfseries #1%
+        }}
+\newcommand{\skillsList}[1]{{%
+            \fontsize{7.5pt}{9pt}\selectfont
+            \baseFont #1%
+        }}
 
 \endinput
