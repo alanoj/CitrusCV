@@ -17,6 +17,9 @@
 \RequirePackage{parskip}              % No paragraph indent, spacing between paragraphs
 \RequirePackage{bookmark}             % No paragraph indent, spacing between paragraphs
 \RequirePackage{tabularx}             % Tabularx for better table handling
+\RequirePackage{multicol}
+\RequirePackage{pifont}            % For checkmark symbol
+\newcommand{\cmark}{\ding{51}}     % Checkmark character
 \RequirePackage{tikz}                % TikZ for drawing
 \usetikzlibrary{calc}
 \RequirePackage{xparse}
@@ -49,6 +52,50 @@
     \hspace{0.5em}%
 }
 
+% --- Skills grid with max rows, dynamic columns ---
+\ExplSyntaxOn
+\seq_new:N \l__skills_seq
+\int_new:N \l__skills_total_int
+\int_new:N \l__skills_cols_int
+\tl_new:N  \l__skills_cols_tl
+\NewDocumentCommand{\skillsGridRows}{O{4}m}{%
+    \vspace{1.5em}% Add space after section title
+    % Split comma list into sequence
+    \seq_set_split:Nnn \l__skills_seq {,} {#2}
+    % Total number of items
+    \int_set:Nn \l__skills_total_int { \seq_count:N \l__skills_seq }
+    % Compute number of columns = ceil(total / max rows)
+    \int_set:Nn \l__skills_cols_int { \int_eval:n { ( \l__skills_total_int + #1 - 1 ) / #1 } }
+    % Prepare column count
+    \tl_set:Nx \l__skills_cols_tl { \int_to_arabic:n { \l__skills_cols_int } }
+    % Adjust multicol spacing and draw
+    {\setlength{\columnsep}{0.5em}%
+        \setlength{\multicolsep}{0pt}%
+        \setlength{\premulticols}{0pt}%
+        \setlength{\postmulticols}{0pt}%
+        \begin{multicols}{\tl_use:N \l__skills_cols_tl}
+            \begin{itemize}[
+                    leftmargin=1em,
+                    itemsep=0.1em,
+                    parsep=0pt,
+                    topsep=0pt,
+                    label=$\vcenter{\hbox{\textcolor{orange}{\cmark}}}$,
+                    labelsep=0.3em
+                ]
+                % Only produce \item for non-empty entries
+                \seq_map_inline:Nn \l__skills_seq {%
+                \tl_set:Nx \l_tmpa_tl { \tl_trim_spaces:n {##1} }%
+                \tl_if_blank:VTF \l_tmpa_tl
+                { }% do nothing if empty
+                { \item \l_tmpa_tl }%
+                      }
+            \end{itemize}
+        \end{multicols}%
+    }%
+    \vspace{1em}
+}
+\ExplSyntaxOff
+
 \newcommand{\comma}{, }
 
 \ExplSyntaxOn
@@ -74,7 +121,7 @@
 
 \newcommand{\newSection}[1]{%
     \baseText{#1}
-    \par\vspace{0.5em}
+    \par\vspace{0em}
 }
 
 \newcommand{\ExpDividerLength}{1\linewidth}  % Set the length of the divider (adjust as needed)
@@ -84,13 +131,23 @@
     \begin{center}%
         \textcolor{itemDivOrange}{\rule{\ExpDividerLength}{\ExpDividerThickness}}%
     \end{center}%
-    \vspace{0.5em}\par%    % Vertical space and paragraph break after the divider
+    \vspace{0em}\par%    % Vertical space and paragraph break after the divider
 }
 
 \newcommand{\skillsItem}[2]{%
     \skillTitle{#1}%
     \skillsList{\vspace{0.1em} #2}\par
     \vspace{0em}%
+}
+
+\NewDocumentCommand{\skillsSectionThree}{mmmmmm}{%
+    \begin{tabularx}{\linewidth}{@{} >{\raggedright\arraybackslash}X
+            >{\raggedright\arraybackslash}X
+            >{\raggedright\arraybackslash}X @{}}
+        \skillTitle{#1}\par\skillsList{#2} &
+        \skillTitle{#3}\par\skillsList{#4} &
+        \skillTitle{#5}\par\skillsList{#6}
+    \end{tabularx}%
 }
 
 % For single-line bullet items (a smaller vertical shift)

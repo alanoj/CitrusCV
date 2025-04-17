@@ -6,7 +6,6 @@
 \color{baseText}
 \begin{document}
 \resumeheader
-% \mylist{Oakland,510-314-9967,alanioordorica@gmail.com,linkedin.com/in/alanoj,github.com/alanoj}
 
 \sectionTitle{\textbf{PROFESSIONAL SUMMARY}}
 \newSection{
@@ -14,13 +13,12 @@
     {Software engineer with experience at leading technology companies specializing in automation, full-stack systems, distributed architectures, and passionate about designing scalable solutions eager to explore and AI-driven challenges and apply a continuous improvement mindset, delivering reliable, and impactful software innovations.}
 }
 
-%---------------------------------------------------
-% Technical Skills Section
-%---------------------------------------------------
 \sectionTitle{\textbf{TECHNICAL SKILLS}}
 \newSection{
-    \skillsItem{Languages:}{C, C++, Python, JavaScript, Java, Dart, HTML, CSS, SQL, NoSQL}
-    \skillsItem{Frameworks, Libraries \& Technologies:}{gRPC, Docker, SDN Networking, Load Testing frameworks, CI/CD pipelines, Microservices orchestration, GCP, React, Flutter, Splunk, Firebase, Bash, Git, Ansible.}
+    \skillsGridRows[4]{C/C++, Python, Bash, Go, JavaScript, Java, LaTeX, Dart, TypeScript, HTML, CSS,
+        gRPC, Protobuf, React, Flutter, ESP-IDF, Node.js, Spring Boot,
+        Docker, Kubernetes, Git, Ansible, Jenkins, GCP, Pub/Sub, VMs, SDN Networking, OVS,
+        FreeRTOS, ESP32, I²C, SPI, BLE, CAN, JTAG, CMake, Bazel, Splunk}
 }
 
 %---------------------------------------------------
@@ -34,27 +32,19 @@
     {Sunnyvale, CA}
     {Software Engineer,SDN Platform Team}
     {May 2022 - December 2024}
-    {%
-        \multibulletitem Drove enhancements for internal load-testing infrastructure that cut setup times and accelerated release cycles by {\textbf{20\%}}, saving the equivalent of \textbf{1.5 SWE-years} of manual work through early bug and regression detections, preventing scaling test failures and production outages.
-
-        \multibulletitem Bolstered testing coverage by \textbf{40\%} by implementing feature improvements that broadened our load testing platform’s scope by launching new VM controller test grid and control plane emulation logic, adding support for \textbf{1,000+} virtual gateway nodes, and reducing system bottlenecks across releases.
-
-        \multibulletitem Architected scalable control-plane framework logic to enable broader testing coverage by implementing a new test grid with control plane VM emulation logic, enabling support for 1k+ virtual gateway nodes, uncovering critical scalability issues and reducing false-negative test results and system bottlenecks by \textbf{35\%}.
-
-        \multibulletitem Implemented robust solutions to scale load-testing capabilities, successfully introducing higher load VM simulation support, improving overall testing infrastructure efficiency.
-
+    {
+        \multibulletitem Drove load-testing framework development and automation, cutting test runtimes by \textbf{25\%} and saving an estimated \textbf{1.5 SWE-years}, equivalent of manual debugging work by preventing scaling test failures and production outages through proactive bug and regression detection.
+        \multibulletitem Spearheaded implementation of new GCP customer feature by replicating support for \textbf{1,000+} virtual gateway nodes with high fidelity and introducing a new test grid--broadening test coverage, uncovering critical scalability issues and reducing false-negative test results and system bottlenecks by \textbf{35\%}.
         \multibulletitem Enhanced CI release pipeline reliability by proactively detecting and resolving regressions while rapidly addressing blocking failures, resulting in a \textbf{30\%} decrease in release-related outages and significantly shortening developer feedback loops.
-
-        \multibulletitem Streamlined internal control plane test infrastructure, introducing robust support for distributed updates across thousands of VMs. Drove the design and implementation of scalable message distribution logic, significantly reducing simulation flakiness and increasing test accuracy for large-scale deployments.
-
-        \multibulletitem Collaborated on strategic enhancements with cross-functional teams to identify and resolve performance bottlenecks to streamline requirements gathering and align testing strategies with business objectives. Actively engaged in Agile practices including sprint planning and retrospectives, contributing directly to a \textbf{25\%} increase in team productivity and project velocity.
-        \vspace{0.5em}%
+        \multibulletitem Implemented robust enhancements to the load testing framework—migrating from legacy protocols, boosting system throughput, reducing failure flakiness and increasing test accuracy for large-scale deployments.
+        \multibulletitem Collaborated with cross-functional teams to streamline development and align testing strategies with business objectives, actively engaging in Agile practices including sprint planning and retrospectives, contributing directly to team productivity and velocity objectives.
+        \vspace{0em}
     }
     \expdivider
     \experienceItem
     {Apple}
     {Sunnyvale, CA}
-    {DevOps Engineer Intern, CI Tools - Site reliability}
+    {DevOps Engineer Intern, CI Tools - Site Reliability}
     {July 2020 - March 2021}
     {%
         \multibulletitem Installed and configured \textbf{200+} test racks housing \textbf{1,000+} devices, increasing overall availability by \textbf{50\%}, reducing test scheduling wait times by \textbf{30\%}, and boosting overall lab uptime by \textbf{20\%}.
@@ -68,8 +58,8 @@
     {Software Engineer (Contract)}
     {January 2020 - Present}
     {%
-        \singlebulletitem Built modular React frontend and Node.js backend portfolio web apps with Docker Compose for local orchestration, enabling rapid environment setup.
-        \singlebulletitem Developed Node.js RESTful microservices and ESP32-based automation projects using Python, Bash, and other tools, demonstrating a passion for automating processes across software and hardware domains.
+        \singlebulletitem Developed modular React frontend and Node.js backend portfolio web apps with Docker Compose for local orchestration, enabling rapid environment setup.
+        \singlebulletitem Developed Node.js RESTful microservices and ESP32-based automation projects using Python, Bash, and other tools, showcasing proficiency in hardware-software integration and system-level programming.
     }
 
 }
@@ -84,7 +74,7 @@
         \multibulletitem \textbf{GhostPass:} Engineered an embedded solution integrating an RC522 RFID module and SSD1306 Mini OLED with an ESP32S3 via I²C/SPI in C/C++, delivering a robust prototype for secure access simulations and demonstrating deep hardware–software integration expertise.
         \multibulletitem \textbf{CitrusCV:} Designed and delivered a reusable LaTeX resume class and automation scripts, enabling streamlined document generation and highlighting proficiency in domain-specific language design.
         \multibulletitem \textbf{Lume-finity:} Spearheaded development of a cross-platform Flutter app for Bluetooth-enabled hardware control, implementing BLE communication layers and intuitive UI to streamline IoT device management.
-        \multibulletitem \textbf{Java Interpreter:} Authored a custom Java-based language interpreter from scratch, designing lexer, parser, and runtime components to deepen understanding of compiler principles and showcase system-level software engineering skills.
+        \multibulletitem \textbf{Java Interpreter:} Developed Java-based language interpreter from scratch, designing lexer, parser, and runtime components to deepen understanding of compiler principles and showcase system-level software engineering skills.
     \end{itemize}
 }
 
