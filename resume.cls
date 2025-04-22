@@ -23,8 +23,30 @@
 \RequirePackage{tikz}                % TikZ for drawing
 \usetikzlibrary{calc}
 \RequirePackage{xparse}
+\RequirePackage{etoolbox}
 
-\pagestyle{empty} % Remove page numbers
+% --- Header storage without @ macros ---
+\newcommand{\fullname}[1]{\renewcommand\resumeName{#1}}
+\newcommand{\jobtitle}[1]{\renewcommand\resumeTitle{\mylist{#1}}}
+\newcommand{\address}[1]{\renewcommand\resumeAddress{\mylist{#1}}}
+
+% Initialize to empty
+\newcommand\resumeName{}
+\newcommand\resumeTitle{}
+\newcommand\resumeAddress{}
+
+% Measure widest skill entry
+\newlength\skillMaxWidth
+\newcount\skillCols
+\newdimen\sk@tempdima
+\newdimen\skillTotalWidth
+
+\newcommand{\measureSkill}[1]{%
+    \settowidth\sk@tempdima{\cmark\ #1}%
+    \ifdim\sk@tempdima>\skillMaxWidth
+        \global\skillMaxWidth=\sk@tempdima
+    \fi%
+}
 
 % Custom Colors
 % \definecolor{sectionbg}{RGB}{242, 188, 62}
@@ -36,65 +58,14 @@
 \definecolor{baseText}{HTML}{000000}
 \definecolor{bulletColor}{HTML}{3D3D3D}
 
-% --- Replace the current font toggle block (starting from "Define storage for header elements") with the following:
 
-% Define storage for header elements
-\def\fullname#1{\def\@name{#1}}
-\def\@name {}
-\def\jobtitle#1{\def\@title{#1}}
-\def\@title {}
-\newcommand{\address}[1]{\def\@address{#1}}
-\def\@address{}
+\pagestyle{empty} % Remove page numbers
 
 % --- Custom pipe separator formatting (vertically centered) ---
 \newcommand{\lpipe}{%
     $\vcenter{\hbox{\textcolor{orange}{\rule{0.9pt}{2.0ex}}}}$%
     \hspace{0.5em}%
 }
-
-% --- Skills grid with max rows, dynamic columns ---
-\ExplSyntaxOn
-\seq_new:N \l__skills_seq
-\int_new:N \l__skills_total_int
-\int_new:N \l__skills_cols_int
-\tl_new:N  \l__skills_cols_tl
-\NewDocumentCommand{\skillsGridRows}{O{4}m}{%
-    \vspace{1.5em}% Add space after section title
-    % Split comma list into sequence
-    \seq_set_split:Nnn \l__skills_seq {,} {#2}
-    % Total number of items
-    \int_set:Nn \l__skills_total_int { \seq_count:N \l__skills_seq }
-    % Compute number of columns = ceil(total / max rows)
-    \int_set:Nn \l__skills_cols_int { \int_eval:n { ( \l__skills_total_int + #1 - 1 ) / #1 } }
-    % Prepare column count
-    \tl_set:Nx \l__skills_cols_tl { \int_to_arabic:n { \l__skills_cols_int } }
-    % Adjust multicol spacing and draw
-    {\setlength{\columnsep}{0.5em}%
-        \setlength{\multicolsep}{0pt}%
-        \setlength{\premulticols}{0pt}%
-        \setlength{\postmulticols}{0pt}%
-        \begin{multicols}{\tl_use:N \l__skills_cols_tl}
-            \begin{itemize}[
-                    leftmargin=1em,
-                    itemsep=0.1em,
-                    parsep=0pt,
-                    topsep=0pt,
-                    label=$\vcenter{\hbox{\textcolor{orange}{\cmark}}}$,
-                    labelsep=0.3em
-                ]
-                % Only produce \item for non-empty entries
-                \seq_map_inline:Nn \l__skills_seq {%
-                \tl_set:Nx \l_tmpa_tl { \tl_trim_spaces:n {##1} }%
-                \tl_if_blank:VTF \l_tmpa_tl
-                { }% do nothing if empty
-                { \item \l_tmpa_tl }%
-                      }
-            \end{itemize}
-        \end{multicols}%
-    }%
-    \vspace{1em}
-}
-\ExplSyntaxOff
 
 \newcommand{\comma}{, }
 
@@ -110,11 +81,11 @@
 % Updated resumeheader command with equal vertical spacing above and below the horizontal line
 \newcommand{\resumeheader}{%
     \begin{center}
-        \headerFullName{\@name}\par\vspace{0.2em}
-        \headerContactInfo{\expandafter\mylist\expandafter{\@address}}\par
+        \headerFullName{\resumeName}\par\vspace{0.2em}
+        \headerContactInfo{\mylist{\resumeAddress}}\par
         \textcolor{orange}{\rule{0.9\linewidth}{0.2em}}\par
         \vspace{0.3em}
-        \headerPosTitle{\@title}
+        \headerPosTitle{\resumeTitle}
     \end{center}%
     \vspace{0.5em}
 }
@@ -132,6 +103,30 @@
         \textcolor{itemDivOrange}{\rule{\ExpDividerLength}{\ExpDividerThickness}}%
     \end{center}%
     \vspace{0em}\par%    % Vertical space and paragraph break after the divider
+}
+
+% Automatically fit skills into evenly sized columns
+% Usage: \autoSkills{comma,list,of,skills}
+\newcommand{\autoSkills}[1]{%
+    \vspace{-0.5em}%
+    \setlength\skillMaxWidth{0pt}%
+    \forcsvlist{\measureSkill}{#1}%
+    \skillCols=\numexpr(\textwidth+\columnsep)/(\skillMaxWidth+\columnsep)\relax
+    \ifnum\skillCols<1 \skillCols=1\fi
+    % Calculate total grid width = (skillMaxWidth * skillCols) + (columnsep * (skillCols - 1))
+    \skillTotalWidth=\dimexpr \skillMaxWidth * \skillCols
+    + \columnsep * (\skillCols - 1)\relax
+    \begin{center}
+        \begin{minipage}{\skillTotalWidth}
+            \begin{multicols}{\the\skillCols}
+                \begin{itemize}[leftmargin=1em,itemsep=0.2em,
+                        label=$\vcenter{\hbox{\textcolor{orange}{\cmark}}}$]
+                    \renewcommand*\do[1]{\item ##1}%
+                          \docsvlist{#1}%
+                \end{itemize}
+            \end{multicols}
+        \end{minipage}
+    \end{center}
 }
 
 \newcommand{\skillsItem}[2]{%

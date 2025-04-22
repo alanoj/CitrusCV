@@ -1,7 +1,7 @@
 \documentclass{resume}
 \fullname{ALAN ORDORICA}
 \address{Oakland\comma CA, (510) 314-9967, alaniordorica@gmail, \href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj}, \href{https://github.com/alanoj}{github.com/alanoj}}
-\jobtitle{SOFTWARE ENGINEER | JACK-OF-ALL-STACKS | TECH MAVERICK}
+\jobtitle{SOFTWARE ENGINEER,JACK-OF-ALL-STACKS,TECH MAVERICK}
 
 \color{baseText}
 \begin{document}
@@ -14,12 +14,13 @@
 }
 
 \sectionTitle{\textbf{TECHNICAL SKILLS}}
-\newSection{
-    \skillsGridRows[4]{C/C++, Python, Bash, Go, JavaScript, Java, LaTeX, Dart, TypeScript, HTML, CSS,
-        gRPC, Protobuf, React, Flutter, ESP-IDF, Node.js, Spring Boot,
+\newSection
+{\autoSkills{%
+        C/C++, Python, Bash, Go, JavaScript, Java, LaTeX, Dart, TypeScript,
+        HTML, CSS, gRPC, Protobuf, React, Flutter, ESP-IDF, Node.js, Spring Boot,
         Docker, Kubernetes, Git, Ansible, GCP, Pub/Sub, VMs, SDN, OVS,
-        FreeRTOS, ESP32, I²C, SPI, BLE, CAN, JTAG, CMake, Bazel, Splunk}
-}
+        FreeRTOS, ESP32, I²C, SPI, BLE, JTAG, CMake, Bazel, Splunk%
+    }}
 
 %---------------------------------------------------
 % Work Experience Section
@@ -33,7 +34,7 @@
     {Software Engineer,SDN Platform Team}
     {May 2022 - December 2024}
     {
-        \multibulletitem Drove load-testing framework development and automation, cutting test runtimes by \textbf{25\%} and saving an estimated \textbf{1.5 SWE-years}, equivalent of manual debugging work by preventing scaling test failures and production outages through proactive bug and regression detection.
+        \multibulletitem Advanced load-testing framework development and automation, cutting test runtimes by \textbf{25\%} and saving an estimated \textbf{1.5 SWE-years}, equivalent of manual debugging work by preventing scaling test failures and production outages through proactive bug and regression detection.
         \multibulletitem Spearheaded implementation of new GCP customer feature by replicating support for \textbf{1,000+} virtual gateway nodes with high fidelity and introducing a new test grid--broadening test coverage, uncovering critical scalability issues and reducing false-negative test results and system bottlenecks by \textbf{35\%}.
         \multibulletitem Enhanced CI release pipeline reliability by proactively detecting and resolving regressions while rapidly addressing blocking failures, resulting in a \textbf{30\%} decrease in release-related outages and significantly shortening developer feedback loops.
         \multibulletitem Implemented robust enhancements to the load testing framework—migrating from legacy protocols, boosting system throughput, reducing failure flakiness and increasing test accuracy for large-scale deployments.
@@ -73,8 +74,9 @@
     \begin{itemize}[leftmargin=1.5em]
         \multibulletitem \textbf{GhostPass:} Engineered an embedded solution integrating an RC522 RFID module and SSD1306 Mini OLED with an ESP32S3 via I²C/SPI in C/C++, delivering a robust prototype for secure access simulations and demonstrating deep hardware–software integration expertise.
         \multibulletitem \textbf{CitrusCV:} Designed and delivered a reusable LaTeX resume class and automation scripts, enabling streamlined document generation and highlighting proficiency in domain-specific language design.
+        \multibulletitem \textbf{CitrusCV:} Designed and delivered a reusable LaTeX resume class and automation scripts, enabling streamlined document generation and highlight
         \multibulletitem \textbf{Lume-finity:} Spearheaded development of a cross-platform Flutter app for Bluetooth-enabled hardware control, implementing BLE communication layers and intuitive UI to streamline IoT device management.
-        \multibulletitem \textbf{Java Interpreter:} Developed Java-based language interpreter from scratch, designing lexer, parser, and runtime components to deepen understanding of compiler principles and showcase system-level software engineering skills.
+        \multibulletitem \textbf{Java Interpreter:} Developed Java-based language interpreter, designing lexer, parser, and runtime components to deepen understanding of compiler principles and showcase system-level software engineering skills.
     \end{itemize}
 }
 
