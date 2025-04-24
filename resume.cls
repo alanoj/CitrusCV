@@ -1,5 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2025/04/03 A simple resume class]
+\let\clearpage\relax
 
 % Load the base class:
 \LoadClass{article}
@@ -8,7 +9,7 @@
 \RequirePackage{fontSettings} % Load font settings from fontSettings.sty
 
 % Load packages for layout and styling
-\RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in, showframe]{geometry} % Strict 1 inch margins only
+\RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in]{geometry} % Strict 1 inch margins only
 \RequirePackage{fontspec}             % Font selection
 \RequirePackage{titlesec}             % Control section titles
 \RequirePackage{enumitem}             % Customizable lists
@@ -81,7 +82,7 @@
     \begin{center}
         \headerFullName{\resumeName}\par\vspace{0.2em}
         \headerContactInfo{\mylist{\resumeAddress}}\par
-        \textcolor{orange}{\rule{0.9\linewidth}{0.2em}}\par
+        \textcolor{orange}{\rule{0.8\linewidth}{0.2em}}\par
         \vspace{0.3em}
         \headerPosTitle{\resumeTitle}
     \end{center}%
@@ -106,87 +107,25 @@
 % ----------------------------------------------------------
 % Dynamic-width skill boxes using TikZ
 % ----------------------------------------------------------
-
+\newcommand{\skillTag}[1]{%
+    \tikz[baseline]\node[anchor=base,draw=orange,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+\tcbuselibrary{breakable}
 \ExplSyntaxOn
-%— internal storage
-\clist_new:N \l__ltt_clist
-\int_new:N   \l__ltt_rows_int
-\int_new:N   \l__ltt_cols_int
-\tl_new:N    \l__ltt_table_tl
-
-%— build the table body into \l__ltt_table_tl
-\cs_new_protected:Nn \ltt_create_table:n {%
-    % store the list and set row-count=3
-    \clist_set:Nn \l__ltt_clist { #1 }
-    \int_set:Nn \l__ltt_rows_int { 3 }
-    % compute columns = ceil(total_items ÷ 3)
-    \int_set:Nn \l__ltt_cols_int
-    {
-        \int_eval:n
-        {
-            ( \clist_count:N \l__ltt_clist
-            + \l__ltt_rows_int - 1 )
-            / \l__ltt_rows_int
-        }
-    }
-    % assemble each of 3 rows
-    \tl_clear:N \l__ltt_table_tl
-    \int_step_inline:nn { \l__ltt_rows_int }
-    {
-        \int_step_inline:nn { \l__ltt_cols_int }
-        {
-            % Only prepend '&' if not the first column
-            \int_compare:nNnTF { ####1 } = { 1 }
-                {
-                    \tl_put_right:Nx \l__ltt_table_tl
-                    { \clist_item:Nn
-                        \l__ltt_clist
-                        { \int_eval:n { (####1-1) * \l__ltt_rows_int + ##1 } }
-                    }
-                }
-                {
-                    \tl_put_right:Nx \l__ltt_table_tl
-                    { & \clist_item:Nn
-                        \l__ltt_clist
-                        { \int_eval:n { (####1-1) * \l__ltt_rows_int + ##1 } }
-                    }
-                }
-        }
-        \tl_put_right:Nn \l__ltt_table_tl { \\ }
-    }
-}
-
-\newcommand{\skillCheck}{
-    {
-            \color{orange}%
-            \scalebox{0.8}{\Checkmark}%
-        }
-    \,
-}
-
-%— user-level command
-\NewDocumentCommand \listtoTable { m } {
-    \par\noindent                   % ensure vertical mode before starting
-    \ExplSyntaxOn
-    \ltt_create_table:n { #1 }    % build the row data
-    \ExplSyntaxOff
-    {\renewcommand{\arraystretch}{0.7}% reset row spacing
-        \begin{tabularx}{\linewidth}
-            {*{\int_use:N \l__ltt_cols_int}{>{\skillCheck\raggedright\arraybackslash}X}}
-            \l__ltt_table_tl
-        \end{tabularx}
-    }
-    \par                            % end paragraph cleanly
+\NewDocumentCommand{\listtoTable}{m}{
+    \noindent
+    {%
+        \clist_map_inline:nn {#1}
+        { \skillsList{\skillTag{##1}}\hspace{0.2em} }%
+    }%
 }
 \ExplSyntaxOff
-% —————————————————————————————————————————————
 
 \newcommand{\skillBox}[2]{%
     \begin{tcolorbox}[
-            title=\centering\textbf{#1},
+            title=\centering\skillTitle{#1},
             size=small,
             coltitle=black,
-            before upper=\vspace{-0.5em},
             height=6.99em,
             arc=1.5mm,
             colframe=sectionTitleBg,
@@ -195,12 +134,12 @@
             left=0.5em,
             right=0.5em,
             top=0.2em,
-            bottom=0.5em]%
+            bottom=0.2em,
+            fontupper=\linespread{1.8}\selectfont,
+            before upper=\raggedright]%
         % Replace CSV-list itemize with direct table
         \par\noindent
-        \begin{minipage}{\linewidth}
-            \listtoTable{#2}%
-        \end{minipage}
+        \listtoTable{#2}%
         \par\noindent
     \end{tcolorbox}%
 }
@@ -211,14 +150,14 @@
     \def\arraystretch{1.5}
     \setlength{\tabcolsep}{0.5em}
     \begin{tabularx}{\textwidth}{%
-        >{\centering\arraybackslash}p{0.4\textwidth}
+        >{\centering\arraybackslash}p{0.45\textwidth}
         >{\centering\arraybackslash}p{0.35\textwidth}
-        >{\centering\arraybackslash}p{0.20\textwidth}
+        >{\centering\arraybackslash}p{0.15\textwidth}
         }
         #1 & #2 & #3
     \end{tabularx}
     \egroup
-    \vspace{-0.5em}
+    \vspace{-1em}
 }
 
 % For single-line bullet items (a smaller vertical shift)

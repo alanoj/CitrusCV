@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.22)  24 APR 2025 13:17
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.22)  24 APR 2025 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,10 +845,17 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
 )
-\l__ltt_rows_int=\count407
-\l__ltt_cols_int=\count408
-) (./resume.aux)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box129
+\tcb@totalupperbox=\box130
+\tcb@totallowerbox=\box131
+)) (./resume.aux)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -879,7 +886,7 @@ LaTeX Font Info:    ... okay on input line 7.
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: showframe 
+* modes: 
 * h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
 * v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
 * \paperwidth=614.295pt
@@ -953,25 +960,23 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <3.75> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 10.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/bbding/Uding.fd)
-Overfull \hbox (0.58952pt too wide) in paragraph at lines 21--21
-[]|[][]\TU/OpenSans(0)/m/n/7.5 TypeScript|  
- []
 
-
-Overfull \hbox (20.22942pt too wide) in paragraph at lines 21--21
-[]|[][]\TU/OpenSans(0)/m/n/7.5 Node.js/Express|  
- []
-
-
-Overfull \hbox (11.07657pt too wide) in paragraph at lines 21--21
-[]|[][]\TU/OpenSans(0)/m/n/7.5 Kubernetes|  
- []
-
-
-Overfull \hbox (0.5004pt too wide) in paragraph at lines 21--21
-[]|[][]\TU/OpenSans(0)/m/n/7.5 Pub/Sub|  
- []
+Package fontspec Info: 
+(fontspec)             Font family 'OpenSans(6)' created for font 'Open Sans'
+(fontspec)             with options [BoldFont={Open Sans
+(fontspec)             SemiBold},LetterSpace=2.0].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
+(fontspec)             Sans/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
+(fontspec)             SemiBold/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
+(fontspec)             Sans/I/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
+(fontspec)             SemiBold/I/OT:script=latn;language=dflt;letterspace=2.0;"
 
 
 Underfull \hbox (badness 10000) in alignment at lines 21--21
@@ -980,7 +985,7 @@ Underfull \hbox (badness 10000) in alignment at lines 21--21
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(6)' created for font 'Open Sans'
+(fontspec)             Font family 'OpenSans(7)' created for font 'Open Sans'
 (fontspec)             with options [BoldFont={* Bold},LetterSpace=2.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
@@ -997,7 +1002,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(7)' created for font 'Open Sans'
+(fontspec)             Font family 'OpenSans(8)' created for font 'Open Sans'
 (fontspec)             with options [BoldFont={* Medium},LetterSpace=2.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
@@ -1019,33 +1024,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--92
 
 
 
-
-Overfull \hbox (0.4pt too wide) has occurred while \output is active
-[] | [] |
- []
-
-[1
-
-]
-
-
-Overfull \hbox (0.4pt too wide) has occurred while \output is active
-[] | [] |
- []
-
-[2] (./resume.aux)
+[1] (./resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32825 strings out of 470267
- 726385 string characters out of 5484665
- 1234646 words of memory out of 5000000
- 58919 multiletter control sequences out of 15000+600000
- 657553 words of font info for 140 fonts, out of 8000000 for 9000
+ 33183 strings out of 470267
+ 736250 string characters out of 5484665
+ 1292230 words of memory out of 5000000
+ 59262 multiletter control sequences out of 15000+600000
+ 668266 words of font info for 160 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,25n,121p,1230b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,17n,121p,1230b,1175s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.pdf (2 pages).
+Output written on resume.pdf (1 page).
