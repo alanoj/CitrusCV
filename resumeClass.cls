@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2025/04/03 A simple resume class]
-\let\clearpage\relax
+\ProvidesClass{resumeClass}[2025/04/03 A simple resume class]
+\raggedbottom
 
 % Load the base class:
 \LoadClass{article}
@@ -101,7 +101,6 @@
     \begin{center}%
         \textcolor{itemDivOrange}{\rule{\ExpDividerLength}{\ExpDividerThickness}}%
     \end{center}%
-    \vspace{0em}\par%    % Vertical space and paragraph break after the divider
 }
 
 % ----------------------------------------------------------
@@ -131,13 +130,12 @@
             colframe=sectionTitleBg,
             rounded corners,
             boxsep=0.3em,
-            left=0.5em,
-            right=0.5em,
+            left=0.1em,
+            right=0.1em,
             top=0.2em,
             bottom=0.2em,
             fontupper=\linespread{1.8}\selectfont,
             before upper=\raggedright]%
-        % Replace CSV-list itemize with direct table
         \par\noindent
         \listtoTable{#2}%
         \par\noindent
@@ -150,9 +148,9 @@
     \def\arraystretch{1.5}
     \setlength{\tabcolsep}{0.5em}
     \begin{tabularx}{\textwidth}{%
-        >{\centering\arraybackslash}p{0.45\textwidth}
+        >{\centering\arraybackslash}p{0.47\textwidth}
         >{\centering\arraybackslash}p{0.35\textwidth}
-        >{\centering\arraybackslash}p{0.15\textwidth}
+        >{\centering\arraybackslash}p{0.14\textwidth}
         }
         #1 & #2 & #3
     \end{tabularx}
@@ -160,14 +158,9 @@
     \vspace{-1em}
 }
 
-% For single-line bullet items (a smaller vertical shift)
-\newcommand{\singlebulletitem}{%
-    \item[\raisebox{-0.2ex}{\textcolor{bulletColor}{\textbullet}}]
-}
-
 % For multi-line bullet items (a larger vertical shift)
 \newcommand{\multibulletitem}{%
-    \item[\raisebox{-0.8ex}{\textcolor{bulletColor}{\textbullet}}]
+    \item[\raisebox{-0.8ex}{\scalebox{1.5}{\textcolor{bulletColor}{\textbullet}}}]
 }
 
 \newcommand{\experienceItem}[5]{%
