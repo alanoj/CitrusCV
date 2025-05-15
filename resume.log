@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  28 APR 2025 17:13
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  14 MAY 2025 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1019,7 +1019,12 @@ Package fontspec Info:
 (fontspec)             Medium/I/OT:script=latn;language=dflt;letterspace=2.0;"
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Overfull \hbox (6.31093pt too wide) in paragraph at lines 64--64
+[]\TU/OpenSans(3)/m/n/7.5 Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 
  []
 
@@ -1036,7 +1041,7 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  33162 strings out of 473832
  735813 string characters out of 5729482
- 1312677 words of memory out of 5000000
+ 1314680 words of memory out of 5000000
  55677 multiletter control sequences out of 15000+600000
  589508 words of font info for 146 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

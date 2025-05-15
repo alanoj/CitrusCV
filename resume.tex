@@ -25,28 +25,33 @@
 \sectionTitle{\textbf{WORK EXPERIENCE}}
 \newSection{
 
-    \experienceItem{Google,GCP Networking}
+    \experienceItem
+    {Google, GCP Networking}
     {Sunnyvale, CA}
-    {Software Engineer,SDN Platform Team}
-    {May 2022 - December 2024}
-    {
-        \multibulletitem{}Operated and maintained critical GCP production systems, collaborating with SRE and cross-functional dev teams to streamline development, align testing strategies with business objectives ensure 99.99\% uptime, enabling seamless deployments.
-        \multibulletitem{}Advanced load-testing framework development and automation, cutting test runtimes by \textbf{25\%} and saving an estimated \textbf{1.5 SWE-years}, equivalent of manual debugging work by preventing scaling test failures and production outages through proactive bug and regression detection.
-        \multibulletitem{}Spearheaded implementation of new GCP customer feature by replicating support for \textbf{1,000+} virtual gateway nodes with high fidelity and introducing a new test grid-broadening test coverage, uncovering critical scalability issues and reducing false-negative test results and system bottlenecks by \textbf{35\%}.
-        \multibulletitem{}Enhanced CI release pipeline reliability by proactively detecting and resolving regressions while rapidly addressing blocking failures, resulting in a \textbf{30\%} decrease in release-related outages and significantly shortening developer feedback loops.
-        \multibulletitem{}Implemented robust enhancements to the load testing framework—migrating from legacy protocols, boosting system throughput, reducing failure flakiness and increasing test accuracy for large-scale deployments.
-        \multibulletitem{}Designed and implemented scalable backend services supporting millions of users.
-        \vspace{0em}
+    {Software Engineer, SDN Platform Team}
+    {May 2022 – Dec 2024}
+    {%
+        \multibulletitem{Drove development of internal Python/C++ load-testing framework, implementing gRPC, protobuff and pub/sub based workflows and components to replicate networking control-plane behavior—reducing test runtimes by \textbf{25\%} and saving \textbf{1.5 SWE-years} via regression detection.}
+
+        \multibulletitem{Spearheaded the design and developement of a VPC gateway and multicast VM controller feature into the framework—extending C++ control-plane emulation and authoring Python orchestration scripts—to replicate the production pub/sub communication between 1k+ VPC gateway components to each multicast VM controller, expanding the scope testing, uncovering critical scalability issues and reducing system bottlenecks by \textbf{35\%}.}
+
+        \multibulletitem{Automated and maintained critical CI/CD pipeline load-test tasks by provisioning isolated test sandbox containers, creating CRON test monitoring jobs, and scripting metric collection tasks with python and SQL—to reduce release-blocking failures by 30\% and accelerate developer feedback loops by \textbf{40\%}.}
+
+        \multibulletitem{Enhanced the control-plane testing by migrating legacy host VM live migration system to a more scalable pub/sub architecture, boosting system throughput by \textbf{20\%} and improving test accuracy (reducing false negatives) by \textbf{35\%}.}
+
+        \multibulletitem{Collaborated with SRE and partner dev's to drive design reviews, brown-bag knowledge-sharing sessions, sprint planning/retrospectives and conducting peer code reviews of Python, C/C++ to improve code quality and team alignment, ensuring over \textbf{98\%} uptime for critical test grids.}
     }
+
     \expdivider\experienceItem{Apple}
     {Sunnyvale, CA}
     {DevOps Engineer Intern, CI Tools-Site Reliability}
     {July 2020 - March 2021}
     {%
-        \multibulletitem{}Led a team to design, wire, and deploy 200+ test racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a 50\% increase in availability, 30\% reduction in test scheduling wait times, and 20\% boost in overall lab uptime.
-        \multibulletitem{}Automated device provisioning and network monitoring and configuration using Python, Bash, and Ansible scripts, reducing setup time by over \textbf{70\%} while achieving \textbf{98\%} lab uptime consistently.
-        \multibulletitem{}Developed monitoring and remediation tools integrated with Splunk and internal dashboards, reducing device downtime by \textbf{27\%} and increasing test execution success rates by \textbf{34\%}.
+        \multibulletitem{}Led a team to design, wire, and deploy 200+ test racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a \textbf{50\%} increase in availability, \textbf{30\%} reduction in test scheduling wait times, and \textbf{20\%} boost in overall lab uptime.
+        \multibulletitem{Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—to reduce manual setup time by and sustain \textbf{97\%} lab uptime.}
+        \multibulletitem{Developed custom Splunk monitoring and remediation tools, integrating gathered metrics into dashboards and internal alerting systems, enabling real-time detection and auto-recovery of host and device failures, which cut device downtime by \textbf{27\%} and improved test success rates by \textbf{34\%}.}
     }
+
     \expdivider\experienceItem{Full Stack Developer}
     {Remote}
     {Software Engineer (Contract)}

@@ -1,7 +1,7 @@
 # 🍊 CitrusCV
 
 ![CitrusCV Screenshot
-](https: //raw.githubusercontent.com/alanoj/CitrusCV/main/screenshots/resume_sample.jpg)
+](https: //raw.githubusercontent.com/alanoj/CitrusCV/main/logo/logo.png?raw=true)
 
 ## 🍊 Overview
 

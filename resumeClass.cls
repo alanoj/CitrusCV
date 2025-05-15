@@ -159,8 +159,8 @@
 }
 
 % For multi-line bullet items (a larger vertical shift)
-\newcommand{\multibulletitem}{%
-    \item[\raisebox{-0.8ex}{\scalebox{1.5}{\textcolor{bulletColor}{\textbullet}}}]
+\newcommand{\multibulletitem}[1]{%
+    \item[\raisebox{-0.8ex}{\scalebox{1.5}{\textcolor{bulletColor}{\textbullet}}}] #1
 }
 
 \newcommand{\experienceItem}[5]{%
