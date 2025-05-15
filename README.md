@@ -1,7 +1,7 @@
 # 🍊 CitrusCV
 
 ![CitrusCV Screenshot
-](https: //raw.githubusercontent.com/alanoj/CitrusCV/main/logo/logo.png?raw=true)
+](https: //raw.githubusercontent.com/alanoj/CitrusCV/main/assets/logo.png?raw=true)
 
 ## 🍊 Overview
 
