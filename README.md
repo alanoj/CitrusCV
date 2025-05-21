@@ -1,7 +1,8 @@
-<img src="assets/logo_banner_clear.png" height="250" style="text-align: center">
-## 🍊 Overview
+<img width="800" alt="CitrusCV-Lettermark" src="assets/logo_banner_clear.png"/>
 
-CitrusCV is an orange-themed LaTeX resume generator that combines style with functionality. It's perfect for those who want their resumes to stand out with a splash of color and a dash of citrus flair.
+## 🍊 CitrusCV
+
+CitrusCV is a LaTeX project which generates an orange themed tech resume.
 
 ## 🎨 Features
 
