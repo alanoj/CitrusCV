@@ -3,7 +3,7 @@
 <div align="center">
    <img width="800" alt="Logo" src="assets/logo_banner_clear.png"/>
 </div>
-<hr/>
+<br/>
 
 <div align="center">
 <a href="https://github.com/alanoj/CitrusCV/actions/workflows/latex-build.yml">
@@ -27,14 +27,7 @@
 
 </div>
 
-<h2 style="color:#EBAF70">🍊 CitrusCV</h2>
-
-
-### Resume Preview
-
-<div align="center">
-   <img src="assets/resume_preview.png">
-</div>
+<h1 style="color:#EBAF70">🍊 CitrusCV</h1>
 
 ---
 
@@ -42,26 +35,29 @@
 
 **CitrusCV** is a modular LaTeX resume template designed to help technical professionals showcase their skills and experience in a polished, maintainable format. Built from the ground up with customization in mind, this project separates styling, layout, and content into dedicated files so you can tweak typography, colors, and structural components without touching the core content.
 
-Key goals:
+<div align="center">
 
-- **Impress recruiters** with a clean, consistent design.
-- **Demonstrate technical proficiency** through a well‑structured codebase.
-- **Enable forks and modifications** by providing clear APIs for each component.
+### ✨ Resume Preview
+</div>
+
+<div align="center">
+   <img src="assets/resume_preview.png">
+</div>
 
 ---
 
 ### 🧭 Table of Contents
 
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [File Reference](#file-reference)
+- [🚀 Getting Started](#getting-started)
+- [🧩 Project Structure](#project-structure)
+- [📂 File Reference](#file-reference)
    - [FontSettings.sty](#fontsettingssty)
    - [resume.cls](#resumeccls)
    - [main.tex](#maintex)
-- [Customization Guide](#customization-guide)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [🎨 Customization Guide](#customization-guide)
+- [🛠️ Usage](#usage)
+- [🤝 Contributing](#contributing)
+- [📄 License](#license)
 
 ---
 
