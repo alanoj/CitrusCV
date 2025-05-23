@@ -3,7 +3,7 @@ name: Release with PDF
 on:
   push:
     tags:
-      - "v*" # Example: v1.0.0
+      - "v*"
 
 jobs:
   release:
@@ -15,9 +15,9 @@ jobs:
       - name: Build PDF
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex
+          root_file: resume.tex
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: main.pdf
+          files: resume.pdf

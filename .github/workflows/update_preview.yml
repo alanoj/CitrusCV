@@ -1,0 +1,40 @@
+name: Update Resume Preview
+
+on:
+  workflow_run:
+    workflows: ["Build LaTeX PDF"]
+    types:
+      - completed
+
+jobs:
+  convert:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+
+      - name: Download PDF artifact from build workflow
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: latex-build.yml
+          name: Resume PDF
+          path: .
+
+      - name: Install ImageMagick
+        run: sudo apt-get install -y imagemagick ghostscript
+
+      - name: Convert PDF to PNG
+        run: |
+          convert -density 300 resume.pdf[0] -quality 100 assets/resume_preview.png
+
+      - name: Commit and push preview image
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git add assets/resume_preview.png
+          git commit -m "Update resume preview image from latest PDF"
+          git push
