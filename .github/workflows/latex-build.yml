@@ -8,6 +8,10 @@ on:
       - "**.cls"
   pull_request:
 
+permissions:
+  actions: read
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
