@@ -6,23 +6,24 @@
 <br/>
 
 <div align="center">
+
 <a href="https://github.com/alanoj/CitrusCV/actions/workflows/latex-build.yml">
-  <img src="https://img.shields.io/github/actions/workflow/status/alanoj/CitrusCV/latex-build.yml?label=Build&style=for-the-badge">
+  <img src="https://img.shields.io/github/actions/workflow/status/alanoj/CitrusCV/latex-build.yml?label=Build&style=for-the-badge&cacheSeconds=60">
 </a>
 <a href="https://github.com/alanoj/CitrusCV/releases">
-  <img src="https://img.shields.io/github/v/release/alanoj/CitrusCV?style=for-the-badge">
+  <img src="https://img.shields.io/github/v/release/alanoj/CitrusCV?include_prereleases&style=for-the-badge&cacheSeconds=60">
 </a>
 <a href="https://github.com/alanoj/CitrusCV/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/alanoj/CitrusCV?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
 </a>
 <a href="https://github.com/alanoj/CitrusCV/commits/main">
-  <img src="https://img.shields.io/github/last-commit/alanoj/CitrusCV?style=for-the-badge">
+  <img src="https://img.shields.io/github/last-commit/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
 </a>
-<a href="https://github.com/alanoj/CitrusCV/commits/main">
-  <img src="https://img.shields.io/tokei/lines/github/alanoj/CitrusCV?style=for-the-badge">
+<a href="https://github.com/alanoj/CitrusCV">
+  <img src="https://img.shields.io/tokei/lines/github/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
 </a>
 <a href="https://www.latex-project.org/">
-  <img src="https://img.shields.io/github/languages/top/alanoj/CitrusCV?style=for-the-badge">
+  <img src="https://img.shields.io/github/languages/top/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
 </a>
 
 </div>
