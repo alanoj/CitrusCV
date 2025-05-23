@@ -1,32 +1,44 @@
-<img width="800" alt="CitrusCV" src="assets/logo_banner_clear.png"/>
-
+<a name="readme-top"></a>
 
 <div align="center">
+   <img width="800" alt="Logo" src="assets/logo_banner_clear.png"/>
+</div>
+<hr/>
 
-![Build](https://img.shields.io/github/actions/workflow/status/alanoj/CitrusCV/latex-build.yml?style=for-the-badge)
-
-![Release](https://img.shields.io/github/v/release/alanoj/CitrusCV?style=for-the-badge)
-
-![License](https://img.shields.io/github/license/alanoj/CitrusCV?style=for-the-badge)
-
-![Last Commit](https://img.shields.io/github/last-commit/alanoj/CitrusCV?style=for-the-badge)
-
-![LaTeX](https://img.shields.io/badge/LaTeX-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
-
-![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+<div align="center">
+<a href="https://github.com/alanoj/CitrusCV/actions/workflows/latex-build.yml">
+  <img src="https://img.shields.io/github/actions/workflow/status/alanoj/CitrusCV/latex-build.yml?label=Build&style=for-the-badge">
+</a>
+<a href="https://github.com/alanoj/CitrusCV/releases">
+  <img src="https://img.shields.io/github/v/release/alanoj/CitrusCV?style=for-the-badge">
+</a>
+<a href="https://github.com/alanoj/CitrusCV/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/alanoj/CitrusCV?style=for-the-badge">
+</a>
+<a href="https://github.com/alanoj/CitrusCV/commits/main">
+  <img src="https://img.shields.io/github/last-commit/alanoj/CitrusCV?style=for-the-badge">
+</a>
+<a href="https://github.com/alanoj/CitrusCV/commits/main">
+  <img src="https://img.shields.io/tokei/lines/github/alanoj/CitrusCV?style=for-the-badge">
+</a>
+<a href="https://www.latex-project.org/">
+  <img src="https://img.shields.io/github/languages/top/alanoj/CitrusCV?style=for-the-badge">
+</a>
 
 </div>
 
-# CitrusCV 
+<h2 style="color:#EBAF70">🍊 CitrusCV</h2>
 
 
 ### Resume Preview
 
-![Resume Preview](assets/resume_preview.png)
+<div align="center">
+   <img src="assets/resume_preview.png">
+</div>
 
 ---
 
-## Overview
+### 📄 Overview
 
 **CitrusCV** is a modular LaTeX resume template designed to help technical professionals showcase their skills and experience in a polished, maintainable format. Built from the ground up with customization in mind, this project separates styling, layout, and content into dedicated files so you can tweak typography, colors, and structural components without touching the core content.
 
@@ -38,7 +50,7 @@ Key goals:
 
 ---
 
-## Table of Contents
+### 🧭 Table of Contents
 
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
@@ -53,15 +65,15 @@ Key goals:
 
 ---
 
-## Getting Started
+### 🚀 Getting Started
 
-### Prerequisites
+#### Prerequisites
 
 - A recent LaTeX distribution (TeX Live, MacTeX, or MiKTeX).
 - Optional: `latexmk` for automated building and watch mode.
 - Git to clone the repository.
 
-### Quick Installation
+#### Quick Installation
 
 ```bash
 # Clone the repo
@@ -80,7 +92,7 @@ pdflatex main.tex
 
 ---
 
-## Project Structure
+### 🗂 Project Structure
 
 ```text
 CitrusCV/
@@ -94,9 +106,9 @@ CitrusCV/
 
 ---
 
-## File Reference
+### 🧩 File Reference
 
-### `FontSettings.sty` {#fontsettingssty}
+#### `FontSettings.sty` {#fontsettingssty}
 
 This file centralizes all typographic settings and spacing. Tweak here to change the look and feel globally.
 
@@ -137,9 +149,10 @@ This file centralizes all typographic settings and spacing. Tweak here to change
 
 ---
 
-### `resume.cls` {#resumeccls}
+#### `resume.cls` {#resumeccls}
 
 Custom document class defining layout components and section macros. This serves as the API for your resume structure.
+
 
 #### Core Macros
 
@@ -235,7 +248,7 @@ The master document that composes all sections and content. Edit this file to up
 
 ---
 
-## Customization Guide
+## 🎨 Customization Guide
 
 1. **Global Styles**: Tweak `FontSettings.sty`.
 2. **Layout & Components**: Extend or adjust macros in `resume.cls`.
@@ -244,7 +257,7 @@ The master document that composes all sections and content. Edit this file to up
 
 ---
 
-## Usage
+## 🛠 Usage
 
 - **Build PDF**:
   ```bash
@@ -261,7 +274,7 @@ The master document that composes all sections and content. Edit this file to up
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork and clone the repo.
 2. Create a feature branch: `git checkout -b feature/my-changes`.
@@ -274,6 +287,6 @@ Please follow existing style conventions and update this README when adding new 
 
 ---
 
-## License
+## 📄 License
 
 This project is released under the MIT License. See [LICENSE](LICENSE) for details.
