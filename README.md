@@ -19,31 +19,28 @@
 <a href="https://github.com/alanoj/CitrusCV/commits/main">
   <img src="https://img.shields.io/github/last-commit/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
 </a>
-<a href="https://github.com/alanoj/CitrusCV">
-  <img src="https://img.shields.io/tokei/lines/github/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
-</a>
 <a href="https://www.latex-project.org/">
   <img src="https://img.shields.io/github/languages/top/alanoj/CitrusCV?style=for-the-badge&cacheSeconds=60">
 </a>
 
 </div>
 
-<h1 style="color:#EBAF70">🍊 CitrusCV</h1>
-
----
-
-### 📄 Overview
-
-**CitrusCV** is a modular LaTeX resume template designed to help technical professionals showcase their skills and experience in a polished, maintainable format. Built from the ground up with customization in mind, this project separates styling, layout, and content into dedicated files so you can tweak typography, colors, and structural components without touching the core content.
+## CitrusCV
 
 <div align="center">
 
-### ✨ Resume Preview
+### ✨ Preview ✨
 </div>
 
 <div align="center">
    <img src="assets/resume_preview.png">
 </div>
+---
+
+### Overview
+
+<img src="assets/logo_3d.png" width="18" style="vertical-align:middle;"> **CitrusCV** is a modular LaTeX resume template designed to help technical professionals showcase their skills and experience in a polished, maintainable format. Built from the ground up with customization in mind, this project separates styling, layout, and content into dedicated files so you can tweak typography, colors, and structural components without touching the core content.
+
 
 ---
 
@@ -284,6 +281,11 @@ Please follow existing style conventions and update this README when adding new 
 
 ---
 
-## 📄 License
+## 📝 License
 
 This project is released under the MIT License. See [LICENSE](LICENSE) for details.
+
+</br>
+<div align="center">
+   <img src="assets/sticker.png" width="200" style="vertical-align:bottom;">
+</div>
