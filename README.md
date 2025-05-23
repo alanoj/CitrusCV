@@ -287,5 +287,5 @@ This project is released under the MIT License. See [LICENSE](LICENSE) for detai
 
 </br>
 <div align="center">
-   <img src="assets/sticker.png" width="200" style="vertical-align:bottom;">
+   <img src="assets/logo_3d.png" width="200" style="vertical-align:bottom;">
 </div>
