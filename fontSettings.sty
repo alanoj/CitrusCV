@@ -2,33 +2,45 @@
 \RequirePackage{lmodern}
 \RequirePackage{fontspec}
 
+% Define a single Open Sans family with several weight faces.
+% Assumes the .ttf files live in assets/fonts/Open_Sans/ relative to the main .tex file.
+\newfontfamily\resumeFont[
+  Path      = assets/fonts/Open_Sans/, % MUST end with a slash
+  Extension = .ttf,                    % file extension
+  UprightFont = OpenSans-Regular,      % default face
+  BoldFont    = OpenSans-Bold,         % face used by \bfseries
+  FontFace    = {m}{n}{OpenSans-Medium},   % medium weight; select with \fontseries{m}
+  FontFace    = {sb}{n}{OpenSans-SemiBold} % semibold weight; select with \fontseries{sb}
+]{OpenSans-Regular}
+
+% Convenience macros for each weight
+\newcommand{\resumeFontRegular}{\resumeFont\fontseries{n}\selectfont}
+\newcommand{\resumeFontMedium}{\resumeFont\fontseries{m}\selectfont}
+\newcommand{\resumeFontSemiBold}{\resumeFont\fontseries{sb}\selectfont}
+\newcommand{\resumeFontBold}{\resumeFont\bfseries}
+
 % ------------------------------ Header font Options ------------------------
 
 % Header Full Name Font Options
-\newfontfamily\headerNameFont{Open Sans}
-\newcommand{\headerFullName}[1]{\fontsize{25pt}{30pt}\selectfont\headerNameFont\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerFullName}[1]{\fontsize{25pt}{30pt}\selectfont\resumeFontRegular\addfontfeature{LetterSpace=10.0} #1}
 
 % Header Contact Into Font Options
-\newfontfamily\headerContactInfoFont{Open Sans}
-\newcommand{\headerContactInfo}[1]{\fontsize{7pt}{8pt}\selectfont\headerContactInfoFont\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerContactInfo}[1]{\fontsize{7pt}{8pt}\selectfont\resumeFontRegular\addfontfeature{LetterSpace=10.0} #1}
 
 % Header Position Title Font Options
-\newfontfamily\headerPosTitleFont{Open Sans}
-\newcommand{\headerPosTitle}[1]{\fontsize{7.5pt}{9pt}\selectfont\headerPosTitleFont\bfseries\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerPosTitle}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=10.0} #1}
 
 % Base Text Font Options
-\newfontfamily\baseFont{Open Sans}
-\newcommand{\baseText}[1]{\fontsize{7.5pt}{9pt}\selectfont\baseFont #1}
+\newcommand{\baseText}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontRegular #1}
 
 % ------------------------------ Section Title Font Options --------------------
 
 % Section Title Font Options
-\newfontfamily\sectionTitleFont[BoldFont=* Bold]{Open Sans}
 \newcommand{\sectionTitle}[1]{%
     \par\noindent%
     \colorbox{sectionTitleBg}{%
         \parbox{\dimexpr\linewidth-2\fboxsep}{%
-            \centering\fontsize{9pt}{9pt}\selectfont\sectionTitleFont\uppercase{#1}%
+            \centering\fontsize{9pt}{9pt}\selectfont\resumeFontMedium\uppercase{#1}%
         }%
     }%
     \par\vspace{0.2em}%
@@ -37,33 +49,27 @@
 % ------------------------------ Experience Item Font Options ---------------
 
 % Experience Company Name Font Options
-\newfontfamily\experienceCompanyNameFont[BoldFont={* Bold}]{Open Sans}
-\newcommand{\experienceCompanyName}[1]{\fontsize{8pt}{9pt}\selectfont\experienceCompanyNameFont\bfseries\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experienceCompanyName}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Location Font Options
-\newfontfamily\experienceLocationFont[BoldFont={* Medium}]{Open Sans}
-\newcommand{\experienceLocation}[1]{\fontsize{8pt}{9pt}\selectfont\experienceLocationFont\bfseries\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experienceLocation}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Position Font Options
-\newfontfamily\experiencePositionFont[BoldFont={* Medium}]{Open Sans}
-\newcommand{\experiencePosition}[1]{\fontsize{7.5pt}{9pt}\selectfont\experiencePositionFont\bfseries\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experiencePosition}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
-% Experience Dates Font Options
-\newfontfamily\experienceDatesFont[BoldFont={* Medium}]{Open Sans}
-\newcommand{\experienceDates}[1]{\fontsize{7.5pt}{9pt}\selectfont\experienceDatesFont\bfseries\addfontfeature{LetterSpace=2.0} \textit{#1}}
+% Experience Dates Font Options 
+\newcommand{\experienceDates}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} \textit{#1}}
 
 % ------------------------------ Skills Font Options ---------------
 
-\newfontfamily\skillTypeFont[BoldFont={Open Sans SemiBold}]{Open Sans}
 \newcommand{\skillTitle}[1]{{%
             \fontsize{7.5pt}{9pt}\selectfont
-            \skillTypeFont
             \addfontfeature{LetterSpace=2.0}%
-            \bfseries #1%
+            \selectfont\resumeFontSemiBold #1%
         }}
 \newcommand{\skillsList}[1]{{%
             \fontsize{7pt}{9pt}\selectfont
-            \bfseries\baseFont #1%
+            \resumeFontSemiBold #1%
         }}
 
 \endinput

@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  23 MAY 2025 14:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  17 SEP 2025 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alanordorica/Developer/CitrusCV/resume
+**/Users/alanordorica/Developer/CitrusCV/resume.tex
 (/Users/alanordorica/Developer/CitrusCV/resume.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -94,88 +94,22 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(0)' created for font 'Open Sans'
-(fontspec)             with options [].
+(fontspec)             Font family 'OpenSans-Regular(0)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
+(fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
+(fontspec)             {m}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {sb}{n}{OpenSans-SemiBold}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/B/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/BI/OT:script=latn;language=dflt;"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(1)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont=* Bold].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             Bold/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             Bold/I/OT:script=latn;language=dflt;"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(2)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont={* Bold}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             Bold/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             Bold/I/OT:script=latn;language=dflt;"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(3)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont={* Medium}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             Medium/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             Medium/I/OT:script=latn;language=dflt;"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(4)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont={Open Sans SemiBold}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             SemiBold/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             SemiBold/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;"
 
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -916,21 +850,31 @@ LaTeX Font Info:    ... okay on input line 8.
 
 Package hyperref Info: Link coloring ON on input line 8.
 
+LaTeX Font Warning: Font shape `TU/OpenSans-Regular(0)/n/n' undefined
+(Font)              using `TU/OpenSans-Regular(0)/m/n' instead on input line 9.
+
+
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(5)' created for font 'Open Sans'
-(fontspec)             with options [LetterSpace=10.0].
+(fontspec)             Font family 'OpenSans-Regular(1)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
+(fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
+(fontspec)             {m}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=10.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;letterspace=10.0;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/B/OT:script=latn;language=dflt;letterspace=10.0;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;letterspace=10.0;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/BI/OT:script=latn;language=dflt;letterspace=10.0;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
+
+
+LaTeX Font Warning: Font shape `TU/OpenSans-Regular(1)/n/n' undefined
+(Font)              using `TU/OpenSans-Regular(1)/m/n' instead on input line 9.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -963,21 +907,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 9.
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(6)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont={Open Sans
-(fontspec)             SemiBold},LetterSpace=2.0].
+(fontspec)             Font family 'OpenSans-Regular(2)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
+(fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
+(fontspec)             {m}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=2.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             SemiBold/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             SemiBold/I/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
 
 
 Overfull \hbox (0.82262pt too wide) in alignment at lines 19--19
@@ -985,42 +930,8 @@ Overfull \hbox (0.82262pt too wide) in alignment at lines 19--19
  []
 
 
-Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(7)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont={* Bold},LetterSpace=2.0].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             Bold/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             Bold/I/OT:script=latn;language=dflt;letterspace=2.0;"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'OpenSans(8)' created for font 'Open Sans'
-(fontspec)             with options [BoldFont={* Medium},LetterSpace=2.0].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Open
-(fontspec)             Sans/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Open Sans
-(fontspec)             Medium/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Open
-(fontspec)             Sans/I/OT:script=latn;language=dflt;letterspace=2.0;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Open Sans
-(fontspec)             Medium/I/OT:script=latn;language=dflt;letterspace=2.0;"
-
-
 Overfull \hbox (6.31093pt too wide) in paragraph at lines 64--64
-[]\TU/OpenSans(3)/m/n/7.5 Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—
+[]\TU/OpenSans-Regular(0)/m/n/7.5 Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—
  []
 
 
@@ -1037,14 +948,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 33162 strings out of 473832
- 735813 string characters out of 5729482
- 1314680 words of memory out of 5000000
- 55677 multiletter control sequences out of 15000+600000
- 589508 words of font info for 146 fonts, out of 8000000 for 9000
+ 32958 strings out of 473832
+ 731178 string characters out of 5729482
+ 1314564 words of memory out of 5000000
+ 55522 multiletter control sequences out of 15000+600000
+ 589180 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,17n,121p,1230b,1187s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,17n,121p,1234b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.pdf (1 page).
+Output written on resume.xdv (1 page, 90052 bytes).

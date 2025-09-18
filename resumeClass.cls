@@ -134,7 +134,7 @@
             right=0.1em,
             top=0.2em,
             bottom=0.2em,
-            fontupper=\linespread{1.8}\selectfont,
+            fontupper=\linespread{1.8},
             before upper=\raggedright]%
         \par\noindent
         \listtoTable{#2}%
