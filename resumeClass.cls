@@ -39,7 +39,7 @@
 % --- Header storage without @ macros ---
 \newcommand{\fullname}[1]{\renewcommand\resumeName{#1}}
 \newcommand{\jobtitle}[1]{\renewcommand\resumeTitle{\mylist{#1}}}
-\newcommand{\address}[1]{\renewcommand\resumeAddress{\mylist{#1}}}
+\newcommand{\address}[1]{\renewcommand\resumeAddress{#1}}
 
 % Initialize to empty
 \newcommand\resumeName{}
@@ -92,6 +92,9 @@
 \newcommand{\newSection}[1]{%
     \baseText{#1}
     \par\vspace{0em}
+}
+\newcommand{\contactIcon}[2]{
+    \textcolor{orange}{\fontsize{9}{9}\raisebox{-0.1\height}{\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0}#1}}\hspace{0.5em}#2\hspace{1.3em}
 }
 
 \newcommand{\ExpDividerLength}{1\linewidth}  % Set the length of the divider (adjust as needed)

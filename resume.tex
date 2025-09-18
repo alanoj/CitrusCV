@@ -1,18 +1,18 @@
 \documentclass{resumeClass}
 
 \fullname{ALAN ORDORICA}
-\address{Seattle\comma{}WA, (510) 314-9967, alaniordorica@gmail, \href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj}, \href{https://github.com/alanoj}{github.com/alanoj}}
-\jobtitle{SOFTWARE ENGINEER,JACK-OF-ALL-STACKS,TECH MAVERICK}
+\address{\contactIcon{\faLocationDot}{Seattle\comma{}WA}\contactIcon{\faMobileScreen}{(510) 314-9967}\contactIcon{\faEnvelope}{alaniordorica@gmail}\contactIcon{\faSquareLinkedin}{\href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj}}\contactIcon{\faGithub}{\href{https://github.com/alanoj}{Github.com/alanoj}}}
+\jobtitle{Software Engineer\hspace{0.6em},\hspace{0.6em}Backend Systems\hspace{0.6em},\hspace{0.6em}Cloud \& Embedded}
 
 \color{baseText}
 \begin{document}
-\resumeheader\sectionTitle{\textbf{PROFESSIONAL SUMMARY}}
+\resumeheader\sectionTitle{Professional Summary}
 \newSection{
 
     {Software engineer with experience at leading technology companies in backend development, cloud computing, system automation, and distributed architectures. Driven to solve complex challenges using an iterative, AI-informed approach to design robust, scalable software and hardware solutions that enhance reliability and foster continuous improvement.}
 }
 
-\sectionTitle{\textbf{TECHNICAL SKILLS}}
+\sectionTitle{Technical Skills}
 \newSection{\skillsBoxes{\skillBox{Languages, Libraries \& Frameworks}{C/C++, Python, Go, JavaScript, JSON, Java, SQL, NoSQL, TypeScript, React, Node.js/Express, ESP-IDF, FreeRTOS}}
     {\skillBox{Cloud \& DevOps}{Docker, Kubernetes, Git, Ansible, GCP, Pub/Sub, CMake, Bazel, Splunk, SDN}}
     {\skillBox{Embedded Sys}{ESP32, I\textsuperscript{2}C, SPI, BLE, GDB}}
@@ -22,39 +22,41 @@
 %---------------------------------------------------
 % Work Experience Section
 %---------------------------------------------------
-\sectionTitle{\textbf{WORK EXPERIENCE}}
+\sectionTitle{Experience}
 \newSection{
 
     \experienceItem
-    {Google, GCP Networking}
+    {\selectfont\resumeFontSemiBold Google}
     {Sunnyvale, CA}
-    {Software Engineer, SDN Platform Team}
+    {Software Engineer, Google Cloud SDN Platform}
     {May 2022 – Dec 2024}
     {%
-        \multibulletitem{Drove development of internal Python/C++ load-testing framework, implementing gRPC, protobuff and pub/sub based workflows and components to replicate networking control-plane behavior—reducing test runtimes by \textbf{25\%} and saving \textbf{1.5 SWE-years} via regression detection.}
+        \multibulletitem{Drove development of internal Python/C++ load-testing framework, implementing gRPC, protobuff and pub/sub based workflows and components to replicate networking control-plane behavior—reducing test runtimes by \textsbseries{25\%} and saving \textsbseries{1.5 SWE-years} via regression detection.}
 
-        \multibulletitem{Spearheaded the design and developement of a VPC gateway and multicast VM controller feature into the framework—extending C++ control-plane emulation and authoring Python orchestration scripts—to replicate the production pub/sub communication between 1k+ VPC gateway components to each multicast VM controller, expanding the scope testing, uncovering critical scalability issues and reducing system bottlenecks by \textbf{35\%}.}
+        \multibulletitem{Spearheaded the design and developement of a VPC gateway and multicast VM controller feature into the framework—extending C++ control-plane emulation and authoring Python orchestration scripts—to replicate the production pub/sub communication between 1k+ VPC gateway components to each multicast VM controller, expanding the scope testing, uncovering critical scalability issues and reducing system bottlenecks by \textsbseries{35\%}.}
 
-        \multibulletitem{Automated and maintained critical CI/CD pipeline load-test tasks by provisioning isolated test sandbox containers, creating CRON test monitoring jobs, and scripting metric collection tasks with python and SQL—to reduce release-blocking failures by 30\% and accelerate developer feedback loops by \textbf{40\%}.}
+        \multibulletitem{Automated and maintained critical CI/CD pipeline load-test tasks by provisioning isolated test sandbox containers, creating CRON test monitoring jobs, and scripting metric collection tasks with python and SQL—to reduce release-blocking failures by 30\% and accelerate developer feedback loops by \textsbseries{40\%}.}
 
-        \multibulletitem{Enhanced the control-plane testing by migrating legacy host VM live migration system to a more scalable pub/sub architecture, boosting system throughput by \textbf{20\%} and improving test accuracy (reducing false negatives) by \textbf{35\%}.}
+        \multibulletitem{Enhanced the control-plane testing by migrating legacy host VM live migration system to a more scalable pub/sub architecture, boosting system throughput by \textsbseries{20\%} and improving test accuracy (reducing false negatives) by \textsbseries{35\%}.}
 
-        \multibulletitem{Collaborated with SRE and partner dev's to drive design reviews, brown-bag knowledge-sharing sessions, sprint planning/retrospectives and conducting peer code reviews of Python, C/C++ to improve code quality and team alignment, ensuring over \textbf{98\%} uptime for critical test grids.}
+        \multibulletitem{Collaborated with SRE and partner dev's to drive design reviews, brown-bag knowledge-sharing sessions, sprint planning/retrospectives and conducting peer code reviews of Python, C/C++ to improve code quality and team alignment, ensuring over \textsbseries{98\%} uptime for critical test grids.}
     }
 
-    \expdivider\experienceItem{Apple}
+    \expdivider\experienceItem
+    {\selectfont\resumeFontSemiBold Apple}
     {Sunnyvale, CA}
     {DevOps Engineer Intern, CI Tools-Site Reliability}
     {July 2020 - March 2021}
     {%
-        \multibulletitem{}Led a team to design, wire, and deploy 200+ test racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a \textbf{50\%} increase in availability, \textbf{30\%} reduction in test scheduling wait times, and \textbf{20\%} boost in overall lab uptime.
-        \multibulletitem{Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—to reduce manual setup time by and sustain \textbf{97\%} lab uptime.}
-        \multibulletitem{Developed custom Splunk monitoring and remediation tools, integrating gathered metrics into dashboards and internal alerting systems, enabling real-time detection and auto-recovery of host and device failures, which cut device downtime by \textbf{27\%} and improved test success rates by \textbf{34\%}.}
+        \multibulletitem{}Led a team to design, wire, and deploy 200+ test racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a \textsbseries{50\%} increase in availability, \textsbseries{30\%} reduction in test scheduling wait times, and \textsbseries{20\%} boost in overall lab uptime.
+        \multibulletitem{Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—to reduce manual setup time by and sustain \textsbseries{97\%} lab uptime.}
+        \multibulletitem{Developed custom Splunk monitoring and remediation tools, integrating gathered metrics into dashboards and internal alerting systems, enabling real-time detection and auto-recovery of host and device failures, which cut device downtime by \textsbseries{27\%} and improved test success rates by \textsbseries{34\%}.}
     }
 
-    \expdivider\experienceItem{Full Stack Developer}
+    \expdivider\experienceItem
+    {\selectfont\resumeFontSemiBold Full Stack Developer}
     {Remote}
-    {Software Engineer (Contract)}
+    {Software Engineer}
     {January 2020 - Present}
     {%
         \multibulletitem{} Developed modular React frontend and Node.js backend portfolio web apps with Docker Compose for local orchestration, enabling rapid environment setup.
@@ -66,7 +68,7 @@
 %---------------------------------------------------
 % Projects Section
 %---------------------------------------------------
-\sectionTitle{\textbf{PROJECT PORTFOLIO}}
+\sectionTitle{PROJECT PORTFOLIO}
 
 \newSection{
     \begin{itemize}[leftmargin=1.5em]
@@ -80,10 +82,10 @@
 %---------------------------------------------------
 % Education Section
 %---------------------------------------------------
-\sectionTitle{\textbf{EDUCATION}}
+\sectionTitle{EDUCATION}
 \newSection{
-    \educationItem{San Francisco State University}
-    {San Francisco, CA}
+    \educationItem{\selectfont\resumeFontBold San Francisco State University}
+    {\selectfont\resumeFontMedium San Francisco, CA}
     {Bachelor of Science in Computer Engineering}
     {December 2019}
 }

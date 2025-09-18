@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  17 SEP 2025 17:44
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  18 SEP 2025 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -91,23 +91,40 @@ Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpc_dim=\dimen144
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7.sty
+Package: fontawesome7 2025/07/31 v7.0.0-1 Font Awesome 7
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7-utex-helper.sty
+Package: fontawesome7-utex-helper 2025/07/31 v7.0.0-1 uTeX helper for fontawesome7
+LaTeX Font Info:    Trying to load font information for TU+fontawesome7free on input line 62.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/tufontawesome7free.fd)
+LaTeX Font Info:    Trying to load font information for TU+fontawesome7brands on input line 63.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/tufontawesome7brands.fd)))
 
 Package fontspec Info: 
 (fontspec)             Font family 'OpenSans-Regular(0)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
-(fontspec)             {m}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {n}{n}{OpenSans-Regular},FontFace =
+(fontspec)             {me}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
 (fontspec)             {sb}{n}{OpenSans-SemiBold}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             - (n/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - (me/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - (mi/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;"
 (fontspec)             - (sb/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;"
 
@@ -507,7 +524,8 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool.sty
 Package: datatool 2025/03/05 v3.0.1 (NLCT)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
@@ -850,32 +868,33 @@ LaTeX Font Info:    ... okay on input line 8.
 
 Package hyperref Info: Link coloring ON on input line 8.
 
-LaTeX Font Warning: Font shape `TU/OpenSans-Regular(0)/n/n' undefined
-(Font)              using `TU/OpenSans-Regular(0)/m/n' instead on input line 9.
-
-
 Package fontspec Info: 
 (fontspec)             Font family 'OpenSans-Regular(1)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
-(fontspec)             {m}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {n}{n}{OpenSans-Regular},FontFace =
+(fontspec)             {me}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
 (fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=10.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             - (n/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
+(fontspec)             - (me/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
+(fontspec)             - (mi/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
 (fontspec)             - (sb/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
 
-
-LaTeX Font Warning: Font shape `TU/OpenSans-Regular(1)/n/n' undefined
-(Font)              using `TU/OpenSans-Regular(1)/m/n' instead on input line 9.
-
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 9.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -893,11 +912,6 @@ LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 9
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 9.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 9.
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 9.
-LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7.5> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5.24997> on input line 9.
@@ -905,22 +919,34 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <3.75> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 9.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 9.
 
 Package fontspec Info: 
 (fontspec)             Font family 'OpenSans-Regular(2)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
-(fontspec)             {m}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {n}{n}{OpenSans-Regular},FontFace =
+(fontspec)             {me}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
 (fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=2.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             - (n/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - (me/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - (mi/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
 (fontspec)             - (sb/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
 
@@ -930,12 +956,12 @@ Overfull \hbox (0.82262pt too wide) in alignment at lines 19--19
  []
 
 
-Overfull \hbox (6.31093pt too wide) in paragraph at lines 64--64
+Overfull \hbox (6.31093pt too wide) in paragraph at lines 66--66
 []\TU/OpenSans-Regular(0)/m/n/7.5 Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 
  []
 
@@ -954,12 +980,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32958 strings out of 473832
- 731178 string characters out of 5729482
- 1314564 words of memory out of 5000000
- 55522 multiletter control sequences out of 15000+600000
- 589180 words of font info for 105 fonts, out of 8000000 for 9000
+ 34979 strings out of 473832
+ 760658 string characters out of 5729482
+ 1345313 words of memory out of 5000000
+ 57501 multiletter control sequences out of 15000+600000
+ 582140 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,17n,121p,1234b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,17n,121p,1234b,1171s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 90052 bytes).
+Output written on resume.xdv (1 page, 89044 bytes).
