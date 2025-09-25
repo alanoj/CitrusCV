@@ -6,34 +6,48 @@
 % Define a single Open Sans family with several weight faces.
 % Assumes the .ttf files live in assets/fonts/Open_Sans/ relative to the main .tex file.
 \newfontfamily\resumeFont[
-  Path      = assets/fonts/Open_Sans/, % MUST end with a slash
-  Extension = .ttf,                    % file extension
-  UprightFont = OpenSans-Regular,      % default face
-  BoldFont    = OpenSans-Bold,         % face used by \bfseries
-  FontFace    = {n}{n}{OpenSans-Regular},   % 
-  FontFace    = {me}{n}{OpenSans-Medium},   % medium weight; select with \fontseries{m}
-  FontFace    = {mi}{n}{OpenSans-MediumItalic},   % medium weight; select with \fontseries{m}
-  FontFace    = {sb}{n}{OpenSans-SemiBold} % semibold weight; select with \fontseries{sb}
+    Path      = assets/fonts/Open_Sans/, % MUST end with a slash
+    Extension = .ttf,                    % file extension
+    UprightFont = OpenSans-Regular,      % default face
+    BoldFont    = OpenSans-Bold,         % face used by \bfseries
+    FontFace    = {n}{n}{OpenSans-Regular},   % 
+    FontFace    = {me}{n}{OpenSans-Medium},   % medium weight; select with \fontseries{m}
+    FontFace    = {mi}{n}{OpenSans-MediumItalic},   % medium weight; select with \fontseries{m}
+    FontFace    = {sb}{n}{OpenSans-SemiBold} % semibold weight; select with \fontseries{sb}
+]{OpenSans-Regular}
+% Defines font family for Open Sans Condensed
+\newfontfamily\resumeCondensedFont[
+    Path      = assets/fonts/Open_Sans_Condensed/, % MUST end with a slash
+    Extension = .ttf,                    % file extension
+    UprightFont = OpenSans_Condensed-Regular,      % default face
+    BoldFont    = OpenSans_Condensed-Bold,         % face used by \bfseries
+    FontFace    = {cn}{n}{OpenSans_Condensed-Regular},   % 
+    FontFace    = {cme}{n}{OpenSans_Condensed-Medium},   % medium weight; select with \fontseries{cm}
+    FontFace    = {csb}{n}{OpenSans_Condensed-SemiBold} % semibold weight; select with \fontseries{csb}
 ]{OpenSans-Regular}
 
-% Convenience macros for each weight
+% Convenience macros for each font and weight
 \newcommand{\resumeFontRegular}{\resumeFont}
 \newcommand{\resumeFontMedium}{\resumeFont\fontseries{me}\selectfont}
-\newcommand{\resumeFontMediumItalic}{\resumeFont\fontseries{mi}\selectfont}
 \newcommand{\resumeFontSemiBold}{\resumeFont\fontseries{sb}\selectfont}
 \newcommand{\resumeFontBold}{\resumeFont\bfseries}
 \newcommand{\textsbseries}[1]{{\resumeFontSemiBold\selectfont #1}}
+% Condensed font commands
+\newcommand{\resumeCondensedFontRegular}{\resumeCondensedFont}
+\newcommand{\resumeCondensedFontMedium}{\resumeCondensedFont\fontseries{cme}\selectfont}
+\newcommand{\resumeCondensedFontSemiBold}{\resumeCondensedFont\fontseries{csb}\selectfont}
+
 
 % ------------------------------ Header font Options ------------------------
 
 % Header Full Name Font Options
-\newcommand{\headerFullName}[1]{\fontsize{25pt}{30pt}\selectfont\resumeFontRegular\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerFullName}[1]{\fontsize{35pt}{50pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
 
 % Header Contact Into Font Options
-\newcommand{\headerContactInfo}[1]{\fontsize{7pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerContactInfo}[1]{\fontsize{8.5pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1}
 
 % Header Position Title Font Options
-\newcommand{\headerPosTitle}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerPosTitle}[1]{\fontsize{9pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1}
 
 % Base Text Font Options
 \newcommand{\baseText}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontRegular #1}

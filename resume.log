@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  19 SEP 2025 15:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  24 SEP 2025 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -92,11 +92,11 @@ Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7.sty
-Package: fontawesome7 2025/07/31 v7.0.0-1 Font Awesome 7
+Package: fontawesome7 2025/09/16 v7.0.1-1 Font Awesome 7
  (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7-utex-helper.sty
-Package: fontawesome7-utex-helper 2025/07/31 v7.0.0-1 uTeX helper for fontawesome7
+Package: fontawesome7-utex-helper 2025/09/16 v7.0.1-1 uTeX helper for fontawesome7
 LaTeX Font Info:    Trying to load font information for TU+fontawesome7free on input line 62.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/tufontawesome7free.fd)
 LaTeX Font Info:    Trying to load font information for TU+fontawesome7brands on input line 63.
@@ -127,6 +127,31 @@ Package fontspec Info:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'OpenSans-Regular(1)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans_Condensed/,Extension =
+(fontspec)             .ttf,UprightFont = OpenSans_Condensed-Regular,BoldFont
+(fontspec)             = OpenSans_Condensed-Bold,FontFace =
+(fontspec)             {cn}{n}{OpenSans_Condensed-Regular},FontFace =
+(fontspec)             {cme}{n}{OpenSans_Condensed-Medium},FontFace =
+(fontspec)             {csb}{n}{OpenSans_Condensed-SemiBold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (cn/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Regular.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - (cme/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Medium.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - (csb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-SemiBold.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Regular.ttf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Bold.ttf]/OT:script=latn;language=dflt;"
 
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -869,7 +894,32 @@ LaTeX Font Info:    ... okay on input line 8.
 Package hyperref Info: Link coloring ON on input line 8.
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans-Regular(1)' created for font
+(fontspec)             Font family 'OpenSans-Regular(2)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans_Condensed/,Extension =
+(fontspec)             .ttf,UprightFont = OpenSans_Condensed-Regular,BoldFont
+(fontspec)             = OpenSans_Condensed-Bold,FontFace =
+(fontspec)             {cn}{n}{OpenSans_Condensed-Regular},FontFace =
+(fontspec)             {cme}{n}{OpenSans_Condensed-Medium},FontFace =
+(fontspec)             {csb}{n}{OpenSans_Condensed-SemiBold},LetterSpace=20.0].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (cn/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Regular.ttf]/OT:script=latn;language=dflt;letterspace=20.0;"
+(fontspec)             - (cme/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Medium.ttf]/OT:script=latn;language=dflt;letterspace=20.0;"
+(fontspec)             - (csb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=20.0;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Regular.ttf]/OT:script=latn;language=dflt;letterspace=20.0;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans_Condensed/OpenSans_Condensed-Bold.ttf]/OT:script=latn;language=dflt;letterspace=20.0;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'OpenSans-Regular(3)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
@@ -894,7 +944,6 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
 
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 9.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -912,20 +961,25 @@ LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 9
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.5> on input line 9.
+(Font)              <9> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.24997> on input line 9.
+(Font)              <6> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.75> on input line 9.
+(Font)              <5> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 9.
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 15.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 9.
+(Font)              <7.5> on input line 15.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.24997> on input line 15.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <3.75> on input line 15.
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans-Regular(2)' created for font
+(fontspec)             Font family 'OpenSans-Regular(4)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
@@ -980,12 +1034,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34983 strings out of 473832
- 760882 string characters out of 5729482
- 1340313 words of memory out of 5000000
- 57503 multiletter control sequences out of 15000+600000
- 582156 words of font info for 120 fonts, out of 8000000 for 9000
+ 35044 strings out of 473832
+ 763890 string characters out of 5729482
+ 1341952 words of memory out of 5000000
+ 57546 multiletter control sequences out of 15000+600000
+ 589425 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,17n,121p,1234b,1171s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 80980 bytes).
+Output written on resume.xdv (1 page, 80588 bytes).
