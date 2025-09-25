@@ -77,16 +77,23 @@
 }
 \ExplSyntaxOff
 
-% Updated resumeheader command with equal vertical spacing above and below the horizontal line
+% ===================== NEW TWO-COLUMN HEADER =====================
+% Left: Name (top-left) + Title (bottom-left)
+% Right: Contact info (stacked, right-aligned)
 \newcommand{\resumeheader}{%
-    \begin{center}
-        \headerFullName{\resumeName}\par\vspace{0.2em}
-        \headerContactInfo{\mylist{\resumeAddress}}\par
-        \textcolor{orange}{\rule{0.8\linewidth}{0.2em}}\par
-        \vspace{0.3em}
-        \headerPosTitle{\resumeTitle}
-    \end{center}%
-    \vspace{0.5em}
+    \noindent
+    \begin{tabularx}{\linewidth}{@{}p{0.66\linewidth}@{\hspace{0.15em}}p{0.43\linewidth}@{}}%
+        \begin{varwidth}{\linewidth}%
+            \headerFullName{\resumeName}\\[0.35em]
+            \headerPosTitle{\resumeTitle}%
+        \end{varwidth}%
+         &
+        \begin{varwidth}{\linewidth}%
+            \raggedright\headerContactInfo{\resumeAddress}%
+        \end{varwidth} \\
+    \end{tabularx}%
+    \par\vspace{0.4em}%
+    \vspace{0.6em}%
 }
 
 \newcommand{\newSection}[1]{%
@@ -94,7 +101,7 @@
     \par\vspace{0em}
 }
 \newcommand{\contactIcon}[2]{
-    \textcolor{orange}{\fontsize{9}{9}\raisebox{-0.1\height}{\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0}#1}}\hspace{0.5em}#2\hspace{1.3em}
+    \textcolor{orange}{\fontsize{11}{9}\raisebox{-0.1\height}{\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0}#1}}\hspace{0.5em}#2\hspace{1.3em}
 }
 
 \newcommand{\ExpDividerLength}{1\linewidth}  % Set the length of the divider (adjust as needed)
@@ -143,6 +150,16 @@
         \listtoTable{#2}%
         \par\noindent
     \end{tcolorbox}%
+}
+
+\newcommand{\headerInfo}[3]{%
+    \noindent
+    \begin{tabularx}%
+        {\linewidth}{@{}Xr@{}}%
+        \headerFullName{#1} & \headerContactInfo{#2} \\[0.5ex]
+        \headerPosTitle{#3} &                        \\[0.5ex]
+    \end{tabularx}%
+    \vspace{0em}%
 }
 
 \newcommand{\skillsBoxes}[3]{%
