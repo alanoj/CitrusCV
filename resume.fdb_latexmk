@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1758841460.58558 "resume.xdv" "resume.pdf" "resume" 1758841460.85648 0
-  "resume.xdv" 1758841460.52936 80512 d30eacff86fdb9bfd235148f658ecd16 "xelatex"
+["xdvipdfmx"] 1759180909.51229 "resume.xdv" "resume.pdf" "resume" 1759180909.79841 0
+  "resume.xdv" 1759180909.45289 43404 a84846cc21e3eadea581fb391269b033 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1758841459.08073 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1758841460.85485 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1758839585.90139 5590 7accef05bb5aa25e0b5758aefc0e88cd ""
+["xelatex"] 1759180908.29227 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1759180909.79678 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1759180908.09926 5722 c68f8c95784e71435183a20f9c223137 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -189,10 +189,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1758841424.26316 4322 566c440a39ceaa717ed207c4524b496f ""
-  "resume.aux" 1758841460.52859 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
-  "resume.tex" 1758839585.90139 5590 7accef05bb5aa25e0b5758aefc0e88cd ""
-  "resumeClass.cls" 1758841458.84297 6854 6fdce26671c7a5ee81804c3432b5c26e ""
+  "fontSettings.sty" 1759177063.20034 4322 43c058af4e592b93853e10ae2738f58b ""
+  "resume.aux" 1759180909.45205 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
+  "resume.tex" 1759180908.09926 5722 c68f8c95784e71435183a20f9c223137 ""
+  "resumeClass.cls" 1758841470.95332 6790 5f40b4064b3806e562e204e4f294d521 ""
   (generated)
   "resume.aux"
   "resume.log"

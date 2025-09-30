@@ -2,8 +2,8 @@
 
 \fullname{ALAN ORDORICA}
 \address{%
-  \contactIcon{\faEnvelope}{alaniordorica@gmail}\\[0.8em]
-  \contactIcon{\faSquareLinkedin}{\href{https://linkedin.com/in/alanoj}{linkedin.com/in/alanoj}}\\[0.8em]
+  \contactIcon{\faEnvelope}{alaniordorica@gmail}\\[1.3em]
+  \contactIcon{\faSquareLinkedin}{\href{https://linkedin.com/in/alanoj}{linkedin.com/in/alanoj}}\\[1.3em]
   \contactIcon{\faGithub}{\href{https://github.com/alanoj}{github.com/alanoj}}%
 }
 \jobtitle{Software Engineer\hspace{0.6em},\hspace{0.6em}Backend Systems\hspace{0.6em},\hspace{0.6em}Cloud \& Embedded}
@@ -14,12 +14,6 @@
 \newSection{
 
     {Software engineer with experience at leading technology companies in backend development, cloud computing, system automation, and distributed architectures. Driven to solve complex challenges using an iterative, AI-informed approach to design robust, scalable software and hardware solutions that enhance reliability and foster continuous improvement.}
-}
-
-\sectionTitle{Technical Skills}
-\newSection{\skillsBoxes{\skillBox{Languages, Libraries \& Frameworks}{C/C++, Python, Go, JavaScript, JSON, Java, SQL, NoSQL, TypeScript, React, Node.js/Express, ESP-IDF, FreeRTOS}}
-    {\skillBox{Cloud \& DevOps}{Docker, Kubernetes, Git, Ansible, GCP, Pub/Sub, CMake, Bazel, Splunk, SDN}}
-    {\skillBox{Embedded Sys}{ESP32, I\textsuperscript{2}C, SPI, BLE, GDB}}
 }
 
 %---------------------------------------------------
@@ -34,13 +28,15 @@
     {Software Engineer, Google Cloud SDN Platform}
     {May 2022 – Dec 2024}
     {%
-        \multibulletitem{Drove development of internal Python/C++ load-testing framework, implementing gRPC, protobuff and pub/sub based workflows and components to replicate networking control-plane behavior—reducing test runtimes by \textsbseries{25\%} and saving \textsbseries{1.5 SWE-years} via regression detection.}
+        \multibulletitem{Led design and implementation of a gRPC + pub/sub-based load-testing framework (C++ / Python) simulating control-plane behavior at production scale, reducing full regression runtimes by \textsbseries{25\%} and reclaiming \textsbseries{~1.5 SWE-years} annually.}
 
-        \multibulletitem{Spearheaded the design and developement of a VPC gateway and multicast VM controller feature into the framework—extending C++ control-plane emulation and authoring Python orchestration scripts—to replicate the production pub/sub communication between 1k+ VPC gateway components to each multicast VM controller, expanding the scope testing, uncovering critical scalability issues and reducing system bottlenecks by \textsbseries{35\%}.}
+        \multibulletitem{Architected and delivered a controller orchestration system between multicast VM controllers and the VPC (virtual private cloud) gateways to replicate production pub/sub between thousands of gateway instances and controllers}
 
-        \multibulletitem{Automated and maintained critical CI/CD pipeline load-test tasks by provisioning isolated test sandbox containers, creating CRON test monitoring jobs, and scripting metric collection tasks with python and SQL—to reduce release-blocking failures by 30\% and accelerate developer feedback loops by \textsbseries{40\%}.}
+        \multibulletitem{Maintained critical load-test systems in the CI/CD pipeline by provisioning isolated test sandbox containers, developing automated test monitoring systems for recovering and monitoring jobs, and creating scripts for automated metric collection, accelerating the developer feedback loop by \textsbseries{40\%} and leading to a reduction in release-blocking failures by 30\%.}
 
-        \multibulletitem{Enhanced the control-plane testing by migrating legacy host VM live migration system to a more scalable pub/sub architecture, boosting system throughput by \textsbseries{20\%} and improving test accuracy (reducing false negatives) by \textsbseries{35\%}.}
+        \multibulletitem{Scaled system-level load testing coverage, exposing critical bottlenecks in the release pipeline leading to a \textsbseries{35\%} increase in total throughput}
+
+        \multibulletitem{Enhanced the control-plane testing by migrating the legacy virtual machine (VM) live migration system to a more scalable pub/sub architecture, increasing total migration throughput by \textsbseries{20\%}.}
 
         \multibulletitem{Collaborated with SRE and partner dev's to drive design reviews, brown-bag knowledge-sharing sessions, sprint planning/retrospectives and conducting peer code reviews of Python, C/C++ to improve code quality and team alignment, ensuring over \textsbseries{98\%} uptime for critical test grids.}
     }
@@ -48,10 +44,10 @@
     \expdivider\experienceItem
     {\selectfont\resumeFontSemiBold Apple}
     {Sunnyvale, CA}
-    {DevOps Engineer Intern, CI Tools-Site Reliability}
+    {Tools and Automation Engineer, CI Tools-Site Reliability}
     {July 2020 - March 2021}
     {%
-        \multibulletitem{Led a team to design, wire, and deploy 200+ test racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a \textsbseries{50\%} increase in availability, \textsbseries{30\%} reduction in test scheduling wait times, and \textsbseries{20\%} boost in overall lab uptime.}
+        \multibulletitem{Led deployment of over 200+ testing racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a \textsbseries{50\%} increase in availability, \textsbseries{30\%} reduction in test scheduling wait times, and \textsbseries{20\%} boost in overall lab uptime.}
         \multibulletitem{Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—to reduce manual setup time by and sustain \textsbseries{97\%} lab uptime.}
         \multibulletitem{Developed custom Splunk monitoring and remediation tools, integrating gathered metrics into dashboards and internal alerting systems, enabling real-time detection and auto-recovery of host and device failures, which cut device downtime by \textsbseries{27\%} and improved test success rates by \textsbseries{34\%}.}
     }
@@ -66,6 +62,15 @@
         \multibulletitem{Developed Node.js RESTful microservices and ESP32-based automation projects using Python, Bash, and other tools, showcasing proficiency in hardware-software integration and system-level programming.}
     }
 
+}
+
+\sectionTitle{Technical Skills}
+\newSection{
+    \begin{tabularx}{\linewidth}{@{}X@{}}
+        \textcolor{orange}{\textsbseries{Languages, Libraries \& Frameworks:}} C/C++, Python, JavaScript/Node.js, SQL, Bash, JSON, Java, Yaml, Dart, Flutter, React, ESP-IDF, FreeRTOS \\[0.5em]
+        \textcolor{orange}{\textsbseries{Cloud \& DevOps:}} Docker, Kubernetes, Git, Ansible, CMake, SDN                                                                             \\[0.5em]
+        \textcolor{orange}{\textsbseries{Embedded Systems:}} ESP32, I\textsuperscript{2}C, SPI, BLE, GDB
+    \end{tabularx}
 }
 
 %---------------------------------------------------
