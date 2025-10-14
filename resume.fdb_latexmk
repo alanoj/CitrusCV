@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1760409829.54508 "resume.xdv" "resume.pdf" "resume" 1760409829.816 0
-  "resume.xdv" 1760409829.48826 50952 bd8c9ea543a605a66ea9e1d18ec5a56c "xelatex"
+["xdvipdfmx"] 1760474672.30715 "resume.xdv" "resume.pdf" "resume" 1760474672.58041 0
+  "resume.xdv" 1760474672.24792 50040 4d1e64c75674662cc07a54183d851bb0 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1760409828.36083 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1760409829.81437 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1760409311.65181 6515 526d9ed3d914123820602b7d61ad3595 ""
+["xelatex"] 1760474671.11058 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1760474672.57857 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1760474670.90545 6457 80cf04bd15950f0d767b28949a0dc171 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -191,9 +191,9 @@
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "fontSettings.sty" 1760409828.12296 4290 94c713656c2c299ed317f8f4325dc221 ""
-  "resume.aux" 1760409829.48748 128 8ec89a09013e497d5b92563b73b0583f "xelatex"
-  "resume.tex" 1760409311.65181 6515 526d9ed3d914123820602b7d61ad3595 ""
-  "resumeClass.cls" 1760409626.15362 5283 325764e1ffa0e239e1768fb7ccbadd5f ""
+  "resume.aux" 1760474672.24711 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
+  "resume.tex" 1760474670.90545 6457 80cf04bd15950f0d767b28949a0dc171 ""
+  "resumeClass.cls" 1760410572.49421 5284 19e2c9ebd009083ec35a4c13dbb8610c ""
   (generated)
   "resume.aux"
   "resume.log"
