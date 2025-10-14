@@ -114,23 +114,6 @@
     \end{center}%
 }
 
-% ----------------------------------------------------------
-% Dynamic-width skill boxes using TikZ
-% ----------------------------------------------------------
-\newcommand{\skillTag}[1]{%
-    \tikz[baseline]\node[anchor=base,draw=orange,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
-}
-\tcbuselibrary{breakable}
-\ExplSyntaxOn
-\NewDocumentCommand{\listtoTable}{m}{
-    \noindent
-    {%
-        \clist_map_inline:nn {#1}
-        { \skillsList{\skillTag{##1}}\hspace{0.2em} }%
-    }%
-}
-\ExplSyntaxOff
-
 
 \newcommand{\headerInfo}[3]{%
     \noindent
@@ -140,22 +123,6 @@
         \headerPosTitle{#3} &                        \\[0.5ex]
     \end{tabularx}%
     \vspace{0em}%
-}
-
-\newcommand{\skillsBoxes}[3]{%
-    \vspace{-0.5em}
-    \bgroup
-    \def\arraystretch{1.5}
-    \setlength{\tabcolsep}{0.5em}
-    \begin{tabularx}{\textwidth}{%
-        >{\centering\arraybackslash}p{0.47\textwidth}
-        >{\centering\arraybackslash}p{0.35\textwidth}
-        >{\centering\arraybackslash}p{0.14\textwidth}
-        }
-        #1 & #2 & #3
-    \end{tabularx}
-    \egroup
-    \vspace{-1em}
 }
 
 % For multi-line bullet items (a larger vertical shift)
