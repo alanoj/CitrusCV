@@ -133,8 +133,8 @@
 \newcommand{\experienceItem}[5]{%
     \noindent
     \begin{tabularx}{\linewidth}{@{}Xr@{}}%
-        \experienceCompanyName{\mylist{#1}} & \textcolor{orange}{\experienceLocation{#2}} \\[0.5ex]
-        \experiencePosition{\mylist{#3}}    & \experienceDates{#4}                        \\[0.5ex]
+        \experienceCompanyName{\mylist{#1}} & \textcolor{orange}{\experienceLocation{#2}} \\[1.2ex]
+        \experiencePosition{\mylist{#3}}    & \experienceDates{#4}                        \\[0.2ex]
     \end{tabularx}%
     \begin{itemize}[leftmargin=*,label=\textcolor{bulletColor}{\textbullet}]%
         \setlength{\itemsep}{-3pt}%
