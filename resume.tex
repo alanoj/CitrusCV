@@ -6,14 +6,14 @@
   \contactIcon{\faSquareLinkedin}{\href{https://linkedin.com/in/alanoj}{linkedin.com/in/alanoj}}\\[1.3em]
   \contactIcon{\faGithub}{\href{https://github.com/alanoj}{github.com/alanoj}}%
 }
-\jobtitle{Software Engineer\hspace{0.6em},\hspace{0.6em}Backend Systems\hspace{0.6em},\hspace{0.6em}Cloud \& Embedded}
+\jobtitle{Software Engineer\hspace{0.6em},\hspace{0.6em}Backend Systems\hspace{0.6em},\hspace{0.6em}Cloud \& Platform}
 
 \color{baseText}
 \begin{document}
 \resumeheader\sectionTitle{Professional Summary}
 \newSection{
 
-    {Software engineer with experience at leading technology companies in backend development, cloud computing, system automation, and distributed architectures. Driven to solve complex challenges using an iterative, AI-informed approach to design robust, scalable software and hardware solutions that enhance reliability and foster continuous improvement.}
+    {Adaptable software engineer with experience at leading technology companies, focused on backend systems, distributed systems, cloud networking, and test automation. At Google, I helped build gRPC/pub-sub based control-plane components and containerized load tests to catch regressions, expose bottlenecks and shorten releases. I am comfortable navigating ambiguity and enjoy tackling ambiguous problems and shipping pragmatic solutions quickly.}
 }
 
 %---------------------------------------------------
@@ -28,17 +28,17 @@
     {Software Engineer, Google Cloud SDN Platform}
     {May 2022 – Dec 2024}
     {%
-        \multibulletitem{Led design and implementation of a gRPC + pub/sub-based load-testing framework (C++ / Python) simulating control-plane behavior at production scale, reducing full regression runtimes by \textsbseries{25\%} and reclaiming \textsbseries{~1.5 SWE-years} annually.}
+        \multibulletitem{Owned a gRPC + Pub/Sub load-testing framework (C++/Python) that simulated control-plane behavior at production scale, cutting full regression time by \textsbseries{25\%} and reclaiming \textsbseries{~1.5 SWE-years} annually.}
 
-        \multibulletitem{Architected and delivered a controller orchestration system between multicast VM controllers and the VPC (virtual private cloud) gateways to replicate production pub/sub between thousands of gateway instances and controllers}
+        \multibulletitem{Architected multicast-controller $\leftrightarrow$ VPC-gateway orchestration to mirror production Pub/Sub traffic between thousands of gateway instances and controllers, improving test fidelity with production; expanded system-level coverage and surfaced throughput bottlenecks later fixed by service owners.}
 
-        \multibulletitem{Maintained critical load-test systems in the CI/CD pipeline by provisioning isolated test sandbox containers, developing automated test monitoring systems for recovering and monitoring jobs, and creating scripts for automated metric collection, accelerating the developer feedback loop by \textsbseries{40\%} and leading to a reduction in release-blocking failures by 30\%.}
+        \multibulletitem{Maintained and scaled the CI/CD load-testing system: provisioned isolated sandboxes, built automated health/auto-recovery monitoring, and scripted metrics collection while continuously expanding test scenario coverage (failovers, rolling upgrades, burst traffic, resharding) across services/regions to expose critical release-pipeline bottlenecks earlier in CI, accelerating developer feedback by\textsbseries{~40\%} and reducing release-blocking failures by\textsbseries{~30\%}.}
 
-        \multibulletitem{Scaled system-level load testing coverage, exposing critical bottlenecks in the release pipeline leading to a \textsbseries{35\%} increase in total throughput}
+        \multibulletitem{Migrated legacy, OpenFlow-based live VM migration tests to a more scalable Pub/Sub architecture, boosting total throughput by \textsbseries{20\%}, improving resource utilization and reducing test setup/runtimes.}
 
-        \multibulletitem{Enhanced the control-plane testing by migrating the legacy virtual machine (VM) live migration system to a more scalable pub/sub architecture, increasing total migration throughput by \textsbseries{20\%}.}
+        \multibulletitem{Drove cross-team code design/reviews and SRE/Dev knowledge shares, which improved on-call triage and accelerated adoption of the test framework across partner teams}
 
-        \multibulletitem{Collaborated with SRE and partner dev's to drive design reviews, brown-bag knowledge-sharing sessions, sprint planning/retrospectives and conducting peer code reviews of Python, C/C++ to improve code quality and team alignment, ensuring over \textsbseries{98\%} uptime for critical test grids.}
+        \multibulletitem{Ramped quickly on Google-internal stack, mapping external paradigms to internal equivalents—Kubernetes $\rightarrow$ Borg, Docker/containers $\rightarrow$ internal sandboxes, gRPC $\rightarrow$ Stubby, SQL $\rightarrow$ Spanner/BigQuery; contributed to a control-plane simulator that replicates large-scale orchestration events, and to CI load tests, catching regressions pre-prod, during onboarding.}
     }
 
     \expdivider\experienceItem
@@ -47,9 +47,11 @@
     {Tools and Automation Engineer, CI Tools-Site Reliability}
     {July 2020 - March 2021}
     {%
-        \multibulletitem{Led deployment of over 200+ testing racks housing 1,000+ devices; defined host configuration strategies for each rack’s unique use case, driving a \textsbseries{50\%} increase in availability, \textsbseries{30\%} reduction in test scheduling wait times, and \textsbseries{20\%} boost in overall lab uptime.}
-        \multibulletitem{Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—to reduce manual setup time by and sustain \textsbseries{97\%} lab uptime.}
-        \multibulletitem{Developed custom Splunk monitoring and remediation tools, integrating gathered metrics into dashboards and internal alerting systems, enabling real-time detection and auto-recovery of host and device failures, which cut device downtime by \textsbseries{27\%} and improved test success rates by \textsbseries{34\%}.}
+        \multibulletitem{Deployed ~200 test racks (1,000+ devices) and documented host configuration strategies tailored to rack use cases; standardized bring-up and handoff processes that reduced scheduling friction for streamlied lab operations by new techs without escalations.}
+        \multibulletitem{Automated provisioning (Python/Bash/Ansible) for firmware flashing and network bootstrap; delivered a repeatable playbook and batch orchestration so racks could be brought online consistently without manual intervention.}
+        \multibulletitem{Built Splunk dashboards, alerts, and auto-remediation scripts for device health and job status; reduced MTTD/MTTR by enabling on-call techs to triage from a single pane of glass with documented runbooks}
+        \multibulletitem{Defined rack bring-up smoke tests (power, network, device enumeration) and acceptance criteria with SRE/lab ops; ensured racks met production-ready standards before handoff.}
+        \multibulletitem{Authored setup docs and remediation runbooks and trained lab techs; improved shift-to-shift continuity and reduced escalations for common failures.}
     }
 
     \expdivider\experienceItem
@@ -67,16 +69,18 @@
 \sectionTitle{Technical Skills}
 \newSection{
     \begin{tabularx}{\linewidth}{@{}X@{}}
-        \textcolor{orange}{\textsbseries{Languages, Libraries \& Frameworks:}} C/C++, Python, JavaScript/Node.js, SQL, Bash, JSON, Java, Yaml, Dart, Flutter, React, ESP-IDF, FreeRTOS \\[0.5em]
-        \textcolor{orange}{\textsbseries{Cloud \& DevOps:}} Docker, Kubernetes, Git, Ansible, CMake, SDN                                                                             \\[0.5em]
-        \textcolor{orange}{\textsbseries{Embedded Systems:}} ESP32, I\textsuperscript{2}C, SPI, BLE, GDB
+        {\technicalSkillsList{Languages:}{C/C++, Python, JavaScript, Dart, Java, SQL, Bash, JSON, YAML}}                                          \\[0.5em]
+        {\technicalSkillsList{Cloud \& Distributed Systems:}{GCP, Kubernetes, Docker, gRPC, Protobuf, CI/CD, Microservices, Distributed Systems}} \\[0.5em]
+        {\technicalSkillsList{DevOps \& Build:}{Ansible, CMake, Git}}                                                                             \\[0.5em]
+        {\technicalSkillsList{Libraries \& Frameworks:}{Flutter, React, Next.js, Express.js, ESP-IDF, FreeRTOS}}                                  \\[0.5em]
+        {\technicalSkillsList{Embedded Systems:}{ESP32, I\textsuperscript{2}C, SPI, BLE, GDB}}
     \end{tabularx}
 }
 
 %---------------------------------------------------
 % Education Section
 %---------------------------------------------------
-\sectionTitle{EDUCATION}
+\sectionTitle{Education}
 \newSection{
     \educationItem{\selectfont\resumeFontBold San Francisco State University}
     {\selectfont\resumeFontMedium San Francisco, CA}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  29 SEP 2025 14:21
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  13 OCT 2025 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -946,7 +946,7 @@ Package fontspec Info:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
 
 
-Overfull \hbox (50.28018pt too wide) in alignment at lines 13--13
+Overfull \hbox (99.06046pt too wide) in alignment at lines 13--13
 [][] 
  []
 
@@ -985,17 +985,12 @@ Package fontspec Info:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
 
 
-Overfull \hbox (6.31093pt too wide) in paragraph at lines 65--65
-[]\TU/OpenSans-Regular(0)/m/n/7.5 Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 
  []
 
@@ -1014,12 +1009,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34963 strings out of 473832
- 761651 string characters out of 5729482
- 1267441 words of memory out of 5000000
- 57476 multiletter control sequences out of 15000+600000
- 589356 words of font info for 127 fonts, out of 8000000 for 9000
+ 34996 strings out of 473832
+ 762796 string characters out of 5729482
+ 1271230 words of memory out of 5000000
+ 57494 multiletter control sequences out of 15000+600000
+ 593050 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,16n,121p,1234b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 43404 bytes).
+Output written on resume.xdv (1 page, 50632 bytes).

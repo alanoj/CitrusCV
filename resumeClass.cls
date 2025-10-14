@@ -53,7 +53,7 @@
 \definecolor{sectionTitleBg}{HTML}{EBAF70}
 \definecolor{itemDivOrange}{HTML}{F0C394}
 \definecolor{yellow1}{HTML}{F7D564}
-\definecolor{orange}{HTML}{C4731C}
+\definecolor{orange}{HTML}{A15E17}
 \definecolor{baseText}{HTML}{000000}
 \definecolor{bulletColor}{HTML}{3D3D3D}
 
@@ -82,7 +82,7 @@
 % Right: Contact info (stacked, right-aligned)
 \newcommand{\resumeheader}{%
     \noindent
-    \begin{tabularx}{\linewidth}{@{}p{0.66\linewidth}@{\hspace{0.15em}}p{0.43\linewidth}@{}}%
+    \begin{tabularx}{\linewidth}{@{}p{0.75\linewidth}@{\hspace{0.15em}}p{0.43\linewidth}@{}}%
         \begin{varwidth}{\linewidth}%
             \headerFullName{\resumeName}\\[0.35em]
             \headerPosTitle{\resumeTitle}%
@@ -97,8 +97,9 @@
 }
 
 \newcommand{\newSection}[1]{%
+    \par\vspace{0.5em}
     \baseText{#1}
-    \par\vspace{0em}
+    \par\vspace{0.5em}
 }
 \newcommand{\contactIcon}[2]{
     \textcolor{orange}{\fontsize{11}{9}\raisebox{-0.1\height}{\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0}#1}}\hspace{0.5em}#2\hspace{1.3em}
@@ -130,27 +131,6 @@
 }
 \ExplSyntaxOff
 
-\newcommand{\skillBox}[2]{%
-    \begin{tcolorbox}[
-            title=\centering\skillTitle{#1},
-            size=small,
-            coltitle=black,
-            height=6.99em,
-            arc=1.5mm,
-            colframe=sectionTitleBg,
-            rounded corners,
-            boxsep=0.3em,
-            left=0.1em,
-            right=0.1em,
-            top=0.2em,
-            bottom=0.2em,
-            fontupper=\linespread{1.8},
-            before upper=\raggedright]%
-        \par\noindent
-        \listtoTable{#2}%
-        \par\noindent
-    \end{tcolorbox}%
-}
 
 \newcommand{\headerInfo}[3]{%
     \noindent
@@ -180,7 +160,7 @@
 
 % For multi-line bullet items (a larger vertical shift)
 \newcommand{\multibulletitem}[1]{%
-    \item[\raisebox{-0.8ex}{\scalebox{1.5}{\textcolor{bulletColor}{\textbullet}}}] #1
+    \item[\raisebox{-0.8ex}{\scalebox{2}{\textcolor{bulletColor}{\textbullet}}}] #1
 }
 
 \newcommand{\experienceItem}[5]{%
@@ -189,7 +169,6 @@
         \experienceCompanyName{\mylist{#1}} & \textcolor{orange}{\experienceLocation{#2}} \\[0.5ex]
         \experiencePosition{\mylist{#3}}    & \experienceDates{#4}                        \\[0.5ex]
     \end{tabularx}%
-    \vspace{-0.5ex}%
     \begin{itemize}[leftmargin=*,label=\textcolor{bulletColor}{\textbullet}]%
         \setlength{\itemsep}{-3pt}%
         #5
