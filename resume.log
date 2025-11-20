@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  29 SEP 2025 14:21
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  20 NOV 2025 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -821,18 +821,10 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@roff=\dimen300
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/bbding/bbding.sty
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
-(/usr/local/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty
-Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
-Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
-)
-Package pdfcol Info: pdfTeX's color stacks are not available.
-\tcb@testbox=\box129
-\tcb@totalupperbox=\box130
-\tcb@totallowerbox=\box131
 )) (./resume.aux)
 \openout1 = `resume.aux'.
 
@@ -946,17 +938,22 @@ Package fontspec Info:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=10.0;"
 
 
-Overfull \hbox (50.28018pt too wide) in alignment at lines 13--13
+Overfull \hbox (99.06046pt too wide) in alignment at lines 13--13
 [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 22.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.5> on input line 22.
+(Font)              <8.5> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.24997> on input line 22.
+(Font)              <5.94997> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.75> on input line 22.
+(Font)              <4.25> on input line 22.
 
 Package fontspec Info: 
 (fontspec)             Font family 'OpenSans-Regular(4)' created for font
@@ -985,17 +982,12 @@ Package fontspec Info:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=2.0;"
 
 
-Overfull \hbox (6.31093pt too wide) in paragraph at lines 65--65
-[]\TU/OpenSans-Regular(0)/m/n/7.5 Automated device provisioning and network setup with Python, Bash, and Ansible scripts—flashing firmware at scale and orchestrating batch configurations—
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 
  []
 
@@ -1014,12 +1006,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34963 strings out of 473832
- 761651 string characters out of 5729482
- 1267441 words of memory out of 5000000
- 57476 multiletter control sequences out of 15000+600000
- 589356 words of font info for 127 fonts, out of 8000000 for 9000
+ 34754 strings out of 473832
+ 756251 string characters out of 5729482
+ 1262692 words of memory out of 5000000
+ 57247 multiletter control sequences out of 15000+600000
+ 603892 words of font info for 158 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,16n,121p,1234b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 43404 bytes).
+Output written on resume.xdv (1 page, 50184 bytes).

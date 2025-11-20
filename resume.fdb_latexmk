@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1759180909.51229 "resume.xdv" "resume.pdf" "resume" 1759180909.79841 0
-  "resume.xdv" 1759180909.45289 43404 a84846cc21e3eadea581fb391269b033 "xelatex"
+["xdvipdfmx"] 1763681104.64655 "resume.xdv" "resume.pdf" "resume" 1763681104.96176 0
+  "resume.xdv" 1763681104.58488 50184 7699f02b20bc36b1e992bb89ba8e6e2e "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1759180908.29227 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1759180909.79678 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1759180908.09926 5722 c68f8c95784e71435183a20f9c223137 ""
+["xelatex"] 1763681103.38239 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1763681104.95999 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1760476610.55813 6481 c0029d40cd0fd4e4aea9b4123bae6dbe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -15,16 +15,19 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm" 1148093231 1512 94a3fd88c6f27dbd9ecb46987e297a4e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm" 1148093231 1528 d5b028dd23da623848ef0645c96a1ed7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm" 1148093231 1520 a3fe5596932db2db2cbda300920dd4e9 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm" 1148093231 1524 cdf05765c2a8bdb569ea0aa208fb0947 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm" 1148093231 1308 02cc510f9dd6012e5815d0c0ffbf6869 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm" 1148093231 1296 54ed1a711e2303d5282575278e3620b0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm" 1148093231 1300 b0605d44c16c22d99dc001808e4f24ea ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm" 1148093231 1304 32f22a15acc296b2a4e15698403dcb88 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm" 1148093231 1304 cdc9a17df9ef0d2dc320eff37bbab1c4 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm" 1148093231 1300 ca37bc0213808d24f74bf4d32f81f80d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm" 1254269338 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm" 1254269338 11804 aefb10c002e6492c25236524a447f969 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm" 1254269338 11836 e3b6ce3e601aec94f64a536e7f4224d5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm" 1254269338 11852 5a9022f105fd1ee2797df861e79ae9a0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm" 1254269338 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm" 1254269338 11884 c93929a6974dce79eabb778f219d7e18 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -152,7 +155,6 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd" 1616454256 568 a5494d810f2680caf10205cd1226c76c ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd" 1616454256 1882 28c08db1407ebff35a658fd141753d16 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty" 1615762720 4288 94714aa7f535440f33181fec52a31963 ""
-  "/usr/local/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty" 1663877585 8086 ac143843b6ea88d172677dc3ed532925 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1673816307 373 00b204b1d7d095b892ad31a7494b0373 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1601326656 21013 f4ff83d25bb56552493b030f27c075ae ""
@@ -168,7 +170,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/upzd.fd" 1137110629 148 b2a94082cb802f90d3daf6dd0c7188a0 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
-  "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex" 1729629551 34681 5ad5619477798e0585ce97e92ba075bc ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty" 1670275497 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex" 1729629551 83599 50e7ac6ad41eaf61a7736beda9e3416b ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex" 1729629551 10040 cd3f87486a5ead1213ec367836f72332 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty" 1729629551 105823 554671f5b2d97c7efbbaf6dae11c29a8 ""
@@ -189,10 +191,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1759177063.20034 4322 43c058af4e592b93853e10ae2738f58b ""
-  "resume.aux" 1759180909.45205 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
-  "resume.tex" 1759180908.09926 5722 c68f8c95784e71435183a20f9c223137 ""
-  "resumeClass.cls" 1758841470.95332 6790 5f40b4064b3806e562e204e4f294d521 ""
+  "fontSettings.sty" 1760475459.58399 4377 8f23296f12341709c84674b8f738ef60 ""
+  "resume.aux" 1763681104.58429 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
+  "resume.tex" 1760476610.55813 6481 c0029d40cd0fd4e4aea9b4123bae6dbe ""
+  "resumeClass.cls" 1763681101.89291 5310 25a4daf8268260ccfcf36e7bb73bba36 ""
   (generated)
   "resume.aux"
   "resume.log"

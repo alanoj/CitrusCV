@@ -27,7 +27,7 @@
 ]{OpenSans-Regular}
 
 % Convenience macros for each font and weight
-\newcommand{\resumeFontRegular}{\resumeFont}
+\newcommand{\resumeFontRegular}{\resumeFont\fontseries{n}\selectfont}
 \newcommand{\resumeFontMedium}{\resumeFont\fontseries{me}\selectfont}
 \newcommand{\resumeFontSemiBold}{\resumeFont\fontseries{sb}\selectfont}
 \newcommand{\resumeFontBold}{\resumeFont\bfseries}
@@ -40,14 +40,16 @@
 
 % ------------------------------ Header font Options ------------------------
 
+\newcommand{\headerSummary}[1]{\fontsize{8.5pt}{8pt}\selectfont\resumeFontRegular #1}
+
 % Header Full Name Font Options
-\newcommand{\headerFullName}[1]{\fontsize{40pt}{50pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
+\newcommand{\headerFullName}[1]{\fontsize{43pt}{50pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
 
 % Header Contact Into Font Options
-\newcommand{\headerContactInfo}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerContactInfo}[1]{\fontsize{8.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=10.0} #1}
 
 % Header Position Title Font Options
-\newcommand{\headerPosTitle}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1}
+\newcommand{\headerPosTitle}[1]{\fontsize{9pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1}
 
 % Base Text Font Options
 \newcommand{\baseText}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontRegular #1}
@@ -59,7 +61,7 @@
     \par\noindent%
     \colorbox{sectionTitleBg}{%
         \parbox{\dimexpr\linewidth-2\fboxsep}{%
-            \centering\fontsize{9pt}{9pt}\selectfont\resumeFontSemiBold{#1}%
+            \centering\fontsize{11pt}{10pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1%
         }%
     }%
     \par\vspace{0.2em}%
@@ -68,27 +70,22 @@
 % ------------------------------ Experience Item Font Options ---------------
 
 % Experience Company Name Font Options
-\newcommand{\experienceCompanyName}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experienceCompanyName}[1]{\fontsize{9.5pt}{10pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Location Font Options
-\newcommand{\experienceLocation}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experienceLocation}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Position Font Options
-\newcommand{\experiencePosition}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experiencePosition}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Dates Font Options 
-\newcommand{\experienceDates}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} \textit{#1}}
+\newcommand{\experienceDates}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} \textit{#1}}
 
 % ------------------------------ Skills Font Options ---------------
 
-\newcommand{\skillTitle}[1]{{%
-            \fontsize{7.5pt}{9pt}\selectfont
-            \addfontfeature{LetterSpace=2.0}%
-            \selectfont\resumeFontSemiBold #1%
-        }}
-\newcommand{\skillsList}[1]{{%
-            \fontsize{7pt}{9pt}\selectfont
-            \resumeFontSemiBold #1%
-        }}
+\newcommand{\technicalSkillsList}[2]{
+    \fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} \textcolor{orange}{#1}
+    \fontsize{8pt}{9pt}\selectfont\resumeFontRegular #2
+}
 
 \endinput
