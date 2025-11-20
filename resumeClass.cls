@@ -34,6 +34,7 @@
 \RequirePackage{multicol}
 \RequirePackage{varwidth}
 \RequirePackage{bbding}
+\RequirePackage{setspace}
 \usetikzlibrary{matrix, calc}
 
 % --- Header storage without @ macros ---

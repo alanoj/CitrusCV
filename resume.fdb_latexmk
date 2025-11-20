@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1760474672.30715 "resume.xdv" "resume.pdf" "resume" 1760474672.58041 0
-  "resume.xdv" 1760474672.24792 50040 4d1e64c75674662cc07a54183d851bb0 "xelatex"
+["xdvipdfmx"] 1763681104.64655 "resume.xdv" "resume.pdf" "resume" 1763681104.96176 0
+  "resume.xdv" 1763681104.58488 50184 7699f02b20bc36b1e992bb89ba8e6e2e "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1760474671.11058 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1760474672.57857 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1760474670.90545 6457 80cf04bd15950f0d767b28949a0dc171 ""
+["xelatex"] 1763681103.38239 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1763681104.95999 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1760476610.55813 6481 c0029d40cd0fd4e4aea9b4123bae6dbe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -170,6 +170,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/upzd.fd" 1137110629 148 b2a94082cb802f90d3daf6dd0c7188a0 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty" 1670275497 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex" 1729629551 83599 50e7ac6ad41eaf61a7736beda9e3416b ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex" 1729629551 10040 cd3f87486a5ead1213ec367836f72332 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty" 1729629551 105823 554671f5b2d97c7efbbaf6dae11c29a8 ""
@@ -190,10 +191,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1760409828.12296 4290 94c713656c2c299ed317f8f4325dc221 ""
-  "resume.aux" 1760474672.24711 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
-  "resume.tex" 1760474670.90545 6457 80cf04bd15950f0d767b28949a0dc171 ""
-  "resumeClass.cls" 1760410572.49421 5284 19e2c9ebd009083ec35a4c13dbb8610c ""
+  "fontSettings.sty" 1760475459.58399 4377 8f23296f12341709c84674b8f738ef60 ""
+  "resume.aux" 1763681104.58429 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
+  "resume.tex" 1760476610.55813 6481 c0029d40cd0fd4e4aea9b4123bae6dbe ""
+  "resumeClass.cls" 1763681101.89291 5310 25a4daf8268260ccfcf36e7bb73bba36 ""
   (generated)
   "resume.aux"
   "resume.log"
