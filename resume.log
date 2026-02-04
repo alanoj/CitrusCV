@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  4 FEB 2026 10:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  4 FEB 2026 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -828,31 +828,42 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
+\FN@temptoken=\toks60
+\footnotemargin=\dimen301
+\@outputbox@depth=\dimen302
+Package footmisc Info: Declaring symbol style bringhurst on input line 699.
+Package footmisc Info: Declaring symbol style chicago on input line 707.
+Package footmisc Info: Declaring symbol style wiley on input line 716.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
+Package footmisc Info: Declaring symbol style lamport* on input line 747.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 768.
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -861,16 +872,16 @@ LaTeX Font Info:    ... okay on input line 12.
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: showframe 
 * h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* v-part:(T,H,B)=(25.29494pt, 744.38011pt, 25.29494pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=542.02501pt
-* \textheight=722.7pt
+* \textheight=744.38011pt
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
-* \topmargin=-36.135pt
+* \topmargin=-46.97505pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -888,7 +899,7 @@ LaTeX Font Info:    ... okay on input line 12.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 12.
+Package hyperref Info: Link coloring ON on input line 13.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd)
 
 Package fontspec Info: 
@@ -951,26 +962,26 @@ Package fontspec Info:
 (fontspec)             {n}{n}{OpenSans-Regular},FontFace =
 (fontspec)             {me}{n}{OpenSans-Medium},FontFace =
 (fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
-(fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=7.0].
+(fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=5.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - (n/n) with NFSS spec.:
-(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=7.0;"
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=5.0;"
 (fontspec)             - (me/n) with NFSS spec.:
-(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;letterspace=7.0;"
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;letterspace=5.0;"
 (fontspec)             - (mi/n) with NFSS spec.:
-(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;letterspace=7.0;"
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;letterspace=5.0;"
 (fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=7.0;"
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=5.0;"
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=7.0;"
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=5.0;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=7.0;"
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=5.0;"
 
 
-Overfull \hbox (99.06046pt too wide) in alignment at lines 13--13
+Overfull \hbox (99.06046pt too wide) in alignment at lines 14--14
 [][] 
  []
 
@@ -1001,15 +1012,15 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 17.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 17.
+(Font)              <8.5> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.94997> on input line 17.
+(Font)              <5.94997> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.25> on input line 17.
+(Font)              <4.25> on input line 18.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
 
  []
 
@@ -1058,20 +1069,30 @@ Package fontspec Info:
 (fontspec)             Neue/BI/AAT"
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 
  []
 
 
+
+
+Overfull \hbox (0.4pt too wide) has occurred while \output is active
+[] | [] |
+ []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 
  []
 
 
+
+
+Overfull \hbox (0.4pt too wide) has occurred while \output is active
+[] | [] |
+ []
 
 [2] (./resume.aux)
  ***********
@@ -1084,12 +1105,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 35130 strings out of 473832
- 763513 string characters out of 5729482
- 1274136 words of memory out of 5000000
- 57594 multiletter control sequences out of 15000+600000
- 593225 words of font info for 161 fonts, out of 8000000 for 9000
+ 35264 strings out of 473832
+ 766051 string characters out of 5729482
+ 1277178 words of memory out of 5000000
+ 57720 multiletter control sequences out of 15000+600000
+ 593249 words of font info for 164 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,16n,121p,1234b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,1234b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (2 pages, 57156 bytes).
+Output written on resume.xdv (2 pages, 57700 bytes).

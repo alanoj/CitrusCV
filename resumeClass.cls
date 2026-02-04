@@ -9,7 +9,7 @@
 \RequirePackage{fontSettings} % Load font settings from fontSettings.sty
 
 % Load packages for layout and styling
-\RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in]{geometry} % Strict 1 inch margins only
+\RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.35in, bottom=0.35in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in, showframe]{geometry} % Strict 1 inch margins only
 \RequirePackage{fontspec}             % Font selection
 \RequirePackage{titlesec}             % Control section titles
 \RequirePackage{enumitem}             % Customizable lists
@@ -35,6 +35,7 @@
 \RequirePackage{varwidth}
 \RequirePackage{bbding}
 \RequirePackage{setspace}
+\RequirePackage[bottom]{footmisc}
 \usetikzlibrary{matrix, calc}
 
 % --- Header storage without @ macros ---
@@ -111,9 +112,9 @@
     \begingroup
     \textcolor{orange}{\fontsize{9.5pt}{11pt}\selectfont #1}%
     \endgroup
-    \hspace{0.5em}%
-    {\resumeFontSemiBold\addfontfeature{LetterSpace=7.0} #2}%
-    \hspace{1.3em}%
+    \hspace{0.8em}%
+    {\fontsize{8}{9}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=5.0} #2}%
+    \\[0.6em]
 }
 
 \newcommand{\ExpDividerLength}{1\linewidth}  % Set the length of the divider (adjust as needed)

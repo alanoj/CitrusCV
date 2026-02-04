@@ -309,6 +309,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbding/bbding.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bbding/bbding.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/footmisc/footmisc.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/footmisc/footmisc.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 INPUT ./resume.aux
