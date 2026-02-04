@@ -45,7 +45,7 @@
 \newcommand{\headerSummary}[1]{\fontsize{8.5pt}{8pt}\selectfont\resumeFontRegular\addfontfeatures{LetterSpace=1.0} #1}
 
 % Header Full Name Font Options
-\newcommand{\headerFullName}[1]{\fontsize{43pt}{50pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
+\newcommand{\headerFullName}[1]{\fontsize{35pt}{30pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
 
 % Header Contact Into Font Options
 \newcommand{\headerContactInfo}[1]{\fontsize{8.5pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=10.0} #1}
@@ -106,5 +106,9 @@
     \fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} \textcolor{orange}{#1}
     \fontsize{8pt}{9pt}\selectfont\resumeFontRegular #2
 }
+
+% Footnote Font settings
+\renewcommand{\footnoterule}{}
+\renewcommand{\footnotesize}{\scriptsize\resumeFontRegular}
 
 \endinput
