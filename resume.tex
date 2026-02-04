@@ -2,9 +2,9 @@
 
 \fullname{ALAN ORDORICA}
 \address{%
-  \contactIcon{\faEnvelope}{alaniordorica@gmail}\\[1.3em]
-  \contactIcon{\faSquareLinkedin}{\href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj}}\\[1.3em]
-  \contactIcon{\faGithub}{\href{https://github.com/alanoj}{Github.com/alanoj}}%
+  \contactIcon{\faIcon[solid]{at}}{alaniordorica@gmail}\\[1em]
+  \contactIcon{\faLinkedinIn}{\href{https://linkedin.com/in/alanoj}{Linkedin.com/in/alanoj}} \\[1em]
+  \contactIcon{\faIcon[brands]{github}}{\href{https://github.com/alanoj}{Github.com/alanoj}}%
 }
 \jobtitle{Software Engineer\hspace{0.6em},\hspace{0.6em}Backend Systems\hspace{0.6em},\hspace{0.6em}Cloud \& Platform}
 
@@ -13,7 +13,7 @@
 \resumeheader\sectionTitle{Professional Summary}
 \newSection{
 
-    \headerSummary{\hspace{20pt}Adaptable software engineer with experience at leading technology companies, focused on backend systems, distributed systems, cloud networking, and test automation. At Google, I helped build gRPC/pub-sub based control-plane components and containerized load tests to catch regressions, expose bottlenecks and speed releases. I enjoy tackling ambiguous problems and shipping pragmatic solutions quickly.} \\[-2ex]
+    \headerSummary{\hspace{10pt}Adaptable software engineer with experience at leading technology companies, focused on backend systems, distributed systems, cloud networking, and test automation. At Google, I built gRPC/pub-sub based control-plane components and containerized load tests to catch regressions, expose bottlenecks and speed releases. I enjoy tackling ambiguous problems and shipping pragmatic solutions quickly.} \\[-2ex]
 }
 
 %---------------------------------------------------
@@ -23,39 +23,46 @@
 \newSection{
 
     \experienceItem
-    {\selectfont\resumeFontSemiBold Google}
+    {\selectfont\resumeFontSemiBold \colorgoogle{Google}}
     {Sunnyvale, CA}
-    {Software Engineer, Google Cloud Platform}
+    {Software Engineer, Google Cloud}
     {May 2022 – Dec 2024}
     {%
-        \multibulletitem{Owned a gRPC + Pub/Sub load-testing framework (C++/Python) that simulated control-plane behavior at production scale, cutting full regression time by \textsbseries{25\%} and reclaiming \textsbseries{~1.5 SWE-years} annually.}
+        \multibulletitem{Designed and implemented a high-fidelity control-plane simulator in C++/Python using gRPC and Protobuf, complete with pub/sub messaging and concurrency primitives (channels, callbacks).  This simulator replicated complex Andromeda network behaviors, enabling developers to test new features in isolation and reducing full regression runtimes by \textsbseries{25\%} (saving ~1.5 SWE-years each year).}
 
-        \multibulletitem{Architected multicast-controller $\leftrightarrow$ VPC-gateway orchestration to mirror production Pub/Sub traffic between thousands of gateway instances and controllers, improving test fidelity with production; expanded system-level coverage and surfaced throughput bottlenecks later fixed by service owners.}
+        \multibulletitem{Developed a multicast VPC-gateway emulation layer by extending the simulator to support 1,000+ gateways connected to a single controller.  Created new C++ modules and Python orchestration scripts to emit and process messages, mocked missing data-plane components (GSLB, ESF port), and helped customers validate scalable pub/sub topologies—reducing customer onboarding time by \textsbseries{30\%}.}
 
-        \multibulletitem{Maintained and scaled the CI/CD load-testing system: provisioned isolated sandboxes, built automated health/auto-recovery monitoring, and scripted metrics collection while continuously expanding test scenario coverage (failovers, rolling upgrades, burst traffic, re-sharding) across services/regions to expose critical release-pipeline bottlenecks earlier in CI, accelerating developer feedback by\textsbseries{~40\%} and reducing release-blocking failures by\textsbseries{~30\%}.}
+        \multibulletitem{Replaced brittle monitoring hooks with modern observability: migrated from BNS watchers to Streamz/PK-based monitors.  Wrote Python scripts to query Monarch for job health, parse Borg metadata, and auto-restart failed services; integrated these into the test harness, cutting device downtime by \textsbseries{27\%} and eliminating false alarms.}
 
-        \multibulletitem{Migrated legacy, OpenFlow based live VM migration tests to a more scalable Pub/Sub architecture, boosting total throughput by \textsbseries{20\%}, improving resource utilization and reducing test setup/runtimes.}
+        \multibulletitem{Built debugging and orchestration tools for isolated test sandboxes.  Provisioned per-test sandboxes in Borg/Sandman, scripted metrics collection and auto-recovery, and authored log-parsing utilities that quickly pinpointed broken runfile paths or output misconfigurations—reducing release-blocking test failures by \textsbseries{30\%} and speeding developer feedback loops by \textsbseries{40\%}.}
 
-        \multibulletitem{Drove cross-team code design/reviews and SRE/Dev knowledge shares, which improved on-call triage and accelerated adoption of the test framework across partner teams}
+        \multibulletitem{Created pre-population strategies for Spanner test databases.  Developed Python utilities to seed test DBs via textproto, Spanner backups, and Sandman snapshots; configured cron jobs and multi-sandbox topologies to ensure reproducible datasets and cut environment setup time significantly.}
 
-        \multibulletitem{Ramped quickly on Google-internal stack, mapping external paradigms to internal equivalents—Kubernetes $\rightarrow$ Borg, Docker/containers $\rightarrow$ internal sandboxes, gRPC $\rightarrow$ Stubby, SQL $\rightarrow$ Spanner/BigQuery; contributed to a control-plane simulator that replicates large-scale orchestration events, and to CI load tests, catching regressions pre-prod, during onboarding.}
+        \multibulletitem{Contributed to host-agent re-architecture by helping replace an OpenFlow-based on-host agent with a new C++ On-Host Controller (OHC), integrating control-plane logic directly on VM hosts.  Updated gRPC interfaces and host-path plumbing, improving reliability and deprecating legacy code.}
+
+        \multibulletitem{Authored design docs and diagrams for VPC-gateway and ESF-port integrations, weighing separate vs. co-located components and collaborating with cross-functional teams to finalize scalable architectures.}
+
     }
 
     \expdivider\experienceItem
-    {\selectfont\resumeFontSemiBold Apple}
+    {\selectfont\resumeFontSemiBold\applelogo Apple}
     {Sunnyvale, CA}
     {Tools and Automation Engineer, CI Tools-Site Reliability}
     {July 2020 - March 2021}
     {%
         \multibulletitem{Deployed ~200 test racks (1,000+ devices) and documented host configuration strategies tailored to rack use cases; standardized bring-up and handoff processes that reduced scheduling friction for streamlined lab operations by new techs without escalations.}
+
         \multibulletitem{Automated provisioning (Python/Bash/Ansible) for firmware flashing and network bootstrap; delivered a repeatable playbook and batch orchestration so racks could be brought online consistently without manual intervention.}
+
         \multibulletitem{Built Splunk dashboards, alerts, and auto-remediation scripts for device health and job status; reduced MTTD/MTTR by enabling on-call techs to triage from a single pane of glass with documented runbooks}
+
         \multibulletitem{Defined rack bring-up smoke tests (power, network, device enumeration) and acceptance criteria with SRE/lab ops; ensured racks met production-ready standards before handoff.}
+
         \multibulletitem{Authored setup docs and remediation runbooks and trained lab techs; improved shift-to-shift continuity and reduced escalations for common failures.}
     }
 
     \expdivider\experienceItem
-    {\selectfont\resumeFontSemiBold Full Stack Developer}
+    {\selectfont\resumeFontSemiBold\faLaptopCode\hspace{2pt} Full Stack Developer}
     {Remote}
     {Software Engineer}
     {January 2020 - Present}

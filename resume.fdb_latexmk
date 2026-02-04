@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1770179847.65787 "resume.xdv" "resume.pdf" "resume" 1770179847.92987 0
-  "resume.xdv" 1770179847.59848 50176 b8f8e0a9521f2e352657ce4b77b2d3b3 "xelatex"
+["xdvipdfmx"] 1770189598.28176 "resume.xdv" "resume.pdf" "resume" 1770189598.54599 0
+  "resume.xdv" 1770189598.22067 56884 3fdda52140536bb1ef9f016a8bcf6d7f "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1770179846.48237 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770179847.92806 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770179742.97521 6494 496e04d35721d63c518ebda279e6f88c ""
+["xelatex"] 1770189597.02502 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770189598.5444 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770189567.35597 7103 653005ad97f92241f531902f2b9f0225 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -98,6 +98,8 @@
   "/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty" 1575152242 21514 b7557edcee22835ef6b03ede1802dad4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/tracklang/tracklang.tex" 1741122747 151852 b119008e68029888d066c15906c82ad9 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty" 1576624663 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.sty" 1544223003 123 a302f2c651a95033260db60e51527ae8 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.tex" 1692744296 49397 a8071cbd06dd0bb15ae8acf876c73f20 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1717359999 2222 2166a1f7827be30ddc30434e5efcee1b ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty" 1717359999 4173 d22509bc0c91281d991b2de7c88720dd ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty" 1730928152 88370 c780f23aea0ece6add91e09b44dca2cd ""
@@ -191,10 +193,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1770179845.04276 4417 7432538e15aab677c44ef1fda28aeb53 ""
-  "resume.aux" 1770179847.59767 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
-  "resume.tex" 1770179742.97521 6494 496e04d35721d63c518ebda279e6f88c ""
-  "resumeClass.cls" 1763682692.82148 5310 25a4daf8268260ccfcf36e7bb73bba36 ""
+  "fontSettings.sty" 1770189596.80451 5074 1b758423cd5f398c1921fb868ae55dcc ""
+  "resume.aux" 1770189598.21971 128 8ec89a09013e497d5b92563b73b0583f "xelatex"
+  "resume.tex" 1770189567.35597 7103 653005ad97f92241f531902f2b9f0225 ""
+  "resumeClass.cls" 1770185703.20613 5490 2164592ec868b5770b42d60da4fb38bb ""
   (generated)
   "resume.aux"
   "resume.log"

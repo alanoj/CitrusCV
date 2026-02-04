@@ -49,7 +49,6 @@
 
 
 % Custom Colors
-% \definecolor{sectionbg}{RGB}{242, 188, 62}
 \definecolor{sectionbg}{HTML}{FAE49E}
 \definecolor{sectionTitleBg}{HTML}{EBAF70}
 \definecolor{itemDivOrange}{HTML}{F0C394}
@@ -58,12 +57,17 @@
 \definecolor{baseText}{HTML}{000000}
 \definecolor{bulletColor}{HTML}{3D3D3D}
 
+% Define Google logo colors
+\definecolor{gBlue}{RGB}{66,133,244}
+\definecolor{gRed}{RGB}{219,50,54}
+\definecolor{gYellow}{RGB}{244,194,13}
+\definecolor{gGreen}{RGB}{15,157,88}
 
 \pagestyle{empty} % Remove page numbers
 
 % --- Custom pipe separator formatting (vertically centered) ---
 \newcommand{\lpipe}{%
-    $\vcenter{\hbox{\textcolor{orange}{\rule{0.9pt}{2.0ex}}}}$%
+    $\vcenter{\hbox{\textcolor{orange}{\rule{1.1pt}{2.0ex}}}}$%
     \hspace{0.5em}%
 }
 
@@ -93,17 +97,23 @@
             \raggedright\headerContactInfo{\resumeAddress}%
         \end{varwidth} \\
     \end{tabularx}%
-    \par\vspace{0.4em}%
-    \vspace{0.6em}%
+    \par\vspace{0.1em}%
+    \vspace{0.1em}%
 }
 
 \newcommand{\newSection}[1]{%
-    \par\vspace{0.5em}
+    \par\vspace{0.1em}
     \baseText{#1}
-    \par\vspace{0.5em}
+    \par\vspace{0.4em}
 }
-\newcommand{\contactIcon}[2]{
-    \textcolor{orange}{\fontsize{11}{9}\raisebox{-0.1\height}{\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0}#1}}\hspace{0.5em}#2\hspace{1.3em}
+
+\newcommand{\contactIcon}[2]{%
+    \begingroup
+    \textcolor{orange}{\fontsize{9.5pt}{11pt}\selectfont #1}%
+    \endgroup
+    \hspace{0.5em}%
+    {\resumeFontSemiBold\addfontfeature{LetterSpace=7.0} #2}%
+    \hspace{1.3em}%
 }
 
 \newcommand{\ExpDividerLength}{1\linewidth}  % Set the length of the divider (adjust as needed)
@@ -111,7 +121,7 @@
 \newcommand{\expdivider}{%
     \par\vspace{-0.5em}%    % Paragraph break and vertical space before the divider
     \begin{center}%
-        \textcolor{itemDivOrange}{\rule{\ExpDividerLength}{\ExpDividerThickness}}%
+        \textcolor{orange}{\rule{\ExpDividerLength}{\ExpDividerThickness}}%
     \end{center}%
 }
 
@@ -129,6 +139,7 @@
 % For multi-line bullet items (a larger vertical shift)
 \newcommand{\multibulletitem}[1]{%
     \item[\raisebox{-0.8ex}{\scalebox{2}{\textcolor{bulletColor}{\textbullet}}}] #1
+    \vspace{0.3em}%
 }
 
 \newcommand{\experienceItem}[5]{%

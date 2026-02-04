@@ -1,6 +1,7 @@
 \ProvidesPackage{fontSettings}[2025/04/12 Font Settings for Resume]
 \RequirePackage{lmodern}
 \RequirePackage{fontspec}
+\usepackage{xstring}
 \usepackage[style=solid]{fontawesome7}
 
 % Define a single Open Sans family with several weight faces.
@@ -32,6 +33,7 @@
 \newcommand{\resumeFontSemiBold}{\resumeFont\fontseries{sb}\selectfont}
 \newcommand{\resumeFontBold}{\resumeFont\bfseries}
 \newcommand{\textsbseries}[1]{{\resumeFontSemiBold\selectfont #1}}
+\newcommand{\textbseries}[1]{{\resumeFontBold\selectfont #1}}
 % Condensed font commands
 \newcommand{\resumeCondensedFontRegular}{\resumeCondensedFont}
 \newcommand{\resumeCondensedFontMedium}{\resumeCondensedFont\fontseries{cme}\selectfont}
@@ -40,7 +42,7 @@
 
 % ------------------------------ Header font Options ------------------------
 
-\newcommand{\headerSummary}[1]{\setstretch{1}\fontsize{8pt}{8pt}\selectfont\resumeFontRegular\addfontfeatures{LetterSpace=1.0} #1}
+\newcommand{\headerSummary}[1]{\fontsize{8.5pt}{10.5pt}\selectfont\resumeFontRegular\addfontfeatures{LetterSpace=1.0} #1}
 
 % Header Full Name Font Options
 \newcommand{\headerFullName}[1]{\fontsize{43pt}{50pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
@@ -52,7 +54,7 @@
 \newcommand{\headerPosTitle}[1]{\fontsize{9pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1}
 
 % Base Text Font Options
-\newcommand{\baseText}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontRegular #1}
+\newcommand{\baseText}[1]{\fontsize{8pt}{10pt}\selectfont\resumeFontRegular #1}
 
 % ------------------------------ Section Title Font Options --------------------
 
@@ -70,16 +72,33 @@
 % ------------------------------ Experience Item Font Options ---------------
 
 % Experience Company Name Font Options
-\newcommand{\experienceCompanyName}[1]{\fontsize{9.5pt}{10pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experienceCompanyName}[1]{\fontsize{10pt}{10pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Location Font Options
 \newcommand{\experienceLocation}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Position Font Options
-\newcommand{\experiencePosition}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experiencePosition}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Dates Font Options 
 \newcommand{\experienceDates}[1]{\fontsize{7.5pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} \textit{#1}}
+
+%  Apple Logo Command
+\newcommand{\applelogo}{{\fontspec{Helvetica Neue}\char"F8FF}\,\hspace{2pt}}
+
+% Macro to color the literal input "Google"
+\newcommand{\colorgoogle}[1]{%
+    \IfEqCase{#1}{%
+        {Google}{%
+                {\textcolor{gBlue}{G}%
+                        \textcolor{gRed}{o}%
+                        \textcolor{gYellow}{o}%
+                        \textcolor{gBlue}{g}%
+                        \textcolor{gGreen}{l}%
+                        \textcolor{gRed}{e}}%
+            }%
+    }[\PackageError{colorgoogle}{Unsupported text `#1`}{Only supports Google}]%
+}
 
 % ------------------------------ Skills Font Options ---------------
 
