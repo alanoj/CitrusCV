@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  20 NOV 2025 15:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  3 FEB 2026 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -943,20 +943,42 @@ Overfull \hbox (99.06046pt too wide) in alignment at lines 13--13
  []
 
 
+Package fontspec Info: 
+(fontspec)             Font family 'OpenSans-Regular(4)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
+(fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
+(fontspec)             {n}{n}{OpenSans-Regular},FontFace =
+(fontspec)             {me}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
+(fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=1.0].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (n/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
+(fontspec)             - (me/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
+(fontspec)             - (mi/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=1.0;"
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 22.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.94997> on input line 22.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.25> on input line 22.
+(Font)              <8> on input line 22.
 
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans-Regular(4)' created for font
+(fontspec)             Font family 'OpenSans-Regular(5)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
@@ -1006,12 +1028,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34754 strings out of 473832
- 756251 string characters out of 5729482
- 1262692 words of memory out of 5000000
- 57247 multiletter control sequences out of 15000+600000
- 603892 words of font info for 158 fonts, out of 8000000 for 9000
+ 34771 strings out of 473832
+ 757738 string characters out of 5729482
+ 1263001 words of memory out of 5000000
+ 57254 multiletter control sequences out of 15000+600000
+ 593194 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,16n,121p,1234b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 50184 bytes).
+Output written on resume.xdv (1 page, 50176 bytes).

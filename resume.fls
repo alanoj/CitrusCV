@@ -341,15 +341,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
@@ -359,8 +353,5 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
 OUTPUT resume.xdv
 INPUT resume.aux

@@ -40,7 +40,7 @@
 
 % ------------------------------ Header font Options ------------------------
 
-\newcommand{\headerSummary}[1]{\fontsize{8.5pt}{8pt}\selectfont\resumeFontRegular #1}
+\newcommand{\headerSummary}[1]{\setstretch{1}\fontsize{8pt}{8pt}\selectfont\resumeFontRegular\addfontfeatures{LetterSpace=1.0} #1}
 
 % Header Full Name Font Options
 \newcommand{\headerFullName}[1]{\fontsize{43pt}{50pt}\selectfont\resumeCondensedFontRegular\addfontfeature{LetterSpace=20.0} #1}
@@ -61,7 +61,7 @@
     \par\noindent%
     \colorbox{sectionTitleBg}{%
         \parbox{\dimexpr\linewidth-2\fboxsep}{%
-            \centering\fontsize{11pt}{10pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=10.0} #1%
+            \centering\fontsize{9pt}{10pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=10.0} #1%
         }%
     }%
     \par\vspace{0.2em}%
