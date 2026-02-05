@@ -56,34 +56,10 @@
 % Base Text Font Options
 \newcommand{\baseText}[1]{\fontsize{8pt}{10pt}\selectfont\resumeFontRegular #1}
 
-% ------------------------------ Section Title Font Options --------------------
-% Use titlesec to draw a colored rule under section titles and provide a small
-% wrapper so existing calls to \sectionTitle{...} continue to work.
-% NOTE: this uses the color name `sectionTitleBg` which should be defined by the
-% document class (or earlier in the preamble). If you prefer, adjust the color
-% name or define a fallback in the class.
-\AtBeginDocument{%
-    % Global section style: colored rule under the title (Option A)
-    \titleformat{\section}[block]
-    {\normalfont}   % title text styling
-    {}                                    % no label
-    {0pt}                                 % separation
-    {
-        \color{sectionTitleBg}\rule{\linewidth}{0.9pt}\vspace{0.5ex} % top rule
-        \color{black}\centering\fontsize{9pt}{8pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=10.0}}   % before-code: 
-    [\vspace{-2ex}\color{sectionTitleBg}\rule{\linewidth}{0.9pt}\vspace{0.5ex}] % after-code: colored rule
-
-    % Tighter spacing to conserve vertical space on the resume
-    \titlespacing*{\section}{0pt}{4pt}{2pt}
-}% end \AtBeginDocument
-
-% Keep a lightweight wrapper so existing usages of \sectionTitle{...} keep working
-\newcommand{\sectionTitle}[1]{\vspace{-4ex}\section*{#1}}
-
 % ------------------------------ Experience Item Font Options ---------------
 
 % Experience Company Name Font Options
-\newcommand{\experienceCompanyName}[1]{\fontsize{10pt}{10pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\experienceCompanyName}[1]{\fontsize{9pt}{10pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
 
 % Experience Location Font Options
 \newcommand{\experienceLocation}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} #1}
@@ -101,7 +77,7 @@
 \newcommand{\schoolLocation}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} #1}
 
 % Degree
-\newcommand{\schoolDegree}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} #1}
+\newcommand{\schoolDegree}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontRegular\addfontfeature{LetterSpace=2.0} #1}
 
 % Field of Study
 \newcommand{\schoolField}[1]{\fontsize{8pt}{9pt}\selectfont\resumeFontMedium\addfontfeature{LetterSpace=2.0} #1}
@@ -127,8 +103,8 @@
 % ------------------------------ Skills Font Options ---------------
 
 \newcommand{\technicalSkillsList}[2]{
-    \fontsize{8pt}{9pt}\selectfont\resumeFontSemiBold\addfontfeature{LetterSpace=2.0} \textcolor{orange}{#1}
-    \fontsize{8pt}{9pt}\selectfont\resumeFontRegular #2
+    \fontsize{8pt}{10pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=2.0} \textcolor{orange}{#1}
+    \fontsize{7.5pt}{10pt}\selectfont\resumeFontMedium #2
 }
 
 \endinput

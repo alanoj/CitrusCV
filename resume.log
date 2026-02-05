@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  4 FEB 2026 22:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  5 FEB 2026 02:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -724,6 +724,25 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen301
+\lightrulewidth=\dimen302
+\cmidrulewidth=\dimen303
+\belowrulesep=\dimen304
+\belowbottomsep=\dimen305
+\aboverulesep=\dimen306
+\abovetopsep=\dimen307
+\cmidrulesep=\dimen308
+\cmidrulekern=\dimen309
+\defaultaddspace=\dimen310
+\@cmidla=\count406
+\@cmidlb=\count407
+\@aboverulesep=\dimen311
+\@belowrulesep=\dimen312
+\@thisruleclass=\count408
+\@lastruleclass=\count409
+\@thisrulewidth=\dimen313
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip63
@@ -741,6 +760,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip75
 \f@nch@widthR=\skip76
 \@temptokenb=\toks60
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen314
+\c@nlinenum=\count410
+\TeXr@lab=\toks61
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (./fontSettings.sty
@@ -780,8 +804,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count406
-\xs_countb=\count407
+\xs_counta=\count411
+\xs_countb=\count412
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7.sty
@@ -999,6 +1023,33 @@ Package fontspec Info:
 (fontspec)             {n}{n}{OpenSans-Regular},FontFace =
 (fontspec)             {me}{n}{OpenSans-Medium},FontFace =
 (fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
+(fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=10.0pt].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (n/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=10.0pt;"
+(fontspec)             - (me/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Medium.ttf]/OT:script=latn;language=dflt;letterspace=10.0pt;"
+(fontspec)             - (mi/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-MediumItalic.ttf]/OT:script=latn;language=dflt;letterspace=10.0pt;"
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-SemiBold.ttf]/OT:script=latn;language=dflt;letterspace=10.0pt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;letterspace=10.0pt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[assets/fonts/Open_Sans/OpenSans-Bold.ttf]/OT:script=latn;language=dflt;letterspace=10.0pt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'OpenSans-Regular(6)' created for font
+(fontspec)             'OpenSans-Regular' with options [Path =
+(fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
+(fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
+(fontspec)             {n}{n}{OpenSans-Regular},FontFace =
+(fontspec)             {me}{n}{OpenSans-Medium},FontFace =
+(fontspec)             {mi}{n}{OpenSans-MediumItalic},FontFace =
 (fontspec)             {sb}{n}{OpenSans-SemiBold},LetterSpace=1.0].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
@@ -1025,13 +1076,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.25> on input line 18.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
-
- []
-
-
 Package fontspec Info: 
-(fontspec)             Font family 'OpenSans-Regular(6)' created for font
+(fontspec)             Font family 'OpenSans-Regular(7)' created for font
 (fontspec)             'OpenSans-Regular' with options [Path =
 (fontspec)             assets/fonts/Open_Sans/,Extension = .ttf,UprightFont =
 (fontspec)             OpenSans-Regular,BoldFont = OpenSans-Bold,FontFace =
@@ -1077,12 +1123,32 @@ Missing character: There is no ‑ (U+2011) in font [assets/fonts/Open_Sans/Open
 Missing character: There is no ‑ (U+2011) in font [assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;!
 Missing character: There is no ‑ (U+2011) in font [assets/fonts/Open_Sans/OpenSans-Regular.ttf]/OT:script=latn;language=dflt;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 
  []
 
@@ -1106,12 +1172,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 35477 strings out of 473832
- 770161 string characters out of 5729482
- 1283024 words of memory out of 5000000
- 57932 multiletter control sequences out of 15000+600000
- 593265 words of font info for 166 fonts, out of 8000000 for 9000
+ 35829 strings out of 473832
+ 776841 string characters out of 5729482
+ 1304796 words of memory out of 5000000
+ 58267 multiletter control sequences out of 15000+600000
+ 593321 words of font info for 173 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 117i,16n,121p,1234b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,1234b,878s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 52184 bytes).
+Output written on resume.xdv (1 page, 61516 bytes).

@@ -33,7 +33,9 @@
 \RequirePackage{varwidth}
 \RequirePackage{bbding}
 \RequirePackage{setspace}
+\RequirePackage{booktabs}
 \RequirePackage{fancyhdr}
+\RequirePackage{makecell}
 \usetikzlibrary{matrix, calc}
 
 % Font Settings
@@ -58,6 +60,7 @@
 \definecolor{orange}{HTML}{A15E17}
 \definecolor{baseText}{HTML}{000000}
 \definecolor{bulletColor}{HTML}{3D3D3D}
+\colorlet{sectionTitleBgLight}{sectionTitleBg!60!white} % 30% of original + 70% white -> lighter
 
 % Define Google logo colors
 \definecolor{gBlue}{RGB}{66,133,244}
@@ -103,13 +106,40 @@
         \end{varwidth} \\
     \end{tabularx}%
     \par\vspace{0.1em}%
-    \vspace{0.1em}%
+    \vspace{0.5em}%
 }
 
 \newcommand{\newSection}[1]{%
     \par\vspace{0.1em}
     \baseText{#1}
-    \par\vspace{0.4em}
+    \par\vspace{0.1em}
+}
+
+% Full-width rounded band for section title (extends to page margins)
+\newcommand{\bandSectionTitleFullWidth}[2][4pt]{%
+    \noindent\makebox[\linewidth]{% center a box of exact paper-width-minus-margins
+        \begin{tcolorbox}[
+                enhanced,
+                colback=sectionTitleBgLight,
+                colframe=sectionTitleBgLight,
+                boxrule=0pt,
+                arc=#1,                  % corner radius (default 6pt)
+                left=10pt, right=10pt,   % horizontal padding inside box
+                top=4pt, bottom=4pt,     % vertical padding inside box
+                boxsep=0pt,
+                width=\linewidth, % paper width minus left+right margins (0.5in+0.5in)
+                halign=center,
+                before=\par,
+                before skip=0pt,
+                after skip=0.2em,
+                autoparskip=false,
+                nobeforeafter,
+                enlarge left by=0pt,
+                enlarge right by=0pt
+            ]
+            \centering\fontsize{9pt}{8pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=10.0pt} #2
+        \end{tcolorbox}%
+    }%
 }
 
 \newcommand{\contactIcon}[2]{%
@@ -163,8 +193,8 @@
 \newcommand{\educationItem}[4]{%
     \noindent
     \begin{tabularx}{\linewidth}{@{}Xr@{}}%
-        \schoolName{#1} & \textcolor{orange}{\schoolLocation{#2}} \\[0.5ex]
-        \schoolDegree{#3}    & \schoolField{#4}                        \\[0.5ex]
+        \schoolName{#1}   & \textcolor{orange}{\schoolLocation{#2}} \\[0.5ex]
+        \schoolDegree{#3} & \schoolField{#4}                        \\[0.5ex]
     \end{tabularx}%
     \vspace{0em}%
 }

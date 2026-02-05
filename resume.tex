@@ -11,25 +11,25 @@
 
 \color{baseText}
 \begin{document}
-\resumeheader\sectionTitle{Summary}
+\resumeheader\bandSectionTitleFullWidth{Summary}
 \newSection{
 
-    \headerSummary{\textsbseries{\href{https://en.wikipedia.org/wiki/Multipotentiality}{Multipotentialite\textsuperscript{\tiny 1}}} software engineer with a passion for learning and building across disciplines—quickly picking up tools from backend systems to embedded hardware and turning ambiguous challenges into deliverable solutions} \\[-2ex]
+    \headerSummary{\textsbseries{\href{https://en.wikipedia.org/wiki/Multipotentiality}{Multipotentialite\textsuperscript{\tiny 1}}} software engineer with a passion for learning and building across disciplines—quickly picking up tools from backend systems to embedded hardware and turning ambiguous challenges into deliverable solutions}
 }
 
 %---------------------------------------------------
 % Work Experience Section
 %---------------------------------------------------
-\sectionTitle{Experience}
+\bandSectionTitleFullWidth{Experience}
 \newSection{
 
     \experienceItem
-    {\selectfont\resumeFontSemiBold \colorgoogle{Google}}
+    {\fontsize{10pt}{9pt}\selectfont\resumeFontSemiBold\colorgoogle{Google}}
     {Sunnyvale, CA}
     {Software Engineer, Google Cloud}
     {May 2022 – Dec 2024}
     {%
-        \multibulletitem{Designed and implemented a high-fidelity control-plane simulator in C++/Python using gRPC and Protobuf, complete with pub/sub messaging and concurrency primitives (channels, callbacks).  This simulator replicated complex Andromeda network behaviors, enabling developers to test new features in isolation and reducing full regression runtimes by \textsbseries{25\%} (saving ~1.5 SWE-years each year).}
+        \multibulletitem{Designed and implemented a high-fidelity control-plane simulator in C++/Python using gRPC and Protobuf, complete with pub/sub messaging and concurrency primitives (channels, callbacks).  This simulator replicated complex Andromeda network behaviors, enabling developers to test new features in isolation and reducing full regression runtimes by \textsbseries{25\%} (saving \~{}1.5 SWE-years each year).}
 
         \multibulletitem{Developed a multicast VPC-gateway emulation layer by extending the simulator to support 1,000+ gateways connected to a single controller.  Created new C++ modules and Python orchestration scripts to emit and process messages, mocked missing data-plane components (GSLB, ESF port), and helped customers validate scalable pub/sub topologies—reducing customer onboarding time by \textsbseries{30\%}.}
 
@@ -40,13 +40,10 @@
         \multibulletitem{Created pre-population strategies for Spanner test databases.  Developed Python utilities to seed test DBs via textproto, Spanner backups, and Sandman snapshots; configured cron jobs and multi-sandbox topologies to ensure reproducible datasets and cut environment setup time significantly.}
 
         \multibulletitem{Contributed to host-agent re-architecture, replacing an OpenFlow-based on-host agent with a new C++ On-Host Controller (OHC), integrating control-plane logic directly on VM hosts.  Updated gRPC interfaces and host-path plumbing, improving reliability and deprecating legacy code.}
-
-        \multibulletitem{Authored design docs and diagrams for VPC-gateway and ESF-port integrations, weighing separate vs. co-located components and collaborating with cross-functional teams to finalize scalable architectures.}
-
     }
 
     \expdivider\experienceItem
-    {\selectfont\resumeFontSemiBold\applelogo Apple}
+    {\fontsize{10pt}{9pt}\selectfont\resumeFontSemiBold\applelogo Apple}
     {Sunnyvale, CA}
     {Tools and Automation Engineer, CI Tools-Site Reliability}
     {July 2020 - March 2021}
@@ -59,7 +56,7 @@
     }
 
     \expdivider\experienceItem
-    {\selectfont\resumeFontSemiBold\faLaptopCode\hspace{2pt} Full Stack Developer}
+    {\fontsize{9pt}{9pt}\selectfont\resumeFontSemiBold\faLaptopCode\hspace{2pt} Full Stack Developer}
     {Remote}
     {Software Engineer}
     {January 2020 - Present}
@@ -70,19 +67,91 @@
 
 }
 
-\sectionTitle{Technical Skills}
+\bandSectionTitleFullWidth{Technical Skills}
 \newSection{
-    \begin{tabularx}{\linewidth}{@{}X@{}}
-        {\technicalSkillsList{Languages:}{C/C++, Python, JavaScript, Dart, Java, SQL, Bash, JSON, YAML}}         \\[0.2em]
-        {\technicalSkillsList{Libraries \& Frameworks:}{Flutter, React, Next.js, Express.js, ESP-IDF, FreeRTOS}} \\[0.2em]
-        {\technicalSkillsList{Technologies/Tools:}{Ansible, CMake, Git, GCP, Kubernetes, Docker, gRPC, Protobuf, CAD, Shaper3D, CI/CD, Microservices, Distributed Systems, ESP32, I\textsuperscript{2}C, SPI, BLE, GDB}}
+    \begingroup
+    \setlength{\tabcolsep}{4pt} % tighter padding between main columns
+    \setlength{\columnsep}{-4em}
+    \footnotesize
+    \noindent
+    \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X
+        >{\raggedright\arraybackslash}X
+        >{\raggedright\arraybackslash}X
+        >{\raggedright\arraybackslash}X@{}}
+
+        % ---------------------- LANGUAGES ----------------------
+        \begin{minipage}[t]{\hsize}
+            \hspace{2.5em}\textbf{Languages}\\[-3pt] % reduce gap here
+            \begin{multicols}{2}[\vspace{-1.6em}] % two sub-columns
+                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                    \item C\texttt{++}
+                    \item Python
+                    \item JavaScript
+                    \item Dart
+                    \item SQL
+                    \item Bash
+                    \item JSON
+                    \item YAML
+                \end{itemize}
+            \end{multicols}
+        \end{minipage}
+
+         &
+        % --------------- FRAMEWORKS & LIBRARIES ---------------
+        \begin{minipage}[t]{\hsize}
+            \textbf{Frameworks \& Libraries}\\[-1.6em]
+            \begin{multicols}{2}[\vspace{-5pt}]
+                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                    \item React
+                    \item Flutter
+                    \item gRPC
+                    \item Protobuf
+                    \item ESP-IDF
+                    \item Express.js
+                    \item Next.js
+                \end{itemize}
+            \end{multicols}
+        \end{minipage}
+
+         &
+        % ---------------------- TOOLS & INFRA ----------------------
+        \begin{minipage}[t]{\hsize}
+            \textbf{Tools \& Infrastructure}\\[-3pt]
+            \begin{multicols}{2}[\vspace{-1.6em}]
+                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                    \item GCP
+                    \item Docker
+                    \item Ansible
+                    \item CI/CD
+                    \item Git
+                    \item Kubernetes
+                \end{itemize}
+            \end{multicols}
+        \end{minipage}
+
+
+         &
+        % --------------- Embedded Systems ---------------
+        \begin{minipage}[t]{\hsize}
+            \textbf{Embedded Systems}\\[-3pt]
+            \begin{multicols}{2}[\vspace{-1.6em}]
+                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                    \item ESP32
+                    \item I\textsuperscript{2}C
+                    \item SPI
+                    \item BLE
+                    \item GDB
+                \end{itemize}
+            \end{multicols}
+        \end{minipage}
     \end{tabularx}
+    \endgroup
 }
 
 %---------------------------------------------------
 % Education Section
 %---------------------------------------------------
-\sectionTitle{Education}
+\bandSectionTitleFullWidth{Education}
 \newSection{
     \educationItem{San Francisco State University}
     {San Francisco, CA}
