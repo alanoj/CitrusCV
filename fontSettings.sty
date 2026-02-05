@@ -69,8 +69,8 @@
     {}                                    % no label
     {0pt}                                 % separation
     {
-        % \color{sectionTitleBg}\rule{\linewidth}{0.9pt}\vspace{0.5ex} % top rule
-        \centering\fontsize{9pt}{8pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=10.0}}   % before-code: 
+        \color{sectionTitleBg}\rule{\linewidth}{0.9pt}\vspace{0.5ex} % top rule
+        \color{black}\centering\fontsize{9pt}{8pt}\selectfont\resumeFontBold\addfontfeature{LetterSpace=10.0}}   % before-code: 
     [\vspace{-2ex}\color{sectionTitleBg}\rule{\linewidth}{0.9pt}\vspace{0.5ex}] % after-code: colored rule
 
     % Tighter spacing to conserve vertical space on the resume
@@ -78,7 +78,7 @@
 }% end \AtBeginDocument
 
 % Keep a lightweight wrapper so existing usages of \sectionTitle{...} keep working
-\newcommand{\sectionTitle}[1]{\vspace{0ex}\section*{#1}}
+\newcommand{\sectionTitle}[1]{\vspace{-4ex}\section*{#1}}
 
 % ------------------------------ Experience Item Font Options ---------------
 
