@@ -5,8 +5,6 @@
 % Load the base class:
 \LoadClass{article}
 
-% Font Settings
-\RequirePackage{fontSettings} % Load font settings from fontSettings.sty
 
 % Load packages for layout and styling
 \RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.4in, bottom=0.5in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in]{geometry} % Strict 1 inch margins only
@@ -37,6 +35,9 @@
 \RequirePackage{setspace}
 \RequirePackage{fancyhdr}
 \usetikzlibrary{matrix, calc}
+
+% Font Settings
+\RequirePackage{fontSettings} % Load font settings from fontSettings.sty
 
 % --- Header storage without @ macros ---
 \newcommand{\fullname}[1]{\renewcommand\resumeName{#1}}
@@ -162,8 +163,8 @@
 \newcommand{\educationItem}[4]{%
     \noindent
     \begin{tabularx}{\linewidth}{@{}Xr@{}}%
-        \experienceCompanyName{#1} & \textcolor{orange}{\experienceLocation{#2}} \\[0.5ex]
-        \experiencePosition{#3}    & \experienceDates{#4}                        \\[0.5ex]
+        \schoolName{#1} & \textcolor{orange}{\schoolLocation{#2}} \\[0.5ex]
+        \schoolDegree{#3}    & \schoolField{#4}                        \\[0.5ex]
     \end{tabularx}%
     \vspace{0em}%
 }
