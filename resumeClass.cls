@@ -9,7 +9,7 @@
 \RequirePackage{fontSettings} % Load font settings from fontSettings.sty
 
 % Load packages for layout and styling
-\RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.35in, bottom=0.35in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in, showframe]{geometry} % Strict 1 inch margins only
+\RequirePackage[paperwidth=8.5in, paperheight=11in, top=0.4in, bottom=0.5in, left=0.5in, right=0.5in, marginparwidth=0in, marginparsep=0in, headheight=0in, headsep=0in, footskip=0in, bindingoffset=0in]{geometry} % Strict 1 inch margins only
 \RequirePackage{fontspec}             % Font selection
 \RequirePackage{titlesec}             % Control section titles
 \RequirePackage{enumitem}             % Customizable lists
@@ -35,7 +35,7 @@
 \RequirePackage{varwidth}
 \RequirePackage{bbding}
 \RequirePackage{setspace}
-\RequirePackage[bottom]{footmisc}
+\RequirePackage{fancyhdr}
 \usetikzlibrary{matrix, calc}
 
 % --- Header storage without @ macros ---
@@ -64,7 +64,10 @@
 \definecolor{gYellow}{RGB}{244,194,13}
 \definecolor{gGreen}{RGB}{15,157,88}
 
-\pagestyle{empty} % Remove page numbers
+\pagestyle{fancy} % Remove page numbers
+\fancyhf{}        % Clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 % --- Custom pipe separator formatting (vertically centered) ---
 \newcommand{\lpipe}{%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  4 FEB 2026 16:34
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  4 FEB 2026 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -828,17 +828,23 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/footmisc/footmisc.sty
-Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
-\FN@temptoken=\toks60
-\footnotemargin=\dimen301
-\@outputbox@depth=\dimen302
-Package footmisc Info: Declaring symbol style bringhurst on input line 699.
-Package footmisc Info: Declaring symbol style chicago on input line 707.
-Package footmisc Info: Declaring symbol style wiley on input line 716.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
-Package footmisc Info: Declaring symbol style lamport* on input line 747.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 768.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip63
+\f@nch@offset@elh=\skip64
+\f@nch@offset@erh=\skip65
+\f@nch@offset@olh=\skip66
+\f@nch@offset@orh=\skip67
+\f@nch@offset@elf=\skip68
+\f@nch@offset@erf=\skip69
+\f@nch@offset@olf=\skip70
+\f@nch@offset@orf=\skip71
+\f@nch@height=\skip72
+\f@nch@footalignment=\skip73
+\f@nch@widthL=\skip74
+\f@nch@widthC=\skip75
+\f@nch@widthR=\skip76
+\@temptokenb=\toks60
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (./resume.aux)
@@ -872,16 +878,16 @@ LaTeX Font Info:    ... okay on input line 13.
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: showframe 
+* modes: 
 * h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
-* v-part:(T,H,B)=(25.29494pt, 744.38011pt, 25.29494pt)
+* v-part:(T,H,B)=(28.90755pt, 729.92744pt, 36.135pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=542.02501pt
-* \textheight=744.38011pt
+* \textheight=729.92744pt
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
-* \topmargin=-46.97505pt
+* \topmargin=-43.36244pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -1084,18 +1090,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--91
 
 
 
-Overfull \hbox (0.4pt too wide) has occurred while \output is active
-[] | [] |
- []
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 3.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
 [1
 
 ]
 
 
-Overfull \hbox (0.4pt too wide) has occurred while \output is active
-[] | [] |
- []
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 10.18716pt, for example:
+(fancyhdr)                \setlength{\footskip}{10.18716pt}.
 
 [2] (./resume.aux)
  ***********
@@ -1108,12 +1114,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 35264 strings out of 473832
- 766051 string characters out of 5729482
- 1275358 words of memory out of 5000000
- 57720 multiletter control sequences out of 15000+600000
+ 35471 strings out of 473832
+ 769965 string characters out of 5729482
+ 1279105 words of memory out of 5000000
+ 57929 multiletter control sequences out of 15000+600000
  593249 words of font info for 164 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  117i,16n,121p,1234b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (2 pages, 52988 bytes).
+Output written on resume.xdv (2 pages, 52372 bytes).

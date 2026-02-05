@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1770251673.90692 "resume.xdv" "resume.pdf" "resume" 1770251674.19809 0
-  "resume.xdv" 1770251673.84481 52988 f20020a391ba54b130b83af994e7a885 "xelatex"
+["xdvipdfmx"] 1770261079.15455 "resume.xdv" "resume.pdf" "resume" 1770261079.42962 0
+  "resume.xdv" 1770261079.09269 52372 ebf8e6bc210d99b61e92fcdcad2fe6b4 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1770251672.57614 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770251674.19636 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770251672.2985 6439 a8e8c82d29f0d982efed6fd76791ad20 ""
+["xelatex"] 1770261077.89174 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770261079.42793 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770260974.52247 6618 e253c78684aad58efa3829e5ee63ce65 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -122,6 +122,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/environ/environ.sty" 1399239813 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1739306980 46850 d87daedc2abdc653769a6f1067849fe0 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1739048179 31715 19e60610b63819fe670dfa1cd84a4e94 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7-utex-helper.sty" 1758137734 5142 36ce2bc63917f500c179e59679d9b042 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/fontawesome7.sty" 1758137734 3844 cee636473a08f169baa5bef2071111eb ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome7/tufontawesome7brands.fd" 1754083305 1257 4fdec4e73d830b07c5cca0a6e2bc64d1 ""
@@ -129,7 +130,6 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty" 1715459803 164981 148a15871e0e3c3101b8203733535af2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg" 1532898934 549 c4adac819276241fea8eb79c5ab7b99e ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty" 1715459803 3755 4872b99d810c024f9c09bb1c62ffee3b ""
-  "/usr/local/texlive/2025/texmf-dist/tex/latex/footmisc/footmisc.sty" 1735074790 21517 e6c380e6f383c61a6a04ddbdffb45d81 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -194,10 +194,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1770228891.00364 5154 e52d03e4706cb6285bb45dd1167ebac4 ""
-  "resume.aux" 1770251673.84409 128 8ec89a09013e497d5b92563b73b0583f "xelatex"
-  "resume.tex" 1770251672.2985 6439 a8e8c82d29f0d982efed6fd76791ad20 ""
-  "resumeClass.cls" 1770231260.13549 5554 2f60d2c8e653e07fa4da1c9ed3ed701f ""
+  "fontSettings.sty" 1770256759.16973 5034 060255b399b7707e2493004e66512fc8 ""
+  "resume.aux" 1770261079.09182 128 8ec89a09013e497d5b92563b73b0583f "xelatex"
+  "resume.tex" 1770260974.52247 6618 e253c78684aad58efa3829e5ee63ce65 ""
+  "resumeClass.cls" 1770261077.65934 5658 e07d1864afead9a6a379ed5d40e5e548 ""
   (generated)
   "resume.aux"
   "resume.log"
