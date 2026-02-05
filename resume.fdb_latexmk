@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1770270929.75018 "resume.xdv" "resume.pdf" "resume" 1770270930.02441 0
-  "resume.xdv" 1770270929.68955 52184 d3b5aa8911e4b26ea7ff1e6691fdf712 "xelatex"
+["xdvipdfmx"] 1770271197.94811 "resume.xdv" "resume.pdf" "resume" 1770271198.21371 0
+  "resume.xdv" 1770271197.88645 53432 0103634a03345580a0282f03680c9331 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1770270928.49364 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770270930.02276 0
+["xelatex"] 1770271196.70186 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770271198.21209 0
   "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770270928.28411 6618 485939eba0b706b452cea3b605059e98 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -194,8 +194,8 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1770270778.94003 6486 8aa718a2844b49ad0b47e18755db82a6 ""
-  "resume.aux" 1770270929.68863 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
+  "fontSettings.sty" 1770271196.47718 6474 3cd2a46e5439b7b1a61b5ca042431f79 ""
+  "resume.aux" 1770271197.8855 128 8ec89a09013e497d5b92563b73b0583f "xelatex"
   "resume.tex" 1770270928.28411 6618 485939eba0b706b452cea3b605059e98 ""
   "resumeClass.cls" 1770270689.96924 5634 076286ae466a11bc2c37f1429ddba9fa ""
   (generated)
