@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1770286022.87752 "resume.xdv" "resume.pdf" "resume" 1770286023.17868 0
-  "resume.xdv" 1770286022.8119 61516 334bede5bc7c0403eef2085febe027ae "xelatex"
+["xdvipdfmx"] 1770354062.2285 "resume.xdv" "resume.pdf" "resume" 1770354062.52901 0
+  "resume.xdv" 1770354062.16315 62064 044c98867dc8373de10aca0630517d52 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1770286021.57557 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770286023.1769 0
-  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770286021.34617 8669 5ce9675c37dba4b51e181d91248db22b ""
+["xelatex"] 1770354060.89864 "/Users/alanordorica/Developer/CitrusCV/resume.tex" "resume.xdv" "resume" 1770354062.5273 0
+  "/Users/alanordorica/Developer/CitrusCV/resume.tex" 1770354059.34356 9744 61b3ff691e9d9b7a3e1297bfc70a0d95 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -196,9 +196,9 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "fontSettings.sty" 1770278003.63012 5186 c4a3d111e464e74ac5692ca5e95efd79 ""
-  "resume.aux" 1770286022.81101 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
-  "resume.tex" 1770286021.34617 8669 5ce9675c37dba4b51e181d91248db22b ""
+  "fontSettings.sty" 1770353883.89173 5164 44173a0448763a60a19a6c22c2b9b75c ""
+  "resume.aux" 1770354062.16225 128 852fc3e86949e4a73cd552c13992dc37 "xelatex"
+  "resume.tex" 1770354059.34356 9744 61b3ff691e9d9b7a3e1297bfc70a0d95 ""
   "resumeClass.cls" 1770285999.8902 6911 dc84cd9f7560c8dde5ecf7cc93e1bfb4 ""
   (generated)
   "resume.aux"

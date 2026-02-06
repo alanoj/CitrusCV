@@ -71,78 +71,101 @@
 \newSection{
     \begingroup
     \setlength{\tabcolsep}{4pt} % tighter padding between main columns
-    \setlength{\columnsep}{-4em}
+    \setlength{\columnsep}{-3.5em}
     \footnotesize
     \noindent
-    \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X
-        >{\raggedright\arraybackslash}X
-        >{\raggedright\arraybackslash}X
-        >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\linewidth}{@{}%
+        >{\raggedright\arraybackslash}p{\dimexpr0.2\linewidth-2\tabcolsep\relax}
+        >{\raggedright\arraybackslash}p{\dimexpr0.2\linewidth-2\tabcolsep\relax}
+        >{\centering\arraybackslash}p{\dimexpr0.12\linewidth-2\tabcolsep\relax}
+        >{\raggedright\arraybackslash}p{\dimexpr0.3\linewidth-2\tabcolsep\relax}
+        >{\raggedright\arraybackslash}p{\dimexpr0.2\linewidth-2\tabcolsep\relax}@{}}
 
         % ---------------------- LANGUAGES ----------------------
         \begin{minipage}[t]{\hsize}
-            \hspace{2.5em}\textbf{Languages}\\[-3pt] % reduce gap here
-            \begin{multicols}{2}[\vspace{-1.6em}] % two sub-columns
-                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
-                    \item C\texttt{++}
-                    \item Python
-                    \item JavaScript
-                    \item Dart
-                    \item SQL
-                    \item Bash
-                    \item JSON
-                    \item YAML
-                \end{itemize}
-            \end{multicols}
+            \technicalSkillsList{\hspace{1.5em}\textbf{Languages}}
+            {
+                \begin{multicols}{2}[\vspace{-1em}] % two sub-columns
+                    \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                        \item C\texttt{++}
+                        \item Python
+                        \item Dart
+                        \item SQL
+                        \item Bash
+                        \item JavaScript
+                    \end{itemize}
+                \end{multicols}
+            }
         \end{minipage}
 
          &
-        % --------------- FRAMEWORKS & LIBRARIES ---------------
+        % ---------------------- Backend & API ----------------------
         \begin{minipage}[t]{\hsize}
-            \textbf{Frameworks \& Libraries}\\[-1.6em]
-            \begin{multicols}{2}[\vspace{-5pt}]
-                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+            \technicalSkillsList{\hspace{1.5em}\textbf{Backend \& API}}
+            {
+                \begin{multicols}{2}[\vspace{-1em}] % two sub-columns
+                    \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                        \item REST
+                        \item gRPC
+                        \item Protobuf
+                        \item Concurrency
+                        \item Networking
+                    \end{itemize}
+                \end{multicols}
+            }
+        \end{minipage}
+
+         &
+        % --------------- Frontend & UI ---------------
+        \begin{minipage}[t]{\hsize}
+            \technicalSkillsList{\hspace{0.1em}\textbf{Frontend \& UI}}
+            {
+                \vspace{-1em}
+                \begin{itemize}[leftmargin=3em,nosep,topsep=0pt]
                     \item React
                     \item Flutter
-                    \item gRPC
-                    \item Protobuf
-                    \item ESP-IDF
-                    \item Express.js
-                    \item Next.js
                 \end{itemize}
-            \end{multicols}
+            }
         \end{minipage}
 
          &
-        % ---------------------- TOOLS & INFRA ----------------------
+        % ---------------------- DevOps & Cloud ----------------------
         \begin{minipage}[t]{\hsize}
-            \textbf{Tools \& Infrastructure}\\[-3pt]
-            \begin{multicols}{2}[\vspace{-1.6em}]
-                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
-                    \item GCP
-                    \item Docker
-                    \item Ansible
-                    \item CI/CD
-                    \item Git
-                    \item Kubernetes
-                \end{itemize}
-            \end{multicols}
+            \technicalSkillsList{\hspace{3.5em}\textbf{DevOps \& Cloud}}
+            {
+                \setlength{\columnsep}{-5em}
+                \begin{multicols}{3}[\vspace{-1em}]
+                    \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+                        \item GCP
+                        \item Ansible
+                        \item CI/CD
+                        \item Git
+                        \item Metrics
+                        \item Docker
+                        \item Logging
+                        \item Monitoring
+                        \item Kubernetes
+                    \end{itemize}
+                \end{multicols}
+            }
         \end{minipage}
-
 
          &
         % --------------- Embedded Systems ---------------
         \begin{minipage}[t]{\hsize}
-            \textbf{Embedded Systems}\\[-3pt]
-            \begin{multicols}{2}[\vspace{-1.6em}]
-                \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
-                    \item ESP32
-                    \item I\textsuperscript{2}C
-                    \item SPI
-                    \item BLE
-                    \item GDB
-                \end{itemize}
-            \end{multicols}
+            \technicalSkillsList{\textbf{Embedded Systems}}
+            {
+                \begin{multicols}{2}[\vspace{-1em}]
+                    \begin{itemize}[leftmargin=2em,nosep,topsep=0pt]
+                        \item ESP32
+                        \item Linux
+                        \item I\textsuperscript{2}C
+                        \item SPI
+                        \item BLE
+                        \item GDB
+                    \end{itemize}
+                \end{multicols}
+            }
         \end{minipage}
     \end{tabularx}
     \endgroup
